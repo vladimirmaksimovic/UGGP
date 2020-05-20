@@ -1,74 +1,94 @@
-@import "reset";
-@import "variables";
+/*** IMPORTS ***/
+@import "globals";
 
-/*** GLOBALS ***/
-body {
-  color: $clr-dark;
-  font-family: $f-family;
-  font-size: $f-size;
-  line-height: $l-height;
-  /* min-height: 200vh; */
-  /* Background */
-  /* background-color: $bg-clr;
-  background-image: url("./../img/green-trees-under-white-sky-2790395.jpg"); */
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2349ce20' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231f8827' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%233eb020' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%236ea576' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%233e7631' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%231b4b25' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%233bae25' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2337914e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2381c277' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2338744b' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2353a149' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%232a7e47' points='943 900 1210 900 971 687'/%3E%3C/svg%3E"); */
-  /* background-attachment: fixed;
-  background-size: cover; */
-}
-
-/*** HEADER ***/
+/*** HEADER SECTION ***/
 header {
   min-height: 100vh;
   background-image: url("./../img/landing-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+
   .logo-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
     .logo {
       text-align: center;
+
       .logo-img {
         width: 20em;
-        transition: all 0.7s ease-in;
+        transition: all 0.5s ease-in;
+
         &:hover {
           opacity: 0.7;
-          transform: scale(1.2);
-          color: $clr-light;
+          transform: scale(1.05);
         }
       }
     }
   }
 }
 
+/** NAVBAR SECTION **/
 nav {
   width: 100%;
   background-color: $clr-dark;
   position: fixed;
   opacity: 0.5;
+
   ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
+
     li {
+      margin: auto;
+      padding: 0.5em 2em;
       color: $clr-light;
-      padding: 1em 2em;
+
       a {
+        font-size: 1.1em;
         color: $clr-light;
         text-decoration: none;
+
         &:hover {
-          color: #fbea00;
+          color: #d0ff00;
+        }
+
+        .logo-img {
+          width: 75px;
+          background-attachment: fixed;
+          background-size: cover;
+          transition: all 0.5s ease-in;
+
+          &:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+          }
         }
       }
     }
   }
 }
-/*** MAIN ***/
-main {
+
+/*** MAIN SECTION ***/
+main #about,
+#news,
+#gallery,
+#goc {
   min-height: 100vh;
+  padding: 5em 0;
 }
-/*** FOOTER ***/
+
+/*** FOOTER SECTION ***/
 footer {
+  padding: 5em 0;
   min-height: 100vh;
+
+  background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: #fff;
 }
