@@ -81,6 +81,46 @@ main #about,
   padding: 5em 0;
 }
 
+/** GALLERY **/
+#gallery {
+  h3 {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    /* opacity: 0.5; */
+
+    padding: 0.5em;
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+
+      /* padding: 0.5em; */
+
+      .grid-item {
+        padding: 1em;
+        width: 20em;
+        /* background-color: red; */
+        /* opacity: 0.5; */
+        transition: all 0.5s ease-in;
+        &:hover {
+          /* opacity: 1; */
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
 /*** FOOTER SECTION ***/
 footer {
   padding: 5em 0;
