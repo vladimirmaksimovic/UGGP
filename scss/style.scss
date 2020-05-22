@@ -35,7 +35,7 @@ nav {
   width: 100%;
   background-color: $clr-dark;
   position: fixed;
-  opacity: 0.5;
+  opacity: 0.7;
 
   ul {
     display: flex;
@@ -48,12 +48,13 @@ nav {
       color: $clr-light;
 
       a {
-        font-size: $f-size;
+        /* font-size: $f-size; */
         color: $clr-light;
         text-decoration: none;
+        text-transform: uppercase;
 
         &:hover {
-          color: #d0ff00;
+          color: #f8f556;
         }
 
         .logo-img {
@@ -111,14 +112,14 @@ main #about,
       }
 
       /* Medium devices (tablets, 768px and up) */
-      @media (min-width: 576px) and (max-width: 768px) {
+      @media (min-width: 576px) and (max-width: 992px) {
         max-width: 45.5%;
       }
 
       /* Large devices (desktops, 992px and up) */
-      @media (min-width: 768px) and (max-width: 992px) {
+      /* @media (min-width: 768px) and (max-width: 992px) {
         max-width: 32.5%;
-      }
+      } */
 
       .img-item {
         padding: 0.5rem;
@@ -146,4 +147,66 @@ footer {
   background-size: cover;
 
   color: #fff;
+
+  h2 {
+    text-align: center;
+    padding: 0 0 3rem 0;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .footer-info {
+    padding: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+
+    .footer-info-item {
+      padding: 1.5rem;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+  }
+
+  .friends-and-family {
+    h3 {
+      text-align: center;
+    }
+
+    .friends-and-family-container {
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      img {
+        padding: 2rem;
+
+        width: 200px;
+        height: 150px;
+      }
+    }
+  }
+
+  .footer-copyright {
+    width: 100;
+    height: auto;
+
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      &:hover {
+        color: #f8f556;
+      }
+    }
+  }
 }
