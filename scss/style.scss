@@ -3,6 +3,7 @@
 
 /*** HEADER SECTION ***/
 header {
+  position: relative;
   min-height: 100vh;
   background-image: url("./../img/landing-bg.jpg");
   background-attachment: fixed;
@@ -51,19 +52,21 @@ nav {
 
       display: flex;
 
-      &:hover {
+      /* &:hover {
         border-bottom: 2px solid #fff;
-      }
+      } */
 
       a {
         margin: auto;
+        background-color: transparent;
         /* font-size: $f-size; */
-        color: $clr-light;
+        color: rgb(172, 172, 172);
         text-decoration: none;
         text-transform: uppercase;
+        font-weight: 500;
 
         &:hover {
-          color: #f8f556;
+          color: #fff;
         }
 
         .logo-img {
@@ -76,6 +79,22 @@ nav {
             opacity: 0.9;
             transform: scale(1.05);
           }
+        }
+      }
+
+      .nav-link {
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: #fff;
+          transition: width 0.5s;
+        }
+
+        &:hover::after {
+          width: 100%;
+          transition: width 0.3s;
         }
       }
     }
