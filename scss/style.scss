@@ -75,14 +75,64 @@ nav {
 
 /*** MAIN SECTION ***/
 main #about,
-#news,
 #gallery,
 #goc {
   min-height: 100vh;
   padding: 7rem 0;
 }
 
-/** GALLERY **/
+/** NEWS SECTION **/
+#news {
+  min-height: 100vh;
+  padding: 7rem 3rem;
+  background-color: rgb(4, 61, 114);
+  color: rgb(185, 185, 185);
+
+  h2 {
+    padding: 3rem 0;
+  }
+
+  .news-container {
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: all 0.3s ease-in;
+    text-align: justify;
+
+    &:hover {
+      cursor: pointer;
+      padding: 1rem;
+      border: 1px solid rgb(0, 132, 255);
+      background-color: rgb(0, 66, 128);
+    }
+
+    .author-and-time {
+      padding: 0.5rem 0;
+      font-style: italic;
+      font-size: small;
+      text-indent: 0.5rem;
+    }
+
+    .news-info {
+      padding: 0.5rem;
+    }
+
+    .news-content {
+      padding: 0 1rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: rgb(0, 66, 128);
+
+      p {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/** GALLERY SECTION **/
 #gallery {
   h3 {
     text-align: center;
