@@ -43,7 +43,7 @@ nav {
     justify-content: center;
     list-style-type: none;
 
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
 
     li {
       margin: auto;
@@ -60,7 +60,7 @@ nav {
         margin: auto;
         background-color: transparent;
         /* font-size: $f-size; */
-        color: rgb(172, 172, 172);
+        color: $clr-light;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 500;
@@ -104,7 +104,8 @@ nav {
 /*** MAIN SECTION ***/
 main #about,
 #gallery,
-#goc {
+#goc,
+#ggl-map {
   min-height: 100vh;
   padding: 7rem 0;
 }
@@ -201,10 +202,10 @@ main #about,
       } */
 
       .img-item {
-        padding: 0.5rem;
+        padding: 1rem;
         width: 100%;
         height: auto;
-        opacity: 0.7;
+        opacity: 0.8;
         transition: all 0.5s ease-in;
 
         &:hover {
@@ -218,33 +219,33 @@ main #about,
 
 /*** FOOTER SECTION ***/
 footer {
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
   min-height: 100vh;
 
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   background-attachment: fixed;
   background-size: cover;
 
-  color: #fff;
+  color: $clr-light;
 
   h2 {
     text-align: center;
-    padding: 0 0 3rem 0;
+    padding: 0 0 1rem 0;
   }
 
   h3 {
-    text-align: center;
+    padding: 1rem 2rem;
   }
 
   .footer-info {
-    padding: 1.5rem;
+    padding: 1rem 2rem;
 
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around; */
 
     .footer-info-item {
-      padding: 1.5rem;
+      padding: 1rem 2rem;
 
       ul {
         list-style-type: none;
@@ -253,9 +254,7 @@ footer {
   }
 
   .friends-and-family {
-    h3 {
-      text-align: center;
-    }
+    padding: 1rem 2rem;
 
     .friends-and-family-container {
       width: 100%;
@@ -263,28 +262,45 @@ footer {
 
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      /* justify-content: space-around; */
 
-      img {
-        padding: 2rem;
+      .friends-and-family-item {
+        margin: auto;
+        img {
+          padding: 1rem 2rem;
 
-        width: 200px;
-        height: 150px;
+          width: 200px;
+          height: 150px;
+        }
       }
     }
   }
 
+  /*** GOOGLE MAP ***/
+  .ggl-map {
+    h3 {
+      padding: 1rem 4rem;
+    }
+    .gmap-canvas,
+    iframe {
+      width: 100%;
+      height: 32rem;
+      border: none;
+    }
+  }
+
   .footer-copyright {
+    padding: 0.5rem 0;
     width: 100;
     height: auto;
-
+    background-color: #000;
     text-align: center;
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: $clr-light;
       &:hover {
-        color: #f8f556;
+        color: #fff;
       }
     }
   }
