@@ -35,19 +35,28 @@ nav {
   width: 100%;
   background-color: $clr-dark;
   position: fixed;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 
   ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 
+    border-bottom: 1px solid #fff;
+
     li {
       margin: auto;
       padding: 0.5rem 2rem;
       color: $clr-light;
 
+      display: flex;
+
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+
       a {
+        margin: auto;
         /* font-size: $f-size; */
         color: $clr-light;
         text-decoration: none;
@@ -84,16 +93,17 @@ main #about,
 /** NEWS SECTION **/
 #news {
   min-height: 100vh;
-  padding: 7rem 3rem;
+  padding: 6rem 4rem;
   background-color: rgb(4, 61, 114);
   color: rgb(185, 185, 185);
 
   h2 {
-    padding: 3rem 0;
+    padding: 4rem 0;
+    /* border-bottom: 1px solid black; */
   }
 
   .news-container {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: 1rem 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
