@@ -230,32 +230,50 @@ footer {
 
   h2 {
     text-align: center;
-    padding: 0 0 1rem 0;
+    padding: 0 0 4rem 0;
   }
 
   h3 {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
   }
 
   .footer-info {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 5rem 2rem;
 
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around; */
 
     .footer-info-item {
+      /* margin: auto; */
       padding: 1rem 2rem;
 
       ul {
         list-style-type: none;
+
+        .fas,
+        .far {
+          padding: 0 0 0.5rem 2rem;
+        }
+
+        img {
+          width: 230px;
+          height: 170px;
+
+          &:hover {
+            border: 1px solid rgb(0, 132, 255);
+          }
+        }
       }
     }
   }
 
   .friends-and-family {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 5rem 2rem;
 
+    h3 {
+      padding: 2rem;
+    }
     .friends-and-family-container {
       width: 100%;
       height: auto;
@@ -267,10 +285,14 @@ footer {
       .friends-and-family-item {
         margin: auto;
         img {
-          padding: 1rem 2rem;
+          /* padding: 1rem; */
 
           width: 200px;
           height: 150px;
+
+          &:hover {
+            border: 1px solid rgb(0, 132, 255);
+          }
         }
       }
     }
@@ -279,13 +301,19 @@ footer {
   /*** GOOGLE MAP ***/
   .ggl-map {
     h3 {
-      padding: 1rem 4rem;
+      padding: 2rem 4rem;
     }
     .gmap-canvas,
     iframe {
       width: 100%;
-      height: 32rem;
+      height: 85vh;
       border: none;
+      /* opacity: 0.8;
+        transition: all 0.2s ease-in;
+
+      &:hover {
+        opacity: 1;
+      } */
     }
   }
 
@@ -294,13 +322,22 @@ footer {
     width: 100;
     height: auto;
     background-color: #000;
-    text-align: center;
 
-    a {
-      text-decoration: none;
-      color: $clr-light;
-      &:hover {
-        color: #fff;
+    display: flex;
+
+    .footer-copyright-item {
+      margin: auto;
+    }
+
+    .design-link {
+      padding: 0 1rem 0 0;
+
+      a {
+        text-decoration: none;
+        color: $clr-light;
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
