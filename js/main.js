@@ -1,10 +1,10 @@
 // console.log("test JS connection!")
 
 // NEWS COLLAPSE
-const newsContainer = document.getElementsByClassName("news-container")
+const newsArticle = document.getElementsByClassName("news-article")
 
-for (let i = 0; i < newsContainer.length; i++) {
-  newsContainer[i].addEventListener("click", function () {
+for (let i = 0; i < newsArticle.length; i++) {
+  newsArticle[i].addEventListener("click", function () {
     this.classList.toggle("active")
     var newsContent = this.lastElementChild
     if (newsContent.style.maxHeight) {

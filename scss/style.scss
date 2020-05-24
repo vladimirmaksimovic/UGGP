@@ -24,6 +24,7 @@ header {
         transition: all 0.5s ease-in;
 
         &:hover {
+          /* cursor: pointer; */
           opacity: 0.7;
           transform: scale(1.05);
         }
@@ -117,17 +118,17 @@ nav {
   padding: 7rem 0;
 } */
 
-/*** ABOUT SECTION ***/
+/** ABOUT SECTION **/
 #about {
   padding: 0 4rem;
   /* position: relative; */
   min-height: 100vh;
   /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
-  background-image: url("./../img/bridge-clouds-cloudy-dark-clouds-dark2.jpg");
+  background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
   background-attachment: fixed;
   background-size: cover;
 
-  color: $clr-light;
+  color: #fff;
 
   h1 {
     margin: 0;
@@ -139,13 +140,19 @@ nav {
     padding: 2rem 0 0.5rem 2rem;
   }
 
-  p {
-    padding: 0.5rem 0;
-    text-align: justify;
-    text-indent: 2rem;
+  article {
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem;
 
-    &::first-letter {
-      font-size: 150%;
+    p {
+      padding: 0.5rem 0;
+      text-align: justify;
+      text-indent: 2rem;
+
+      &::first-letter {
+        font-size: 150%;
+      }
     }
   }
 }
@@ -154,7 +161,12 @@ nav {
 #news {
   min-height: 100vh;
   padding: 6rem 4rem;
-  background-color: rgb(4, 61, 114);
+
+  background-image: url("./../img/alps-austria-blue-sky-clouds-dark2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  /* background-color: rgb(4, 61, 114); */
   color: rgb(185, 185, 185);
 
   h2 {
@@ -163,48 +175,54 @@ nav {
   }
 
   .news-container {
-    margin-bottom: 4rem;
-    padding: 1rem 0;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    transition: all 0.3s ease-in;
-    text-align: justify;
+    width: 80%;
+    margin: auto;
+    padding: 0.5rem;
 
-    &:hover {
-      cursor: pointer;
-      padding: 1rem;
-      border: 1px solid rgb(0, 132, 255);
-      background-color: rgb(0, 66, 128);
-    }
+    .news-article {
+      margin-bottom: 4rem;
+      padding: 1rem 0.5rem;
+      border-top: 1px solid #b9b9b9;
+      border-bottom: 1px solid #b9b9b9;
+      transition: all 0.3s ease-in;
+      text-align: justify;
 
-    .author-and-time {
-      padding: 0.5rem 0;
-      font-style: italic;
-      font-size: small;
-      text-indent: 0.5rem;
-    }
-
-    .news-info {
-      padding: 0.5rem;
-
-      &::first-letter {
-        font-size: 150%;
+      &:hover {
+        cursor: pointer;
+        padding: 1rem;
+        border: 1px solid rgb(0, 132, 255);
+        background-color: rgb(0, 66, 128);
       }
-    }
 
-    .news-content {
-      padding: 0 1rem;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: rgb(0, 66, 128);
+      .author-and-time {
+        padding: 0.5rem 0;
+        font-style: italic;
+        font-size: small;
+        text-indent: 0.5rem;
+      }
 
-      p {
-        padding-bottom: 1rem;
-        text-indent: 2rem;
+      .news-info {
+        padding: 0.5rem;
 
         &::first-letter {
           font-size: 150%;
+        }
+      }
+
+      .news-content {
+        padding: 0 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: rgb(0, 66, 128);
+
+        p {
+          padding-bottom: 1rem;
+          text-indent: 2rem;
+
+          &::first-letter {
+            font-size: 150%;
+          }
         }
       }
     }
@@ -213,18 +231,24 @@ nav {
 
 /** GALLERY SECTION **/
 #gallery {
-  h3 {
-    text-align: center;
+  min-height: 100vh;
+
+  background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  h2 {
+    padding: 6rem 0 2rem 4rem;
+    /* text-align: center; */
+    color: #fff;
   }
   .img-gallery-container {
+    width: 80%;
+    margin: auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100vh;
 
     padding: 0.5rem;
 
@@ -266,9 +290,42 @@ nav {
   }
 }
 
-/*** AMBIENCE ***/
+/** AMBIENCE **/
 #ambience {
+  padding: 0 4rem;
+  /* position: relative; */
   min-height: 100vh;
+  /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
+  background-image: url("./../img/alps-austria-blue-sky-clouds.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: $clr-dark;
+
+  h2 {
+    margin: 0;
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .ambience-article {
+    width: 80%;
+    margin: auto;
+
+    h3 {
+      padding: 2rem 0 0.5rem 2rem;
+    }
+
+    p {
+      padding: 0.5rem 0;
+      text-align: justify;
+      text-indent: 2rem;
+
+      &::first-letter {
+        font-size: 150%;
+      }
+    }
+  }
 }
 
 /*** FOOTER SECTION ***/
@@ -290,7 +347,7 @@ footer {
     .gmap-canvas,
     iframe {
       width: 100%;
-      height: 55vh;
+      height: 50vh;
       border: none;
       /* opacity: 0.8;
       transition: all 0.2s ease-in;
@@ -362,27 +419,37 @@ footer {
     h3 {
       padding: 0 2rem 1rem 2rem;
     }
-    .friends-and-family-container {
-      width: 100%;
-      height: auto;
+  }
 
-      display: flex;
-      flex-wrap: wrap;
-      /* justify-content: space-around; */
+  .friends-and-family-container {
+    width: 100%;
+    height: auto;
 
-      .friends-and-family-item {
-        margin: auto;
-        img {
-          /* padding: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
 
-          width: 150px;
-          height: 100px;
+    .friends-and-family-item {
+      margin: auto;
 
-          &:hover {
-            border: 1px solid rgb(0, 132, 255);
-          }
+      a {
+        color: $clr-light;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
         }
       }
+      /* img {
+        padding: 1rem;
+
+        width: 150px;
+        height: 100px;
+
+        &:hover {
+          border: 1px solid rgb(0, 132, 255);
+        }
+      } */
     }
   }
 
