@@ -109,12 +109,45 @@ nav {
 }
 
 /*** MAIN SECTION ***/
-main #about,
+/* main,
 #gallery,
-#goc,
+#ambience,
 #ggl-map {
   min-height: 100vh;
   padding: 7rem 0;
+} */
+
+/*** ABOUT SECTION ***/
+#about {
+  padding: 0 4rem;
+  /* position: relative; */
+  min-height: 100vh;
+  /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
+  background-image: url("./../img/bridge-clouds-cloudy-dark-clouds-dark2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+  color: $clr-light;
+
+  h1 {
+    margin: 0;
+    padding: 6rem 0 2rem 0;
+    text-align: center;
+  }
+
+  h2 {
+    padding: 2rem 0 0.5rem 2rem;
+  }
+
+  p {
+    padding: 0.5rem 0;
+    text-align: justify;
+    text-indent: 2rem;
+
+    &::first-letter {
+      font-size: 150%;
+    }
+  }
 }
 
 /** NEWS SECTION **/
@@ -153,6 +186,10 @@ main #about,
 
     .news-info {
       padding: 0.5rem;
+
+      &::first-letter {
+        font-size: 150%;
+      }
     }
 
     .news-content {
@@ -164,6 +201,11 @@ main #about,
 
       p {
         padding-bottom: 1rem;
+        text-indent: 2rem;
+
+        &::first-letter {
+          font-size: 150%;
+        }
       }
     }
   }
@@ -222,6 +264,11 @@ main #about,
       }
     }
   }
+}
+
+/*** AMBIENCE ***/
+#ambience {
+  min-height: 100vh;
 }
 
 /*** FOOTER SECTION ***/
@@ -358,7 +405,7 @@ footer {
         text-decoration: none;
         color: $clr-light;
         &:hover {
-          color: #fff;
+          color: rgb(255, 196, 0);
         }
       }
     }
