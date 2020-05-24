@@ -120,7 +120,7 @@ nav {
 
 /** ABOUT SECTION **/
 #about {
-  padding: 0 4rem;
+  padding: 0 4rem 2rem 4rem;
   /* position: relative; */
   min-height: 100vh;
   /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
@@ -137,16 +137,17 @@ nav {
   }
 
   h2 {
-    padding: 2rem 0 0.5rem 2rem;
+    padding: 2rem 0 1rem 1rem;
   }
 
-  article {
+  .about-article {
     width: 80%;
     margin: auto;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    border-left: 4px solid #fff;
 
     p {
-      padding: 0.5rem 0;
+      padding: 0 0 1rem 1rem;
       text-align: justify;
       text-indent: 2rem;
 
@@ -170,7 +171,7 @@ nav {
   color: rgb(185, 185, 185);
 
   h2 {
-    padding: 4rem 0;
+    padding: 2rem 0 1rem 1rem;
     /* border-bottom: 1px solid black; */
   }
 
@@ -292,7 +293,7 @@ nav {
 
 /** AMBIENCE **/
 #ambience {
-  padding: 0 4rem;
+  padding: 0 4rem 2rem 4rem;
   /* position: relative; */
   min-height: 100vh;
   /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
@@ -308,16 +309,17 @@ nav {
     text-align: center;
   }
 
+  h3 {
+    padding: 2rem 0 1rem 1rem;
+  }
+
   .ambience-article {
     width: 80%;
     margin: auto;
-
-    h3 {
-      padding: 2rem 0 0.5rem 2rem;
-    }
+    border-left: 4px solid #000;
 
     p {
-      padding: 0.5rem 0;
+      padding: 0 0 1rem 1rem;
       text-align: justify;
       text-indent: 2rem;
 
