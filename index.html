@@ -20,12 +20,13 @@
         <li><a href="#header" class="nav-link">Naslovna</a></li>
         <li><a href="#about" class="nav-link">Udruženje</a></li>
         <li><a href="#news" class="nav-link">Novosti</a></li>
-        <li>
-          <a href="#header"><img src="./img/uggo-logo-example-white.svg" alt="" class="logo-img" /></a>
-        </li>
         <li><a href="#gallery" class="nav-link">Muzej</a></li>
         <li><a href="#goc" class="nav-link">Okolina</a></li>
         <li><a href="#footer" class="nav-link">Kontakt</a></li>
+        <li>
+          <a href="#" class="nav-link lang-link">Srb</a><span class="dash">/</span><a href="#"
+            class=" nav-link lang-link">Rus</a>
+        </li>
       </ul>
     </nav>
     <!-- /Navbar -->
@@ -382,7 +383,19 @@
 
   <!-- Footer Section -->
   <footer id="footer">
-    <h2>Udruženje gradjana Gočka pruga</h2>
+
+    <!-- Google Map -->
+    <div class="ggl-map" id="map">
+      <div class="gmap-canvas">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
+          allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- <h2>Udruženje gradjana Gočka pruga</h2> -->
     <!--
       TODO:
         1) import FA5 CDN
@@ -393,6 +406,9 @@
 
     <div class="footer-info">
       <div class="footer-info-item item-1">
+        <a href="#header"><img src="./img/uggo-logo-example-white.svg" alt="" class="logo-img" /></a>
+      </div>
+      <div class="footer-info-item item-2">
         <ul>
           <li>
             <h3>Kontakt</h3>
@@ -404,7 +420,7 @@
           <li><i class="fas fa-envelope"></i> gockapruga@gmail.com</li>
         </ul>
       </div>
-      <div class="footer-info-item item-2">
+      <div class="footer-info-item item-3">
         <ul>
           <li>
             <h3>Delatnost</h3>
@@ -415,7 +431,7 @@
           <li><i class="fas fa-calendar-alt"></i> Datum osnivanja: 28.06.2013. godine</li>
         </ul>
       </div>
-      <div class="footer-info-item item-3">
+      <div class="footer-info-item item-4">
         <ul>
           <li>
             <h3>Banka i račun</h3>
@@ -426,7 +442,7 @@
           <li><i class="fas fa-long-arrow-alt-right"></i> 310-0000000218305-48</li>
         </ul>
       </div>
-      <div class="footer-info-item item-4">
+      <div class="footer-info-item item-5">
         <ul>
           <li>
             <h3>Zastupnici</h3>
@@ -435,7 +451,7 @@
           <li><i class="fas fa-user"></i> Prokurist: Živomir Milašinović</li>
         </ul>
       </div>
-      <div class="footer-info-item item-5">
+      <!-- <div class="footer-info-item item-5">
         <ul>
           <li>
             <h3>Lokacija</h3>
@@ -445,7 +461,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
 
     <div class="friends-and-family">
@@ -479,16 +495,7 @@
       </div>
     </div>
 
-    <!-- Google Map -->
-    <div class="ggl-map" id="map">
-      <div class="gmap-canvas">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
-          allowfullscreen="" aria-hidden="false" tabindex="0">
-        </iframe>
-      </div>
-    </div>
-    <!-- /Google Map -->
+
 
     <div class="footer-copyright">
       <span class="footer-copyright-item">@ copyright Udruženje gradjana Gočka pruga</span>
