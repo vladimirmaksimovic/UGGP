@@ -128,7 +128,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: #fff;
+  color: rgb(218, 218, 218);
 
   h1 {
     margin: 0;
@@ -144,12 +144,15 @@ nav {
     width: 80%;
     margin: auto;
     /* padding: 0.5rem; */
-    border-left: 4px solid #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-left: 4px solid rgb(185, 185, 185);
 
     p {
-      padding: 0 0 1rem 1rem;
+      padding: 0 1rem 1rem 1rem;
       text-align: justify;
       text-indent: 2rem;
+      /* border-left: 4px solid #000; */
 
       &::first-letter {
         font-size: 150%;
@@ -301,7 +304,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: $clr-dark;
+  color: rgb(218, 218, 218);
 
   h2 {
     margin: 0;
@@ -316,17 +319,31 @@ nav {
   .ambience-article {
     width: 80%;
     margin: auto;
-    border-left: 4px solid #000;
+    /* border-left: 4px solid #000; */
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-left: 4px solid rgb(185, 185, 185);
 
     p {
+      padding: 0 1rem 1rem 1rem;
+      text-align: justify;
+      text-indent: 2rem;
+      /* border-left: 4px solid #000; */
+
+      &::first-letter {
+        font-size: 150%;
+      }
+    }
+
+    /* p {
       padding: 0 0 1rem 1rem;
       text-align: justify;
       text-indent: 2rem;
 
       &::first-letter {
         font-size: 150%;
-      }
-    }
+      } 
+    }*/
   }
 }
 
@@ -380,7 +397,7 @@ footer {
       padding: 1rem 2rem !important;
 
       img {
-        width: 18rem;
+        width: 14rem;
         height: auto;
         transition: all 0.3s ease-in;
 
