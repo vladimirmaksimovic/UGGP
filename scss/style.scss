@@ -23,6 +23,47 @@ header {
         width: 20rem;
         transition: all 0.5s ease-in;
 
+        animation-name: logo;
+        animation-duration: 0.7s;
+        animation-delay: 2s;
+        animation-iteration-count: 2;
+
+        @keyframes logo {
+          0% {
+            transform: scale(1);
+          }
+          10% {
+            transform: scale(1.01);
+          }
+          20% {
+            transform: scale(1.015);
+          }
+          30% {
+            transform: scale(1.02);
+          }
+          40% {
+            transform: scale(1.025);
+          }
+          50% {
+            transform: scale(1.03);
+          }
+          60% {
+            transform: scale(1.025);
+          }
+          70% {
+            transform: scale(1.02);
+          }
+          80% {
+            transform: scale(1.015);
+          }
+          90% {
+            transform: scale(1.01);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+
         &:hover {
           /* cursor: pointer; */
           opacity: 0.7;
@@ -128,20 +169,42 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: rgb(218, 218, 218);
+  color: #ccc;
+
+  /* Medium devices (tablets) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 0 3.5rem 2rem 3.5rem;
+  }
+
+  /* Small devices (landscape phones) */
+  @media (max-width: 576px) {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
 
   h1 {
     margin: 0;
     padding: 6rem 0 1.5rem 0;
     text-align: center;
 
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #ccc;
+      margin: auto;
+      margin-top: 0.5rem;
+    }
+
     /* Medium devices (tablets) */
     @media (min-width: 577px) and (max-width: 992px) {
+      padding: 6rem 0 0.5rem 0;
       font-size: 1.5em;
     }
 
     /* Small devices (landscape phones) */
     @media (max-width: 576px) {
+      padding: 6rem 0 0 0;
       font-size: 1.2em;
     }
   }
@@ -150,6 +213,16 @@ nav {
     width: 80%;
     margin: auto;
     padding: 1.5rem 0 1rem 1rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #ccc;
+      /* margin: auto;
+      margin-top: 0.5rem; */
+    }
 
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
@@ -172,7 +245,7 @@ nav {
     /* padding: 0.5rem; */
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    border-left: 4px solid rgb(185, 185, 185);
+    border-left: 4px solid #ccc;
     border-radius: 7px;
 
     /* Medium devices (tablets) */
@@ -220,7 +293,17 @@ nav {
   background-size: cover;
 
   /* background-color: rgb(4, 61, 114); */
-  color: rgb(185, 185, 185);
+  color: #ccc;
+
+  /* Medium devices (tablets) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 0 3.5rem 2rem 3.5rem;
+  }
+
+  /* Small devices (landscape phones) */
+  @media (max-width: 576px) {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
 
   h2 {
     width: 80%;
@@ -363,12 +446,32 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
+  /* Medium devices (tablets) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 0 3.5rem 2rem 3.5rem;
+  }
+
+  /* Small devices (landscape phones) */
+  @media (max-width: 576px) {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
   h2 {
     width: 80%;
     margin: auto;
     padding: 6rem 0 0.5rem 2rem;
     /* text-align: center; */
-    color: #fff;
+    color: #ccc;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #ccc;
+      /* margin: auto;
+      margin-top: 0.5rem; */
+    }
 
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
@@ -449,7 +552,17 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: rgb(218, 218, 218);
+  color: #ccc;
+
+  /* Medium devices (tablets) */
+  @media (min-width: 577px) and (max-width: 992px) {
+    padding: 0 3.5rem 2rem 3.5rem;
+  }
+
+  /* Small devices (landscape phones) */
+  @media (max-width: 576px) {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
 
   h2 {
     margin: 0;
@@ -457,10 +570,21 @@ nav {
     text-align: center;
     color: #000;
 
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #000;
+      margin: auto;
+      margin-top: 0.5rem;
+    }
+
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
       /* width: 100%;
       margin: 0; */
+      padding: 6rem 0 0.5rem 0;
       font-size: 1.2em;
     }
 
@@ -469,6 +593,7 @@ nav {
       /* width: 100%;
       margin: 0; */
       font-size: 1em;
+      padding: 6rem 0 0 0;
     }
   }
 
@@ -477,6 +602,16 @@ nav {
     margin: auto;
     padding: 1.5rem 0 1rem 1rem;
     color: #000;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #000;
+      /* margin: auto;
+      margin-top: 0.5rem; */
+    }
 
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
@@ -583,6 +718,16 @@ footer {
   h3 {
     padding: 0 0 1rem 0;
 
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 4px;
+      background: #ccc;
+      /* margin: auto;
+      margin-top: 0.5rem; */
+    }
+
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
       font-size: 1.1em;
@@ -657,6 +802,16 @@ footer {
 
     h3 {
       padding: 0 2rem 1rem 0.5rem;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 4px;
+        background: #ccc;
+        /* margin: auto;
+        margin-top: 0.5rem; */
+      }
 
       /* Medium devices (tablets) */
       @media (min-width: 576px) and (max-width: 992px) {
