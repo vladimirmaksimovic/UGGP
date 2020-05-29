@@ -1,0 +1,81 @@
+/* Small devices (landscape phones, 576px and up) */
+/* @media (max-width: 576px) {
+  max-width: 100%;
+} */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 992px) {
+  /* body {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  article {
+    width: 100%;
+  } */
+
+  /** ABOUT SECTION **/
+  #about {
+    padding: 0 4rem 2rem 4rem;
+    /* position: relative; */
+    min-height: 100vh;
+    /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
+    background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: rgb(218, 218, 218);
+
+    h1 {
+      margin: 0;
+      padding: 6rem 0 1.5rem 0;
+      text-align: center;
+
+      font-size: 1.5em;
+    }
+
+    h2 {
+      width: 100%;
+      margin: auto;
+      padding: 1.5rem 0 1rem 1rem;
+      font-size: 1.2em;
+    }
+
+    .about-article {
+      width: 100%;
+      margin: auto;
+      /* padding: 0.5rem; */
+      background-color: rgba(0, 0, 0, 0.6);
+      box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2),
+        0 4px 20px 0 rgba(0, 0, 0, 0.19);
+      border-left: 4px solid rgb(185, 185, 185);
+      border-radius: 7px;
+
+      p {
+        padding: 0 1rem 1rem 1rem;
+        text-align: justify;
+        text-indent: 2.5rem;
+        /* border-left: 4px solid #000; */
+
+        font-size: 1em;
+
+        &::first-letter {
+          font-size: 110%;
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 768px) and (max-width: 992px) {
+  max-width: 32.5%;
+} */
