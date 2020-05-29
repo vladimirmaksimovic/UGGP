@@ -92,7 +92,7 @@ nav {
 
     li {
       margin: auto;
-      padding: 0.5rem 2rem;
+      /* padding: 0.5rem 2rem; */
       color: $clr-light;
 
       display: flex;
@@ -104,14 +104,24 @@ nav {
       a {
         margin: auto;
         background-color: transparent;
-        /* font-size: $f-size; */
+        font-size: 1.2em;
         color: $clr-light;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 500;
+        /* font-weight: 500; */
 
         &:hover {
           color: #fff;
+        }
+
+        /* Medium devices (tablets) */
+        @media (min-width: 576px) and (max-width: 992px) {
+          font-size: 1em;
+        }
+
+        /* Small devices (landscape phones) */
+        @media (max-width: 576px) {
+          font-size: 0.8em;
         }
 
         /* .logo-img {
@@ -129,6 +139,17 @@ nav {
 
       .dash {
         padding: 0 0.5rem;
+        font-size: 1.2em;
+
+        /* Medium devices (tablets) */
+        @media (min-width: 576px) and (max-width: 992px) {
+          font-size: 1em;
+        }
+
+        /* Small devices (landscape phones) */
+        @media (max-width: 576px) {
+          font-size: 0.8em;
+        }
       }
 
       .nav-link {
