@@ -10,6 +10,8 @@ header {
   background-attachment: fixed;
   background-size: cover;
 
+  color: darkish;
+
   .logo-container {
     height: 100vh;
     display: flex;
@@ -24,8 +26,8 @@ header {
         transition: all 0.5s ease-in;
 
         animation-name: logo;
-        animation-duration: 0.7s;
-        animation-delay: 2s;
+        animation-duration: 0.8s;
+        animation-delay: 3s;
         animation-iteration-count: 2;
 
         @keyframes logo {
@@ -77,7 +79,7 @@ header {
 /** NAVBAR SECTION **/
 nav {
   width: 100%;
-  background-color: $clr-dark;
+  background-color: $blackish-clr;
   position: fixed;
   /* opacity: 0.7; */
 
@@ -93,7 +95,7 @@ nav {
     li {
       margin: auto;
       /* padding: 0.5rem 2rem; */
-      color: $clr-light;
+      /* color: $font-clr; */
 
       display: flex;
 
@@ -105,13 +107,13 @@ nav {
         margin: auto;
         background-color: transparent;
         font-size: 1.2em;
-        color: $clr-light;
+        color: $link-clr;
         text-decoration: none;
         text-transform: uppercase;
         /* font-weight: 500; */
 
         &:hover {
-          color: #fff;
+          color: $light-clr;
         }
 
         /* Medium devices (tablets) */
@@ -137,9 +139,10 @@ nav {
         } */
       }
 
-      .dash {
+      .slash {
         padding: 0 0.5rem;
         font-size: 1.2em;
+        color: $link-clr;
 
         /* Medium devices (tablets) */
         @media (min-width: 576px) and (max-width: 992px) {
@@ -158,7 +161,7 @@ nav {
           display: block;
           width: 0;
           height: 2px;
-          background: #fff;
+          background: $light-clr;
           transition: width 0.5s;
         }
 
@@ -190,7 +193,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: #ccc;
+  color: $font-clr;
 
   /* Medium devices (tablets) */
   @media (min-width: 577px) and (max-width: 992px) {
@@ -206,13 +209,14 @@ nav {
     margin: 0;
     padding: 6rem 0 1.5rem 0;
     text-align: center;
+    color: $heading-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #ccc;
+      background: $light-clr;
       margin: auto;
       margin-top: 0.5rem;
     }
@@ -234,13 +238,14 @@ nav {
     width: 80%;
     margin: auto;
     padding: 1.5rem 0 1rem 1rem;
+    color: $heading-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #ccc;
+      background: $light-clr;
       /* margin: auto;
       margin-top: 0.5rem; */
     }
@@ -264,9 +269,9 @@ nav {
     width: 80%;
     margin: auto;
     /* padding: 0.5rem; */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    border-left: 4px solid #ccc;
+    border-left: 4px solid $font-clr;
     border-radius: 7px;
 
     /* Medium devices (tablets) */
@@ -282,7 +287,7 @@ nav {
     }
 
     p {
-      padding: 0 1rem 1rem 1rem;
+      padding: 0.5rem 1rem;
       text-align: justify;
       text-indent: 2.5rem;
       /* border-left: 4px solid #000; */
@@ -314,7 +319,7 @@ nav {
   background-size: cover;
 
   /* background-color: rgb(4, 61, 114); */
-  color: #ccc;
+  color: $font-clr;
 
   /* Medium devices (tablets) */
   @media (min-width: 577px) and (max-width: 992px) {
@@ -330,6 +335,8 @@ nav {
     width: 80%;
     margin: auto;
     padding: 1.5rem 0 1rem 0.5rem;
+
+    color: $heading-clr;
 
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
@@ -366,16 +373,16 @@ nav {
     .news-article {
       margin-bottom: 4rem;
       padding: 1rem 0.5rem;
-      border-top: 1px solid #b9b9b9;
-      border-bottom: 1px solid #b9b9b9;
+      border-top: 1px solid $font-clr;
+      border-bottom: 1px solid $font-clr;
       transition: all 0.4s ease-in;
       text-align: justify;
 
       &:hover {
         cursor: pointer;
         padding: 1rem;
-        border: 1px solid rgb(0, 132, 255);
-        background-color: rgb(0, 66, 128);
+        border: 1px solid $border-clr;
+        background-color: $bg-clr;
       }
 
       h3 {
@@ -384,6 +391,8 @@ nav {
           width: 100%;
           margin: 0;
           font-size: 1.05em;
+
+          color: $heading-clr;
         }
 
         /* Small devices (landscape phones) */
@@ -434,7 +443,7 @@ nav {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        background-color: rgb(0, 66, 128);
+        background-color: $bg-clr;
 
         p {
           padding-bottom: 1rem;
@@ -482,14 +491,14 @@ nav {
     margin: auto;
     padding: 6rem 0 0.5rem 2rem;
     /* text-align: center; */
-    color: #ccc;
+    color: $heading-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #ccc;
+      background: $link-clr;
       /* margin: auto;
       margin-top: 0.5rem; */
     }
@@ -573,7 +582,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
 
-  color: #ccc;
+  color: $font-clr;
 
   /* Medium devices (tablets) */
   @media (min-width: 577px) and (max-width: 992px) {
@@ -589,14 +598,14 @@ nav {
     margin: 0;
     padding: 6rem 0 2rem 0;
     text-align: center;
-    color: #000;
+    color: $black-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #000;
+      background: $black-clr;
       margin: auto;
       margin-top: 0.5rem;
     }
@@ -622,14 +631,14 @@ nav {
     width: 80%;
     margin: auto;
     padding: 1.5rem 0 1rem 1rem;
-    color: #000;
+    color: $black-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #000;
+      background: $black-clr;
       /* margin: auto;
       margin-top: 0.5rem; */
     }
@@ -653,7 +662,7 @@ nav {
     width: 80%;
     margin: auto;
     /* border-left: 4px solid #000; */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     /* border-left: 4px solid rgb(185, 185, 185); */
     border-left: 4px solid #000;
@@ -672,7 +681,7 @@ nav {
     }
 
     p {
-      padding: 0 1rem 1rem 1rem;
+      padding: 0.5rem 1rem;
       text-align: justify;
       text-indent: 2.5rem;
       /* border-left: 4px solid #000; */
@@ -713,7 +722,7 @@ footer {
   background-attachment: fixed;
   background-size: cover;
 
-  color: $clr-light;
+  color: $font-clr;
 
   /*** GOOGLE MAP ***/
   .ggl-map {
@@ -738,13 +747,14 @@ footer {
 
   h3 {
     padding: 0 0 1rem 0;
+    color: $heading-clr;
 
     &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
-      background: #ccc;
+      background: $light-clr;
       /* margin: auto;
       margin-top: 0.5rem; */
     }
@@ -765,10 +775,30 @@ footer {
 
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
+    /* Medium devices (tablets) */
+    @media (min-width: 576px) and (max-width: 992px) {
+      justify-content: end;
+    }
+
+    /* Small devices (landscape phones) */
+    @media (max-width: 576px) {
+      justify-content: end;
+    }
 
     .item-1 {
+      /* margin: auto; */
       padding: 1rem 2rem !important;
+
+      /* Medium devices (tablets) */
+      @media (min-width: 576px) and (max-width: 992px) {
+        margin: auto;
+      }
+
+      /* Small devices (landscape phones) */
+      @media (max-width: 576px) {
+        margin: auto;
+      }
 
       img {
         width: 14rem;
@@ -806,14 +836,14 @@ footer {
           padding: 0 0 0.5rem 1rem;
         }
 
-        img {
+        /* img {
           width: 230px;
           height: 170px;
 
           &:hover {
             border: 1px solid rgb(0, 132, 255);
           }
-        }
+        } */
       }
     }
   }
@@ -823,13 +853,14 @@ footer {
 
     h3 {
       padding: 0 2rem 1rem 0.5rem;
+      color: $heading-clr;
 
       &::after {
         content: "";
         display: block;
         width: 1.5rem;
         height: 4px;
-        background: #ccc;
+        background: $light-clr;
         /* margin: auto;
         margin-top: 0.5rem; */
       }
@@ -858,11 +889,11 @@ footer {
       margin: auto;
 
       a {
-        color: $clr-light;
+        color: $link-clr;
         text-decoration: none;
 
         &:hover {
-          color: #fff;
+          color: $light-clr;
         }
       }
       /* img {
@@ -882,7 +913,7 @@ footer {
     padding: 0.5rem 0;
     width: 100;
     height: auto;
-    background-color: #000;
+    background-color: $black-clr;
 
     display: flex;
 
@@ -905,7 +936,7 @@ footer {
 
       a {
         text-decoration: none;
-        color: $clr-light;
+        color: $link-clr;
         &:hover {
           color: rgb(255, 196, 0);
         }
