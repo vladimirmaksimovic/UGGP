@@ -67,7 +67,6 @@ header {
         }
 
         &:hover {
-          /* cursor: pointer; */
           opacity: 0.7;
           transform: scale(1.05);
         }
@@ -81,27 +80,49 @@ nav {
   width: 100%;
   background-color: $blackish-clr;
   position: fixed;
-  /* opacity: 0.7; */
+  z-index: 1;
+  overflow: hidden;
 
   ul {
-    height: 5rem;
+    min-height: 5rem;
 
     display: flex;
     justify-content: center;
     list-style-type: none;
 
-    /* border-bottom: 1px solid #fff; */
+    .hamburger-bars {
+      display: none;
+      padding: 1.5rem 2rem;
+      color: $light-clr;
 
-    li {
+      /* Navbar Hamburger - 760px */
+      @media (max-width: 47.5rem) {
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    /* Navbar Hamburger - 760px */
+    @media (max-width: 47.5rem) {
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    .responsive {
+      display: flex !important;
+      margin: 0 !important;
+      padding: 0.5rem 2rem;
+    }
+
+    /* li */
+    .nav-item {
       margin: auto;
-      /* padding: 0.5rem 2rem; */
-      /* color: $font-clr; */
-
       display: flex;
 
-      /* &:hover {
-        border-bottom: 2px solid #fff;
-      } */
+      /* Navbar Hamburger - 760px */
+      @media (max-width: 47.5rem) {
+        display: none;
+      }
 
       a {
         margin: auto;
@@ -110,7 +131,8 @@ nav {
         color: $link-clr;
         text-decoration: none;
         text-transform: uppercase;
-        /* font-weight: 500; */
+
+        transition: all 0.5s ease-in;
 
         &:hover {
           color: $light-clr;
@@ -121,22 +143,15 @@ nav {
           font-size: 1em;
         }
 
+        /* Navbar Hamburger - 760px */
+        @media (max-width: 47.5rem) {
+          margin: 0em;
+        }
+
         /* Small devices (landscape phones) */
         @media (max-width: 576px) {
           font-size: 0.8em;
         }
-
-        /* .logo-img {
-          width: 75px;
-          background-attachment: fixed;
-          background-size: cover;
-          transition: all 0.5s ease-in;
-
-          &:hover {
-            opacity: 0.9;
-            transform: scale(1.05);
-          }
-        } */
       }
 
       .slash {
@@ -174,21 +189,10 @@ nav {
   }
 }
 
-/*** MAIN SECTION ***/
-/* main,
-#gallery,
-#ambience,
-#ggl-map {
-  min-height: 100vh;
-  padding: 7rem 0;
-} */
-
-/** ABOUT SECTION **/
+/*** ABOUT SECTION ***/
 #about {
   padding: 0 4rem 2rem 4rem;
-  /* position: relative; */
   min-height: 100vh;
-  /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
   background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -246,8 +250,6 @@ nav {
       width: 1.5rem;
       height: 4px;
       background: $light-clr;
-      /* margin: auto;
-      margin-top: 0.5rem; */
     }
 
     /* Medium devices (tablets) */
@@ -268,7 +270,6 @@ nav {
   .about-article {
     width: 80%;
     margin: auto;
-    /* padding: 0.5rem; */
     background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     border-left: 4px solid $font-clr;
@@ -290,7 +291,6 @@ nav {
       padding: 0.5rem 1rem;
       text-align: justify;
       text-indent: 2.5rem;
-      /* border-left: 4px solid #000; */
 
       &::first-letter {
         font-size: 110%;
@@ -335,7 +335,6 @@ nav {
     width: 80%;
     margin: auto;
     padding: 1.5rem 0 1rem 0.5rem;
-
     color: $heading-clr;
 
     /* Medium devices (tablets) */
@@ -391,7 +390,6 @@ nav {
           width: 100%;
           margin: 0;
           font-size: 1.05em;
-
           color: $heading-clr;
         }
 
@@ -407,7 +405,6 @@ nav {
         padding: 0.5rem 0;
         font-style: italic;
         font-size: 0.9em;
-        /* text-indent: 0.5rem; */
 
         /* Medium devices (tablets, 768px and up) */
         @media (min-width: 576px) and (max-width: 992px) {
@@ -490,7 +487,6 @@ nav {
     width: 80%;
     margin: auto;
     padding: 6rem 0 0.5rem 2rem;
-    /* text-align: center; */
     color: $heading-clr;
 
     &::after {
@@ -499,8 +495,6 @@ nav {
       width: 1.5rem;
       height: 4px;
       background: $link-clr;
-      /* margin: auto;
-      margin-top: 0.5rem; */
     }
 
     /* Medium devices (tablets) */
@@ -520,11 +514,9 @@ nav {
   .img-gallery-container {
     width: 80%;
     margin: auto;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     padding: 0.5rem;
 
     /* Medium devices (tablets) */
@@ -543,7 +535,6 @@ nav {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-
       max-width: 24.5%;
 
       /* Small devices (landscape phones, 576px and up) */
@@ -575,9 +566,7 @@ nav {
 /** AMBIENCE **/
 #ambience {
   padding: 0 4rem 2rem 4rem;
-  /* position: relative; */
   min-height: 100vh;
-  /* background-image: url("./../img/alps-austria-blue-sky-clouds-dark.jpg"); */
   background-image: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -620,8 +609,6 @@ nav {
 
     /* Small devices (landscape phones) */
     @media (max-width: 576px) {
-      /* width: 100%;
-      margin: 0; */
       font-size: 1em;
       padding: 6rem 0 0 0;
     }
@@ -639,8 +626,6 @@ nav {
       width: 1.5rem;
       height: 4px;
       background: $black-clr;
-      /* margin: auto;
-      margin-top: 0.5rem; */
     }
 
     /* Medium devices (tablets) */
@@ -661,10 +646,8 @@ nav {
   .ambience-article {
     width: 80%;
     margin: auto;
-    /* border-left: 4px solid #000; */
     background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    /* border-left: 4px solid rgb(185, 185, 185); */
     border-left: 4px solid #000;
     border-radius: 7px;
 
@@ -684,7 +667,6 @@ nav {
       padding: 0.5rem 1rem;
       text-align: justify;
       text-indent: 2.5rem;
-      /* border-left: 4px solid #000; */
 
       &::first-letter {
         font-size: 110%;
@@ -700,50 +682,26 @@ nav {
         font-size: 0.8em;
       }
     }
-
-    /* p {
-      padding: 0 0 1rem 1rem;
-      text-align: justify;
-      text-indent: 2rem;
-
-      &::first-letter {
-        font-size: 150%;
-      } 
-    }*/
   }
 }
 
 /*** FOOTER SECTION ***/
 footer {
-  /* padding: 6rem 0 0 0; */
   min-height: 100vh;
-
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   background-attachment: fixed;
   background-size: cover;
-
   color: $font-clr;
 
-  /*** GOOGLE MAP ***/
+  /** GOOGLE MAP **/
   .ggl-map {
     .gmap-canvas,
     iframe {
       width: 100%;
       height: 53vh;
       border: none;
-      /* opacity: 0.8;
-      transition: all 0.2s ease-in;
-
-    &:hover {
-      opacity: 1;
-    } */
     }
   }
-
-  /* h2 {
-    text-align: center;
-    padding: 2rem 0;
-  } */
 
   h3 {
     padding: 0 0 1rem 0;
@@ -755,8 +713,6 @@ footer {
       width: 1.5rem;
       height: 4px;
       background: $light-clr;
-      /* margin: auto;
-      margin-top: 0.5rem; */
     }
 
     /* Medium devices (tablets) */
@@ -772,10 +728,10 @@ footer {
 
   .footer-info {
     padding: 1rem 2rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     /* Medium devices (tablets) */
     @media (min-width: 576px) and (max-width: 992px) {
       justify-content: end;
@@ -787,7 +743,6 @@ footer {
     }
 
     .item-1 {
-      /* margin: auto; */
       padding: 1rem 2rem !important;
 
       /* Medium devices (tablets) */
@@ -813,7 +768,6 @@ footer {
     }
 
     .footer-info-item {
-      /* margin: auto; */
       padding: 1rem 0.5rem;
 
       ul {
@@ -835,15 +789,6 @@ footer {
         .far {
           padding: 0 0 0.5rem 1rem;
         }
-
-        /* img {
-          width: 230px;
-          height: 170px;
-
-          &:hover {
-            border: 1px solid rgb(0, 132, 255);
-          }
-        } */
       }
     }
   }
@@ -861,8 +806,6 @@ footer {
         width: 1.5rem;
         height: 4px;
         background: $light-clr;
-        /* margin: auto;
-        margin-top: 0.5rem; */
       }
 
       /* Medium devices (tablets) */
@@ -880,10 +823,8 @@ footer {
   .friends-and-family-container {
     width: 100%;
     height: auto;
-
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
 
     .friends-and-family-item {
       margin: auto;
@@ -896,16 +837,6 @@ footer {
           color: $light-clr;
         }
       }
-      /* img {
-        padding: 1rem;
-
-        width: 150px;
-        height: 100px;
-
-        &:hover {
-          border: 1px solid rgb(0, 132, 255);
-        }
-      } */
     }
   }
 
