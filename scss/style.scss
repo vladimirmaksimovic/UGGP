@@ -139,7 +139,7 @@ nav {
         }
 
         /* Medium devices (tablets) */
-        @media (min-width: 576px) and (max-width: 992px) {
+        @media (min-width: 36rem) and (max-width: 62rem) {
           font-size: 1em;
         }
 
@@ -149,7 +149,7 @@ nav {
         }
 
         /* Small devices (landscape phones) */
-        @media (max-width: 576px) {
+        @media (max-width: 36rem) {
           font-size: 0.8em;
         }
       }
@@ -160,12 +160,12 @@ nav {
         color: $link-clr;
 
         /* Medium devices (tablets) */
-        @media (min-width: 576px) and (max-width: 992px) {
+        @media (min-width: 36rem) and (max-width: 62rem) {
           font-size: 1em;
         }
 
         /* Small devices (landscape phones) */
-        @media (max-width: 576px) {
+        @media (max-width: 36rem) {
           font-size: 0.8em;
         }
       }
@@ -200,12 +200,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets) */
-  @media (min-width: 577px) and (max-width: 992px) {
+  @media (min-width: 36rem) and (max-width: 62rem) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones) */
-  @media (max-width: 576px) {
+  @media (max-width: 36rem) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -226,13 +226,13 @@ nav {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 577px) and (max-width: 992px) {
+    @media (min-width: 577px) and (max-width: 62rem) {
       padding: 6rem 0 0.5rem 0;
       font-size: 1.5em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       padding: 6rem 0 0 0;
       font-size: 1.2em;
     }
@@ -253,14 +253,14 @@ nav {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
       font-size: 1.2em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
       font-size: 1em;
@@ -276,13 +276,13 @@ nav {
     border-radius: 7px;
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
     }
@@ -297,12 +297,12 @@ nav {
       }
 
       /* Medium devices (tablets) */
-      @media (min-width: 576px) and (max-width: 992px) {
+      @media (min-width: 36rem) and (max-width: 62rem) {
         font-size: 1em;
       }
 
       /* Small devices (landscape phones) */
-      @media (max-width: 576px) {
+      @media (max-width: 36rem) {
         font-size: 0.8em;
       }
     }
@@ -322,12 +322,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets) */
-  @media (min-width: 577px) and (max-width: 992px) {
+  @media (min-width: 36rem) and (max-width: 62rem) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones) */
-  @media (max-width: 576px) {
+  @media (max-width: 36rem) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -338,14 +338,14 @@ nav {
     color: $heading-clr;
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
       font-size: 1.2em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
       font-size: 1em;
@@ -358,13 +358,13 @@ nav {
     padding: 0.5rem;
 
     /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
     }
 
-    /* Small devices (landscape phones, 576px and up) */
-    @media (max-width: 576px) {
+    /* Small devices (landscape phones, 36rem and up) */
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
     }
@@ -386,7 +386,7 @@ nav {
 
       h3 {
         /* Medium devices (tablets) */
-        @media (min-width: 576px) and (max-width: 992px) {
+        @media (min-width: 36rem) and (max-width: 62rem) {
           width: 100%;
           margin: 0;
           font-size: 1.05em;
@@ -394,7 +394,7 @@ nav {
         }
 
         /* Small devices (landscape phones) */
-        @media (max-width: 576px) {
+        @media (max-width: 36rem) {
           width: 100%;
           margin: 0;
           font-size: 0.9em;
@@ -407,12 +407,12 @@ nav {
         font-size: 0.9em;
 
         /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 576px) and (max-width: 992px) {
+        @media (min-width: 36rem) and (max-width: 62rem) {
           font-size: 0.8em;
         }
 
-        /* Small devices (landscape phones, 576px and up) */
-        @media (max-width: 576px) {
+        /* Small devices (landscape phones, 36rem and up) */
+        @media (max-width: 36rem) {
           font-size: 0.7em;
         }
       }
@@ -425,12 +425,12 @@ nav {
         }
 
         /* Medium devices (tablets) */
-        @media (min-width: 576px) and (max-width: 992px) {
+        @media (min-width: 36rem) and (max-width: 62rem) {
           font-size: 1em;
         }
 
         /* Small devices (landscape phones) */
-        @media (max-width: 576px) {
+        @media (max-width: 36rem) {
           font-size: 0.8em;
         }
       }
@@ -451,12 +451,12 @@ nav {
           }
 
           /* Medium devices (tablets) */
-          @media (min-width: 576px) and (max-width: 992px) {
+          @media (min-width: 36rem) and (max-width: 62rem) {
             font-size: 1em;
           }
 
           /* Small devices (landscape phones) */
-          @media (max-width: 576px) {
+          @media (max-width: 36rem) {
             font-size: 0.8em;
           }
         }
@@ -474,12 +474,12 @@ nav {
   background-size: cover;
 
   /* Medium devices (tablets) */
-  @media (min-width: 577px) and (max-width: 992px) {
+  @media (min-width: 577px) and (max-width: 62rem) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones) */
-  @media (max-width: 576px) {
+  @media (max-width: 36rem) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -498,14 +498,14 @@ nav {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
       font-size: 1.2em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
       font-size: 1em;
@@ -520,13 +520,13 @@ nav {
     padding: 0.5rem;
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
     }
@@ -537,13 +537,13 @@ nav {
       flex-wrap: wrap;
       max-width: 24.5%;
 
-      /* Small devices (landscape phones, 576px and up) */
-      @media (max-width: 576px) {
+      /* Small devices (landscape phones, 36rem and up) */
+      @media (max-width: 36rem) {
         max-width: 100%;
       }
 
       /* Medium devices (tablets, 768px and up) */
-      @media (min-width: 576px) and (max-width: 992px) {
+      @media (min-width: 36rem) and (max-width: 62rem) {
         max-width: 45.5%;
       }
 
@@ -574,12 +574,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets) */
-  @media (min-width: 577px) and (max-width: 992px) {
+  @media (min-width: 36rem) and (max-width: 62rem) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones) */
-  @media (max-width: 576px) {
+  @media (max-width: 36rem) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -600,7 +600,7 @@ nav {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       /* width: 100%;
       margin: 0; */
       padding: 6rem 0 0.5rem 0;
@@ -608,7 +608,7 @@ nav {
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       font-size: 1em;
       padding: 6rem 0 0 0;
     }
@@ -629,14 +629,14 @@ nav {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
       font-size: 1.05em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
       font-size: 0.9em;
@@ -652,13 +652,13 @@ nav {
     border-radius: 7px;
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       width: 100%;
       margin: 0;
     }
@@ -673,12 +673,12 @@ nav {
       }
 
       /* Medium devices (tablets) */
-      @media (min-width: 576px) and (max-width: 992px) {
+      @media (min-width: 36rem) and (max-width: 62rem) {
         font-size: 1em;
       }
 
       /* Small devices (landscape phones) */
-      @media (max-width: 576px) {
+      @media (max-width: 36rem) {
         font-size: 0.8em;
       }
     }
@@ -716,12 +716,12 @@ footer {
     }
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       font-size: 1.1em;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       font-size: 1em;
     }
   }
@@ -733,12 +733,12 @@ footer {
     justify-content: center;
 
     /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 36rem) and (max-width: 62rem) {
       justify-content: end;
     }
 
     /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    @media (max-width: 36rem) {
       justify-content: end;
     }
 
@@ -746,12 +746,12 @@ footer {
       padding: 1rem 2rem !important;
 
       /* Medium devices (tablets) */
-      @media (min-width: 576px) and (max-width: 992px) {
+      @media (min-width: 36rem) and (max-width: 62rem) {
         margin: auto;
       }
 
       /* Small devices (landscape phones) */
-      @media (max-width: 576px) {
+      @media (max-width: 36rem) {
         margin: auto;
       }
 
@@ -775,12 +775,12 @@ footer {
 
         li {
           /* Medium devices (tablets) */
-          @media (min-width: 576px) and (max-width: 992px) {
+          @media (min-width: 36rem) and (max-width: 62rem) {
             font-size: 1em;
           }
 
           /* Small devices (landscape phones) */
-          @media (max-width: 576px) {
+          @media (max-width: 36rem) {
             font-size: 0.8em;
           }
         }
@@ -809,12 +809,12 @@ footer {
       }
 
       /* Medium devices (tablets) */
-      @media (min-width: 576px) and (max-width: 992px) {
+      @media (min-width: 36rem) and (max-width: 62rem) {
         font-size: 1.1em;
       }
 
       /* Small devices (landscape phones) */
-      @media (max-width: 576px) {
+      @media (max-width: 36rem) {
         font-size: 1em;
       }
     }
@@ -848,13 +848,13 @@ footer {
 
     display: flex;
 
-    /* Medium devices (tablets) */
-    @media (min-width: 576px) and (max-width: 992px) {
+    /* Medium devices (tablets: 36rem - 62rem) */
+    @media (min-width: 36rem) and (max-width: 62rem) {
       font-size: 1em;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 576px) {
+    /* Small devices (landscape phones: 36rem) */
+    @media (max-width: 36rem) {
       font-size: 0.8em;
     }
 
@@ -868,6 +868,7 @@ footer {
       a {
         text-decoration: none;
         color: $link-clr;
+
         &:hover {
           color: rgb(255, 196, 0);
         }
