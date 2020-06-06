@@ -10,6 +10,7 @@ header {
   background-attachment: fixed;
   background-size: cover;
 
+  /* ? */
   color: darkish;
 
   .logo-container {
@@ -84,26 +85,31 @@ nav {
   overflow: hidden;
 
   ul {
-    min-height: 5rem;
+    min-height: 4rem;
 
     display: flex;
     justify-content: center;
     list-style-type: none;
 
-    .hamburger-bars {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
+      padding: 0 0 0 0.5rem;
+    }
+
+    .hamburger {
       display: none;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem;
       color: $light-clr;
 
       /* Navbar Hamburger - 760px */
-      @media (max-width: 47.5rem) {
+      @media (max-width: 47.5em) {
         display: block;
         width: fit-content;
       }
     }
 
     /* Navbar Hamburger - 760px */
-    @media (max-width: 47.5rem) {
+    @media (max-width: 47.5em) {
       flex-direction: column;
       justify-content: end;
     }
@@ -120,53 +126,43 @@ nav {
       display: flex;
 
       /* Navbar Hamburger - 760px */
-      @media (max-width: 47.5rem) {
+      @media (max-width: 47.5em) {
         display: none;
       }
 
       a {
         margin: auto;
         background-color: transparent;
-        font-size: 1.2em;
+        font-size: $f-size;
         color: $link-clr;
         text-decoration: none;
         text-transform: uppercase;
 
-        transition: all 0.5s ease-in;
+        transition: all 0.2s ease-in;
 
         &:hover {
           color: $light-clr;
         }
 
-        /* Medium devices (tablets) */
-        @media (min-width: 36rem) and (max-width: 62rem) {
-          font-size: 1em;
-        }
-
         /* Navbar Hamburger - 760px */
-        @media (max-width: 47.5rem) {
+        @media (max-width: 47.5em) {
           margin: 0em;
         }
 
-        /* Small devices (landscape phones) */
-        @media (max-width: 36rem) {
-          font-size: 0.8em;
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: 35.9375em) {
+          font-size: $f-size-s;
         }
       }
 
       .slash {
         padding: 0 0.5rem;
-        font-size: 1.2em;
+        font-size: $f-size;
         color: $link-clr;
 
-        /* Medium devices (tablets) */
-        @media (min-width: 36rem) and (max-width: 62rem) {
-          font-size: 1em;
-        }
-
-        /* Small devices (landscape phones) */
-        @media (max-width: 36rem) {
-          font-size: 0.8em;
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: 35.9375em) {
+          font-size: $f-size-s;
         }
       }
 
@@ -199,21 +195,22 @@ nav {
 
   color: $font-clr;
 
-  /* Medium devices (tablets) */
-  @media (min-width: 36rem) and (max-width: 62rem) {
+  /* Medium devices (tablets: 576px - 992px) */
+  @media (min-width: 36em) and (max-width: 62em) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
-  /* Small devices (landscape phones) */
-  @media (max-width: 36rem) {
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: 35.9375em) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
   h1 {
     margin: 0;
-    padding: 6rem 0 1.5rem 0;
+    padding: 10rem 0 1.5rem 0;
     text-align: center;
     color: $heading-clr;
+    font-size: $f-size-xxl;
 
     &::after {
       content: "";
@@ -222,27 +219,28 @@ nav {
       height: 4px;
       background: $light-clr;
       margin: auto;
-      margin-top: 0.5rem;
+      margin-top: 0.2rem;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 577px) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       padding: 6rem 0 0.5rem 0;
-      font-size: 1.5em;
+      font-size: $f-size-xl;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       padding: 6rem 0 0 0;
-      font-size: 1.2em;
+      font-size: $f-size-l;
     }
   }
 
   h2 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 1.5rem 0 1rem 1rem;
+    padding: 1.5rem 0 1rem 0.5rem;
     color: $heading-clr;
+    font-size: $f-size-xl;
 
     &::after {
       content: "";
@@ -252,37 +250,37 @@ nav {
       background: $light-clr;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
-      font-size: 1.2em;
+      font-size: $f-size-l;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
-      font-size: 1em;
+      font-size: $f-size-m;
     }
   }
 
   .about-article {
-    width: 80%;
+    width: 90%;
     margin: auto;
     background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     border-left: 4px solid $font-clr;
     border-radius: 7px;
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
     }
@@ -296,14 +294,14 @@ nav {
         font-size: 110%;
       }
 
-      /* Medium devices (tablets) */
-      @media (min-width: 36rem) and (max-width: 62rem) {
-        font-size: 1em;
+      /* Medium devices (tablets: 576px - 992px) */
+      @media (min-width: 36em) and (max-width: 62em) {
+        font-size: $f-size-s;
       }
 
-      /* Small devices (landscape phones) */
-      @media (max-width: 36rem) {
-        font-size: 0.8em;
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
+        font-size: $f-size-xs;
       }
     }
   }
@@ -312,59 +310,59 @@ nav {
 /** NEWS SECTION **/
 #news {
   min-height: 100vh;
-  padding: 6rem 4rem;
+  padding: 0 4rem;
 
   background-image: url("./../img/alps-austria-blue-sky-clouds-dark2.jpg");
   background-attachment: fixed;
   background-size: cover;
 
-  /* background-color: rgb(4, 61, 114); */
   color: $font-clr;
 
-  /* Medium devices (tablets) */
-  @media (min-width: 36rem) and (max-width: 62rem) {
+  /* Medium devices (tablets: 576px - 992px) */
+  @media (min-width: 36em) and (max-width: 62em) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
-  /* Small devices (landscape phones) */
-  @media (max-width: 36rem) {
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: 35.9375em) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
   h2 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 1.5rem 0 1rem 0.5rem;
+    padding: 10rem 0 1rem 0.5rem;
     color: $heading-clr;
+    font-size: $f-size-xl;
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
-      font-size: 1.2em;
+      font-size: $f-size-l;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
-      font-size: 1em;
+      font-size: $f-size-m;
     }
   }
 
   .news-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 0.5rem;
 
-    /* Medium devices (tablets, 768px and up) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
     }
 
-    /* Small devices (landscape phones, 36rem and up) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
     }
@@ -385,57 +383,62 @@ nav {
       }
 
       h3 {
-        /* Medium devices (tablets) */
-        @media (min-width: 36rem) and (max-width: 62rem) {
+        margin: 0;
+        font-size: $f-size-l;
+
+        /* Medium devices (tablets: 576px - 992px) */
+        @media (min-width: 36em) and (max-width: 62em) {
           width: 100%;
           margin: 0;
-          font-size: 1.05em;
+          font-size: $f-size-m;
           color: $heading-clr;
         }
 
-        /* Small devices (landscape phones) */
-        @media (max-width: 36rem) {
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: 35.9375em) {
           width: 100%;
           margin: 0;
-          font-size: 0.9em;
+          font-size: $f-size;
         }
       }
 
       .author-and-time {
+        margin: 0;
         padding: 0.5rem 0;
         font-style: italic;
-        font-size: 0.9em;
 
-        /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 36rem) and (max-width: 62rem) {
-          font-size: 0.8em;
+        /* Medium devices (tablets: 576px - 992px) */
+        @media (min-width: 36em) and (max-width: 62em) {
+          font-size: $f-size-s;
         }
 
-        /* Small devices (landscape phones, 36rem and up) */
-        @media (max-width: 36rem) {
-          font-size: 0.7em;
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: 35.9375em) {
+          font-size: $f-size-xs;
         }
       }
 
       .news-info {
+        margin: 0;
         padding: 0 0 1rem 1rem;
 
         &::first-letter {
           font-size: 110%;
         }
 
-        /* Medium devices (tablets) */
-        @media (min-width: 36rem) and (max-width: 62rem) {
-          font-size: 1em;
+        /* Medium devices (tablets: 576px - 992px) */
+        @media (min-width: 36em) and (max-width: 62em) {
+          font-size: $f-size-s;
         }
 
-        /* Small devices (landscape phones) */
-        @media (max-width: 36rem) {
-          font-size: 0.8em;
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: 35.9375em) {
+          font-size: $f-size-xs;
         }
       }
 
       .news-content {
+        margin: 0;
         padding: 0 1rem;
         max-height: 0;
         overflow: hidden;
@@ -450,14 +453,14 @@ nav {
             font-size: 110%;
           }
 
-          /* Medium devices (tablets) */
-          @media (min-width: 36rem) and (max-width: 62rem) {
-            font-size: 1em;
+          /* Medium devices (tablets: 576px - 992px) */
+          @media (min-width: 36em) and (max-width: 62em) {
+            font-size: $f-size-s;
           }
 
-          /* Small devices (landscape phones) */
-          @media (max-width: 36rem) {
-            font-size: 0.8em;
+          /* Small devices (landscape phones: 575px) */
+          @media (max-width: 35.9375em) {
+            font-size: $f-size-xs;
           }
         }
       }
@@ -468,25 +471,28 @@ nav {
 /** GALLERY SECTION **/
 #gallery {
   min-height: 100vh;
+  padding: 0 4rem;
 
   background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
   background-attachment: fixed;
   background-size: cover;
 
-  /* Medium devices (tablets) */
-  @media (min-width: 577px) and (max-width: 62rem) {
+  /* Medium devices (tablets: 576px - 992px) */
+  @media (min-width: 36em) and (max-width: 62em) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
-  /* Small devices (landscape phones) */
-  @media (max-width: 36rem) {
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: 35.9375em) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
   h2 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 6rem 0 0.5rem 2rem;
+    padding: 10rem 0 1rem 0.5rem;
+
+    font-size: $f-size-xl;
     color: $heading-clr;
 
     &::after {
@@ -497,36 +503,36 @@ nav {
       background: $link-clr;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
-      font-size: 1.2em;
+      font-size: $f-size-l;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
-      font-size: 1em;
+      font-size: $f-size-m;
     }
   }
   .img-gallery-container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
     }
@@ -537,14 +543,14 @@ nav {
       flex-wrap: wrap;
       max-width: 24.5%;
 
-      /* Small devices (landscape phones, 36rem and up) */
-      @media (max-width: 36rem) {
-        max-width: 100%;
+      /* Medium devices (tablets: 576px - 992px) */
+      @media (min-width: 36em) and (max-width: 62em) {
+        max-width: 45.5%;
       }
 
-      /* Medium devices (tablets, 768px and up) */
-      @media (min-width: 36rem) and (max-width: 62rem) {
-        max-width: 45.5%;
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
+        max-width: 100%;
       }
 
       .img-item {
@@ -573,21 +579,22 @@ nav {
 
   color: $font-clr;
 
-  /* Medium devices (tablets) */
-  @media (min-width: 36rem) and (max-width: 62rem) {
+  /* Medium devices (tablets: 576px - 992px) */
+  @media (min-width: 36em) and (max-width: 62em) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
-  /* Small devices (landscape phones) */
-  @media (max-width: 36rem) {
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: 35.9375em) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
   h2 {
     margin: 0;
-    padding: 6rem 0 2rem 0;
+    padding: 10rem 0 1rem 0.5rem;
     text-align: center;
     color: $black-clr;
+    font-size: $f-size-xl;
 
     &::after {
       content: "";
@@ -596,29 +603,28 @@ nav {
       height: 4px;
       background: $black-clr;
       margin: auto;
-      margin-top: 0.5rem;
+      margin-top: 0.2rem;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
-      /* width: 100%;
-      margin: 0; */
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       padding: 6rem 0 0.5rem 0;
-      font-size: 1.2em;
+      font-size: $f-size-l;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
-      font-size: 1em;
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       padding: 6rem 0 0 0;
+      font-size: $f-size-m;
     }
   }
 
   h3 {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 1.5rem 0 1rem 1rem;
+    padding: 1.5rem 0 1rem 0.5rem;
     color: $black-clr;
+    font-size: $f-size-l;
 
     &::after {
       content: "";
@@ -628,37 +634,37 @@ nav {
       background: $black-clr;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
-      font-size: 1.05em;
+      font-size: $f-size-m;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
-      font-size: 0.9em;
+      font-size: $f-size;
     }
   }
 
   .ambience-article {
-    width: 80%;
+    width: 90%;
     margin: auto;
     background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    border-left: 4px solid #000;
+    border-left: 4px solid $font-clr;
     border-radius: 7px;
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       width: 100%;
       margin: 0;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       width: 100%;
       margin: 0;
     }
@@ -670,16 +676,6 @@ nav {
 
       &::first-letter {
         font-size: 110%;
-      }
-
-      /* Medium devices (tablets) */
-      @media (min-width: 36rem) and (max-width: 62rem) {
-        font-size: 1em;
-      }
-
-      /* Small devices (landscape phones) */
-      @media (max-width: 36rem) {
-        font-size: 0.8em;
       }
     }
   }
@@ -704,8 +700,10 @@ footer {
   }
 
   h3 {
+    margin: 0;
     padding: 0 0 1rem 0;
     color: $heading-clr;
+    font-size: $f-size-m;
 
     &::after {
       content: "";
@@ -715,14 +713,14 @@ footer {
       background: $light-clr;
     }
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
-      font-size: 1.1em;
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
+      font-size: $f-size-m;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
-      font-size: 1em;
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
+      font-size: $f-size;
     }
   }
 
@@ -732,26 +730,26 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 
-    /* Medium devices (tablets) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: 36em) and (max-width: 62em) {
       justify-content: end;
     }
 
-    /* Small devices (landscape phones) */
-    @media (max-width: 36rem) {
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
       justify-content: end;
     }
 
     .item-1 {
       padding: 1rem 2rem !important;
 
-      /* Medium devices (tablets) */
-      @media (min-width: 36rem) and (max-width: 62rem) {
+      /* Medium devices (tablets: 576px - 992px) */
+      @media (min-width: 36em) and (max-width: 62em) {
         margin: auto;
       }
 
-      /* Small devices (landscape phones) */
-      @media (max-width: 36rem) {
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
         margin: auto;
       }
 
@@ -772,18 +770,6 @@ footer {
 
       ul {
         list-style-type: none;
-
-        li {
-          /* Medium devices (tablets) */
-          @media (min-width: 36rem) and (max-width: 62rem) {
-            font-size: 1em;
-          }
-
-          /* Small devices (landscape phones) */
-          @media (max-width: 36rem) {
-            font-size: 0.8em;
-          }
-        }
 
         .fas,
         .far {
@@ -808,14 +794,14 @@ footer {
         background: $light-clr;
       }
 
-      /* Medium devices (tablets) */
-      @media (min-width: 36rem) and (max-width: 62rem) {
-        font-size: 1.1em;
+      /* Medium devices (tablets: 576px - 992px) */
+      @media (min-width: 36em) and (max-width: 62em) {
+        font-size: $f-size-m;
       }
 
-      /* Small devices (landscape phones) */
-      @media (max-width: 36rem) {
-        font-size: 1em;
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
+        font-size: $f-size-s;
       }
     }
   }
@@ -848,22 +834,29 @@ footer {
 
     display: flex;
 
-    /* Medium devices (tablets: 36rem - 62rem) */
-    @media (min-width: 36rem) and (max-width: 62rem) {
-      font-size: 1em;
-    }
-
-    /* Small devices (landscape phones: 36rem) */
-    @media (max-width: 36rem) {
-      font-size: 0.8em;
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: 35.9375em) {
+      flex-wrap: wrap;
     }
 
     .footer-copyright-item {
       margin: auto;
+
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     .design-link {
       padding: 0 1rem 0 0;
+
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: 35.9375em) {
+        width: 100%;
+        text-align: center;
+      }
 
       a {
         text-decoration: none;

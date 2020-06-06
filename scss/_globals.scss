@@ -1,11 +1,15 @@
 /*** RESET ***/
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 /*** VARIABLES ***/
+
+/** color properties **/
 $black-clr: #000;
 $blackish-clr: rgba(0, 0, 0, 0.7);
 $white-clr: #fff;
@@ -15,7 +19,15 @@ $font-clr: #ccc;
 $link-clr: #b3b3b3;
 $bg-clr: #004280;
 $border-clr: #0084ff;
-$f-size: 1.2rem;
+
+/** font properties **/
+$f-size: 1.25rem;
+$f-size-xxl: 2.5rem;
+$f-size-xl: 2rem;
+$f-size-l: 1.75rem;
+$f-size-m: 1.5rem;
+$f-size-s: 1rem;
+$f-size-xs: 0.85rem;
 $l-height: 1.6;
 $l-space: 0.5px;
 
@@ -31,4 +43,14 @@ body {
   font-size: $f-size;
   line-height: $l-height;
   letter-spacing: $l-space;
+
+  /* Medium devices (tablets: 576px - 992px) */
+  @media (min-width: 36em) and (max-width: 62em) {
+    font-size: $f-size-s;
+  }
+
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: 35.9375em) {
+    font-size: $f-size-xs;
+  }
 }
