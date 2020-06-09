@@ -85,14 +85,20 @@ nav {
   overflow: hidden;
 
   ul {
-    min-height: 4rem;
+    min-height: 5rem;
 
     display: flex;
     justify-content: center;
     list-style-type: none;
 
+    /* Navbar Hamburger - 760px */
+    @media (max-width: $max-hamburger) {
+      min-height: 4rem;
+    }
+
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
+      min-height: 3rem;
       padding: 0 0 0 0.5rem;
     }
 
@@ -102,14 +108,14 @@ nav {
       color: $light-clr;
 
       /* Navbar Hamburger - 760px */
-      @media (max-width: 47.5em) {
+      @media (max-width: $max-hamburger) {
         display: block;
         width: fit-content;
       }
     }
 
     /* Navbar Hamburger - 760px */
-    @media (max-width: 47.5em) {
+    @media (max-width: $max-hamburger) {
       flex-direction: column;
       justify-content: end;
     }
@@ -126,7 +132,7 @@ nav {
       display: flex;
 
       /* Navbar Hamburger - 760px */
-      @media (max-width: 47.5em) {
+      @media (max-width: $max-hamburger) {
         display: none;
       }
 
@@ -145,12 +151,12 @@ nav {
         }
 
         /* Navbar Hamburger - 760px */
-        @media (max-width: 47.5em) {
+        @media (max-width: $max-hamburger) {
           margin: 0em;
         }
 
         /* Small devices (landscape phones: 575px) */
-        @media (max-width: 35.9375em) {
+        @media (max-width: $max-phone) {
           font-size: $f-size-s;
         }
       }
@@ -161,7 +167,7 @@ nav {
         color: $link-clr;
 
         /* Small devices (landscape phones: 575px) */
-        @media (max-width: 35.9375em) {
+        @media (max-width: $max-phone) {
           font-size: $f-size-s;
         }
       }
@@ -186,7 +192,7 @@ nav {
 }
 
 /*** ABOUT SECTION ***/
-#about {
+.about {
   padding: 0 4rem 2rem 4rem;
   min-height: 100vh;
   background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
@@ -196,12 +202,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: 36em) and (max-width: 62em) {
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: 35.9375em) {
+  @media (max-width: $max-phone) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -212,24 +218,24 @@ nav {
     color: $heading-clr;
     font-size: $f-size-xxl;
 
-    &::after {
+    /* &::after {
       content: "";
       display: block;
       width: 1.5rem;
       height: 4px;
       background: $light-clr;
       margin: auto;
-      margin-top: 0.2rem;
-    }
+      margin-top: 0.2em;
+    } */
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       padding: 6rem 0 0.5rem 0;
       font-size: $f-size-xl;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       padding: 6rem 0 0 0;
       font-size: $f-size-l;
     }
@@ -251,14 +257,14 @@ nav {
     }
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
       font-size: $f-size-l;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
       font-size: $f-size-m;
@@ -274,13 +280,13 @@ nav {
     border-radius: 7px;
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
     }
@@ -295,12 +301,12 @@ nav {
       }
 
       /* Medium devices (tablets: 576px - 992px) */
-      @media (min-width: 36em) and (max-width: 62em) {
+      @media (min-width: $min-tablet) and (max-width: $max-tablet) {
         font-size: $f-size-s;
       }
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         font-size: $f-size-xs;
       }
     }
@@ -319,12 +325,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: 36em) and (max-width: 62em) {
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: 35.9375em) {
+  @media (max-width: $max-phone) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -336,14 +342,14 @@ nav {
     font-size: $f-size-xl;
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
       font-size: $f-size-l;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
       font-size: $f-size-m;
@@ -356,13 +362,13 @@ nav {
     padding: 0.5rem;
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
     }
@@ -387,7 +393,7 @@ nav {
         font-size: $f-size-l;
 
         /* Medium devices (tablets: 576px - 992px) */
-        @media (min-width: 36em) and (max-width: 62em) {
+        @media (min-width: $min-tablet) and (max-width: $max-tablet) {
           width: 100%;
           margin: 0;
           font-size: $f-size-m;
@@ -395,7 +401,7 @@ nav {
         }
 
         /* Small devices (landscape phones: 575px) */
-        @media (max-width: 35.9375em) {
+        @media (max-width: $max-phone) {
           width: 100%;
           margin: 0;
           font-size: $f-size;
@@ -408,12 +414,12 @@ nav {
         font-style: italic;
 
         /* Medium devices (tablets: 576px - 992px) */
-        @media (min-width: 36em) and (max-width: 62em) {
+        @media (min-width: $min-tablet) and (max-width: $max-tablet) {
           font-size: $f-size-s;
         }
 
         /* Small devices (landscape phones: 575px) */
-        @media (max-width: 35.9375em) {
+        @media (max-width: $max-phone) {
           font-size: $f-size-xs;
         }
       }
@@ -427,12 +433,12 @@ nav {
         }
 
         /* Medium devices (tablets: 576px - 992px) */
-        @media (min-width: 36em) and (max-width: 62em) {
+        @media (min-width: $min-tablet) and (max-width: $max-tablet) {
           font-size: $f-size-s;
         }
 
         /* Small devices (landscape phones: 575px) */
-        @media (max-width: 35.9375em) {
+        @media (max-width: $max-phone) {
           font-size: $f-size-xs;
         }
       }
@@ -454,12 +460,12 @@ nav {
           }
 
           /* Medium devices (tablets: 576px - 992px) */
-          @media (min-width: 36em) and (max-width: 62em) {
+          @media (min-width: $min-tablet) and (max-width: $max-tablet) {
             font-size: $f-size-s;
           }
 
           /* Small devices (landscape phones: 575px) */
-          @media (max-width: 35.9375em) {
+          @media (max-width: $max-phone) {
             font-size: $f-size-xs;
           }
         }
@@ -478,12 +484,12 @@ nav {
   background-size: cover;
 
   /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: 36em) and (max-width: 62em) {
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: 35.9375em) {
+  @media (max-width: $max-phone) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -504,14 +510,14 @@ nav {
     }
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
       font-size: $f-size-l;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
       font-size: $f-size-m;
@@ -526,13 +532,13 @@ nav {
     /* padding: 0.5rem; */
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
     }
@@ -544,12 +550,12 @@ nav {
       max-width: 24.5%;
 
       /* Medium devices (tablets: 576px - 992px) */
-      @media (min-width: 36em) and (max-width: 62em) {
+      @media (min-width: $min-tablet) and (max-width: $max-tablet) {
         max-width: 45.5%;
       }
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         max-width: 100%;
       }
 
@@ -580,12 +586,12 @@ nav {
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: 36em) and (max-width: 62em) {
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     padding: 0 3.5rem 2rem 3.5rem;
   }
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: 35.9375em) {
+  @media (max-width: $max-phone) {
     padding: 0 1.5rem 2rem 1.5rem;
   }
 
@@ -596,7 +602,7 @@ nav {
     color: $black-clr;
     font-size: $f-size-xl;
 
-    &::after {
+    /* &::after {
       content: "";
       display: block;
       width: 1.5rem;
@@ -604,16 +610,16 @@ nav {
       background: $black-clr;
       margin: auto;
       margin-top: 0.2rem;
-    }
+    } */
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       padding: 6rem 0 0.5rem 0;
       font-size: $f-size-l;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       padding: 6rem 0 0 0;
       font-size: $f-size-m;
     }
@@ -635,14 +641,14 @@ nav {
     }
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
       font-size: $f-size-m;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
       font-size: $f-size;
@@ -658,13 +664,13 @@ nav {
     border-radius: 7px;
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
     }
@@ -683,7 +689,7 @@ nav {
 
 /*** FOOTER SECTION ***/
 footer {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -714,12 +720,12 @@ footer {
     }
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       font-size: $f-size-m;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       font-size: $f-size;
     }
   }
@@ -731,12 +737,12 @@ footer {
     justify-content: center;
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: 36em) and (max-width: 62em) {
+    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       justify-content: end;
     }
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       justify-content: end;
     }
 
@@ -744,12 +750,12 @@ footer {
       padding: 1rem 2rem !important;
 
       /* Medium devices (tablets: 576px - 992px) */
-      @media (min-width: 36em) and (max-width: 62em) {
+      @media (min-width: $min-tablet) and (max-width: $max-tablet) {
         margin: auto;
       }
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         margin: auto;
       }
 
@@ -795,12 +801,12 @@ footer {
       }
 
       /* Medium devices (tablets: 576px - 992px) */
-      @media (min-width: 36em) and (max-width: 62em) {
+      @media (min-width: $min-tablet) and (max-width: $max-tablet) {
         font-size: $f-size-m;
       }
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         font-size: $f-size-s;
       }
     }
@@ -835,7 +841,7 @@ footer {
     display: flex;
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: 35.9375em) {
+    @media (max-width: $max-phone) {
       flex-wrap: wrap;
     }
 
@@ -843,7 +849,7 @@ footer {
       margin: auto;
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         width: 100%;
         text-align: center;
       }
@@ -853,7 +859,7 @@ footer {
       padding: 0 1rem 0 0;
 
       /* Small devices (landscape phones: 575px) */
-      @media (max-width: 35.9375em) {
+      @media (max-width: $max-phone) {
         width: 100%;
         text-align: center;
       }

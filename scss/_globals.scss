@@ -21,15 +21,21 @@ $bg-clr: #004280;
 $border-clr: #0084ff;
 
 /** font properties **/
-$f-size: 1.25rem;
-$f-size-xxl: 2.5rem;
-$f-size-xl: 2rem;
-$f-size-l: 1.75rem;
-$f-size-m: 1.5rem;
+$f-size-xxl: 2.2rem;
+$f-size-xl: 1.8rem;
+$f-size-l: 1.6rem;
+$f-size-m: 1.4rem;
+$f-size: 1.2rem;
 $f-size-s: 1rem;
-$f-size-xs: 0.85rem;
+$f-size-xs: 0.8rem;
 $l-height: 1.6;
 $l-space: 0.5px;
+
+/** media variables **/
+$min-tablet: 36em;
+$max-tablet: 62em;
+$max-phone: 35.9375em;
+$max-hamburger: 47.5em;
 
 /*** SMOOTH SCROLLING ***/
 html {
@@ -45,12 +51,12 @@ body {
   letter-spacing: $l-space;
 
   /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: 36em) and (max-width: 62em) {
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
     font-size: $f-size-s;
   }
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: 35.9375em) {
+  @media (max-width: $max-phone) {
     font-size: $f-size-xs;
   }
 }
