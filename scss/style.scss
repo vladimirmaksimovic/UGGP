@@ -192,7 +192,7 @@ nav {
 }
 
 /*** ABOUT SECTION ***/
-.about {
+#about {
   padding: 0 4rem 2rem 4rem;
   min-height: 100vh;
   background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
@@ -213,7 +213,7 @@ nav {
 
   h1 {
     margin: 0;
-    padding: 10rem 0 1.5rem 0;
+    padding: 6rem 0 1rem 0;
     text-align: center;
     color: $heading-clr;
     /* font-size: $f-size-xxl; */
@@ -229,22 +229,22 @@ nav {
     } */
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+    /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       padding: 6rem 0 0.5rem 0;
-      /* font-size: $f-size-xl; */
-    }
-
-    /* Small devices (landscape phones: 575px) */
-    @media (max-width: $max-phone) {
-      padding: 6rem 0 0 0;
-      /* font-size: $f-size-l; */
-    }
+      font-size: $f-size-xl; */
   }
+
+  /* Small devices (landscape phones: 575px) */
+  /* @media (max-width: $max-phone) {
+      padding: 6rem 0 0 0;
+      font-size: $f-size-l; 
+    }
+  }*/
 
   h2 {
     width: 90%;
     margin: auto;
-    padding: 1.5rem 0 1rem 0.5rem;
+    padding: 1rem 0.5rem;
     color: $heading-clr;
     /* font-size: $f-size-xl; */
 
@@ -337,7 +337,7 @@ nav {
   h2 {
     width: 90%;
     margin: auto;
-    padding: 10rem 0 1rem 0.5rem;
+    padding: 6rem 0 1rem 0.5rem;
     color: $heading-clr;
     /* font-size: $f-size-xl; */
 
@@ -498,7 +498,7 @@ nav {
   h2 {
     width: 90%;
     margin: auto;
-    padding: 10rem 0 1rem 0.5rem;
+    padding: 6rem 0 1rem 0.5rem;
 
     /* font-size: $f-size-xl; */
     color: $heading-clr;
@@ -599,7 +599,7 @@ nav {
 
   h2 {
     margin: 0;
-    padding: 10rem 0 1rem 0.5rem;
+    padding: 6rem 0 1rem 0.5rem;
     text-align: center;
     color: $black-clr;
     /* font-size: $f-size-xl; */
@@ -615,22 +615,22 @@ nav {
     } */
 
     /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+    /*  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       padding: 6rem 0 0.5rem 0;
-      /* font-size: $f-size-l; */
-    }
+      font-size: $f-size-l; 
+    }*/
 
     /* Small devices (landscape phones: 575px) */
-    @media (max-width: $max-phone) {
+    /* @media (max-width: $max-phone) {
       padding: 6rem 0 0 0;
-      /* font-size: $f-size-m; */
-    }
+      font-size: $f-size-m; 
+    }*/
   }
 
   h3 {
     width: 90%;
     margin: auto;
-    padding: 1.5rem 0 1rem 0.5rem;
+    padding: 1rem 0.5rem;
     color: $black-clr;
     /* font-size: $f-size-l; */
 
