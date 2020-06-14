@@ -7,11 +7,9 @@ header {
   position: relative;
   min-height: 100vh;
   background-image: url("./../img/landing-bg.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
-  /* ? */
-  color: darkish;
 
   .logo-container {
     height: 100vh;
@@ -25,12 +23,13 @@ header {
       .logo-img {
         width: 20rem;
         transition: all 0.5s ease-in;
-
+        /* animation */
         animation-name: logo;
         animation-duration: 0.8s;
         animation-delay: 3s;
         animation-iteration-count: 2;
 
+        /* logo animation */
         @keyframes logo {
           0% {
             transform: scale(1);
@@ -86,19 +85,12 @@ nav {
 
   ul {
     min-height: 3rem;
-
     display: flex;
     justify-content: center;
     list-style-type: none;
 
-    /* Navbar Hamburger - 760px */
-    /* @media (max-width: $max-hamburger) {
-      min-height: 4rem;
-    } */
-
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $max-phone) {
-      /* min-height: 3rem; */
       padding: 0 0 0 0.5rem;
     }
 
@@ -139,11 +131,9 @@ nav {
       a {
         margin: auto;
         background-color: transparent;
-        /* font-size: $f-size; */
         color: $link-clr;
         text-decoration: none;
         text-transform: uppercase;
-
         transition: all 0.2s ease-in;
 
         &:hover {
@@ -154,22 +144,11 @@ nav {
         @media (max-width: $max-hamburger) {
           margin: 0;
         }
-
-        /* Small devices (landscape phones: 575px) */
-        /* @media (max-width: $max-phone) {
-          font-size: $f-size-s;
-        } */
       }
 
       .slash {
         padding: 0 0.5rem;
-        /* font-size: $f-size; */
         color: $link-clr;
-
-        /* Small devices (landscape phones: 575px) */
-        /* @media (max-width: $max-phone) {
-          font-size: $f-size-s;
-        } */
       }
 
       .nav-link {
@@ -198,7 +177,7 @@ nav {
   background-image: url("./../img/bridge-clouds-cloudy-dark-clouds.jpg");
   background-attachment: fixed;
   background-size: cover;
-
+  background-repeat: no-repeat;
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
@@ -216,37 +195,13 @@ nav {
     padding: 6rem 0 1rem 0;
     text-align: center;
     color: $heading-clr;
-    /* font-size: $f-size-xxl; */
-
-    /* &::after {
-      content: "";
-      display: block;
-      width: 1.5rem;
-      height: 4px;
-      background: $light-clr;
-      margin: auto;
-      margin-top: 0.2em;
-    } */
-
-    /* Medium devices (tablets: 576px - 992px) */
-    /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-      padding: 6rem 0 0.5rem 0;
-      font-size: $f-size-xl; */
   }
-
-  /* Small devices (landscape phones: 575px) */
-  /* @media (max-width: $max-phone) {
-      padding: 6rem 0 0 0;
-      font-size: $f-size-l; 
-    }
-  }*/
 
   h2 {
     width: 90%;
     margin: auto;
     padding: 1rem 0.5rem;
     color: $heading-clr;
-    /* font-size: $f-size-xl; */
 
     &::after {
       content: "";
@@ -260,14 +215,12 @@ nav {
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-l; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-m; */
     }
   }
 
@@ -299,16 +252,6 @@ nav {
       &::first-letter {
         font-size: 110%;
       }
-
-      /* Medium devices (tablets: 576px - 992px) */
-      /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-        font-size: $f-size-s;
-      } */
-
-      /* Small devices (landscape phones: 575px) */
-      /* @media (max-width: $max-phone) {
-        font-size: $f-size-xs;
-      } */
     }
   }
 }
@@ -317,11 +260,10 @@ nav {
 #news {
   min-height: 100vh;
   padding: 0 4rem;
-
   background-image: url("./../img/alps-austria-blue-sky-clouds-dark2.jpg");
   background-attachment: fixed;
   background-size: cover;
-
+  background-repeat: no-repeat;
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
@@ -339,20 +281,17 @@ nav {
     margin: auto;
     padding: 6rem 0 1rem 0.5rem;
     color: $heading-clr;
-    /* font-size: $f-size-xl; */
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-l; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-m; */
     }
   }
 
@@ -390,13 +329,11 @@ nav {
 
       h3 {
         margin: 0;
-        /* font-size: $f-size-l; */
 
         /* Medium devices (tablets: 576px - 992px) */
         @media (min-width: $min-tablet) and (max-width: $max-tablet) {
           width: 100%;
           margin: 0;
-          /* font-size: $f-size-m; */
           color: $heading-clr;
         }
 
@@ -404,7 +341,6 @@ nav {
         @media (max-width: $max-phone) {
           width: 100%;
           margin: 0;
-          /* font-size: $f-size; */
         }
       }
 
@@ -412,18 +348,7 @@ nav {
         margin: 0;
         padding: 0.5rem 1rem;
         font-size: 0.8rem;
-        /* text-indent: 2rem; */
         font-style: italic;
-
-        /* Medium devices (tablets: 576px - 992px) */
-        /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-          font-size: $f-size-s;
-        } */
-
-        /* Small devices (landscape phones: 575px) */
-        /* @media (max-width: $max-phone) {
-          font-size: $f-size-xs;
-        } */
       }
 
       .news-info {
@@ -433,16 +358,6 @@ nav {
         &::first-letter {
           font-size: 110%;
         }
-
-        /* Medium devices (tablets: 576px - 992px) */
-        /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-          font-size: $f-size-s;
-        } */
-
-        /* Small devices (landscape phones: 575px) */
-        /* @media (max-width: $max-phone) {
-          font-size: $f-size-xs;
-        } */
       }
 
       .news-content {
@@ -460,16 +375,6 @@ nav {
           &::first-letter {
             font-size: 110%;
           }
-
-          /* Medium devices (tablets: 576px - 992px) */
-          /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-            font-size: $f-size-s;
-          } */
-
-          /* Small devices (landscape phones: 575px) */
-          /* @media (max-width: $max-phone) {
-            font-size: $f-size-xs;
-          } */
         }
       }
     }
@@ -480,10 +385,10 @@ nav {
 #gallery {
   min-height: 100vh;
   padding: 0 4rem;
-
   background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
 
   /* Medium devices (tablets: 576px - 992px) */
   @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -499,8 +404,6 @@ nav {
     width: 90%;
     margin: auto;
     padding: 6rem 0 1rem 0.5rem;
-
-    /* font-size: $f-size-xl; */
     color: $heading-clr;
 
     &::after {
@@ -515,14 +418,12 @@ nav {
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-l; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-m; */
     }
   }
   .img-gallery-container {
@@ -531,7 +432,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* padding: 0.5rem; */
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -584,7 +484,7 @@ nav {
   background-image: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
   background-attachment: fixed;
   background-size: cover;
-
+  background-repeat: no-repeat;
   color: $font-clr;
 
   /* Medium devices (tablets: 576px - 992px) */
@@ -602,29 +502,6 @@ nav {
     padding: 6rem 0 1rem 0.5rem;
     text-align: center;
     color: $black-clr;
-    /* font-size: $f-size-xl; */
-
-    /* &::after {
-      content: "";
-      display: block;
-      width: 1.5rem;
-      height: 4px;
-      background: $black-clr;
-      margin: auto;
-      margin-top: 0.2rem;
-    } */
-
-    /* Medium devices (tablets: 576px - 992px) */
-    /*  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-      padding: 6rem 0 0.5rem 0;
-      font-size: $f-size-l; 
-    }*/
-
-    /* Small devices (landscape phones: 575px) */
-    /* @media (max-width: $max-phone) {
-      padding: 6rem 0 0 0;
-      font-size: $f-size-m; 
-    }*/
   }
 
   h3 {
@@ -632,7 +509,6 @@ nav {
     margin: auto;
     padding: 1rem 0.5rem;
     color: $black-clr;
-    /* font-size: $f-size-l; */
 
     &::after {
       content: "";
@@ -646,14 +522,12 @@ nav {
     @media (min-width: $min-tablet) and (max-width: $max-tablet) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size-m; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $max-phone) {
       width: 100%;
       margin: 0;
-      /* font-size: $f-size; */
     }
   }
 
@@ -691,10 +565,10 @@ nav {
 
 /*** FOOTER SECTION ***/
 footer {
-  /* min-height: 100vh; */
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
   color: $font-clr;
 
   /** GOOGLE MAP **/
@@ -711,7 +585,6 @@ footer {
     margin: 0;
     padding: 0 0 1rem 0;
     color: $heading-clr;
-    /* font-size: $f-size-m; */
 
     &::after {
       content: "";
@@ -720,16 +593,6 @@ footer {
       height: 4px;
       background: $light-clr;
     }
-
-    /* Medium devices (tablets: 576px - 992px) */
-    /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-      font-size: $f-size-m;
-    } */
-
-    /* Small devices (landscape phones: 575px) */
-    /* @media (max-width: $max-phone) {
-      font-size: $f-size;
-    } */
   }
 
   .footer-info {
@@ -801,16 +664,6 @@ footer {
         height: 4px;
         background: $light-clr;
       }
-
-      /* Medium devices (tablets: 576px - 992px) */
-      /* @media (min-width: $min-tablet) and (max-width: $max-tablet) {
-        font-size: $f-size-m;
-      } */
-
-      /* Small devices (landscape phones: 575px) */
-      /* @media (max-width: $max-phone) {
-        font-size: $f-size-s;
-      } */
     }
   }
 
@@ -839,7 +692,6 @@ footer {
     width: 100;
     height: auto;
     background-color: $black-clr;
-
     display: flex;
 
     /* Small devices (landscape phones: 575px) */
