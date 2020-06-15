@@ -25,10 +25,10 @@ $l-height: 1.6;
 $l-space: 0.5px;
 
 /** media variables **/
-$min-tablet: 36rem;
-$max-tablet: 62rem;
-$max-phone: 35.9375rem;
-$max-hamburger: 47.5rem;
+$tablet-min: 36rem;
+$tablet-max: 62rem;
+$phone-max: 35.9375rem;
+$hamburger-max: 47.5rem;
 
 /*** SMOOTH SCROLLING ***/
 html {
