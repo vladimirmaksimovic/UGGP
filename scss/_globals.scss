@@ -21,6 +21,7 @@ $bg-clr: #004280;
 $border-clr: #0084ff;
 
 /** font properties **/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 $l-height: 1.6;
 $l-space: 0.5px;
 
@@ -38,7 +39,7 @@ html {
 /*** GLOBAL STYLE ***/
 body {
   color: $black-clr;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: $l-height;
   letter-spacing: $l-space;
 }
