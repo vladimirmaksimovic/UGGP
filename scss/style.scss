@@ -132,6 +132,7 @@ nav {
       a {
         margin: auto;
         background-color: transparent;
+        font-weight: bold;
         color: $link-clr;
         text-decoration: none;
         text-transform: uppercase;
@@ -604,12 +605,12 @@ footer {
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      justify-content: end;
+      justify-content: space-between;
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
-      justify-content: end;
+      justify-content: start;
     }
 
     .item-1 {
