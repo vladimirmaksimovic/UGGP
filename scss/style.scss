@@ -88,6 +88,7 @@ nav {
     display: flex;
     justify-content: center;
     list-style-type: none;
+    font-size: 1.7rem;
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
