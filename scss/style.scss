@@ -29,6 +29,11 @@ header {
         animation-delay: 3s;
         animation-iteration-count: 2;
 
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: $phone-max) {
+          filter: invert(100%);
+        }
+
         /* logo animation */
         @keyframes logo {
           0% {
@@ -630,6 +635,7 @@ footer {
         width: 14rem;
         height: auto;
         transition: all 0.3s ease-in;
+        filter: invert(100%);
 
         &:hover {
           opacity: 0.9;
