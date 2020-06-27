@@ -42,4 +42,9 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: $l-height;
   letter-spacing: $l-space;
+
+  /* Small devices (landscape phones: 575px) */
+  @media (max-width: $phone-max) {
+    font-size: 90%;
+  }
 }
