@@ -22,7 +22,8 @@ $border-clr: #0084ff;
 
 /** font properties **/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-$l-height: 1.6;
+$f-height: 1.6;
+$h-height: 1.2;
 $l-space: 0.5px;
 
 /** media variables **/
@@ -40,11 +41,19 @@ html {
 body {
   color: $black-clr;
   font-family: "Roboto", sans-serif;
-  line-height: $l-height;
+  line-height: $f-height;
   letter-spacing: $l-space;
 
   /* Small devices (landscape phones: 575px) */
   @media (max-width: $phone-max) {
     font-size: 90%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: $h-height;
   }
 }
