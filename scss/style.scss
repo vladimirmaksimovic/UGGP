@@ -199,10 +199,20 @@ nav {
 
   h1 {
     margin: 0;
-    padding: 6rem 0 0.5rem 0;
-    font-size: 5rem;
+    padding: 6rem 0 1rem 0;
+    font-size: 7rem;
     text-align: center;
     color: $heading-clr;
+
+    /* Medium devices (tablets: 576px - 992px) */
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      font-size: 5rem;
+    }
+
+    /* Small devices (landscape phones: 575px) */
+    @media (max-width: $phone-max) {
+      font-size: 3.5rem;
+    }
   }
 
   h2 {

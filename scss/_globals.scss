@@ -33,12 +33,19 @@ $tablet-max: 62rem;
 $phone-max: 35.9375rem;
 $hamburger-max: 47.5rem;
 
-/*** SMOOTH SCROLLING ***/
+/*** GLOBAL STYLE ***/
+
 html {
+  /* smooth page scrolling */
   scroll-behavior: smooth;
+
+  /** 
+   * fixing "headbutting the browser window", i.e.
+   * navbar fixed position overlap
+   */
+  scroll-padding-top: 4rem;
 }
 
-/*** GLOBAL STYLE ***/
 body {
   color: $black-clr;
   font-family: $body-font;
