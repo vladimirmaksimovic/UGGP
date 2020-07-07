@@ -199,26 +199,27 @@ nav {
 
   h1 {
     margin: 0;
-    padding: 3rem 0 1rem 0;
-    font-size: 6rem;
+    padding: 3rem 0 0 0;
+    font-size: 5.5rem;
     text-align: center;
     color: $heading-clr;
+    text-transform: uppercase;
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
     }
   }
 
   h2 {
     width: 90%;
     margin: auto;
-    padding: 1rem 0.5rem;
+    padding: 3rem 0.5rem 1rem 0.5rem;
     color: $heading-clr;
 
     &::after {
@@ -331,7 +332,7 @@ nav {
     }
 
     .news-article {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       padding: 1rem 0.5rem;
       border-top: 1px solid $font-clr;
       border-bottom: 1px solid $font-clr;
@@ -517,7 +518,7 @@ nav {
 
   h2 {
     margin: 0;
-    padding: 3rem 0 1rem 0.5rem;
+    padding: 3rem 0 0 0.5rem;
     font-size: 3rem;
     text-align: center;
     color: $black-clr;
@@ -526,7 +527,7 @@ nav {
   h3 {
     width: 90%;
     margin: auto;
-    padding: 1rem 0.5rem;
+    padding: 3rem 0.5rem 1rem 0.5rem;
     color: $black-clr;
 
     &::after {
@@ -558,6 +559,20 @@ nav {
     border-left: 4px solid $font-clr;
     border-radius: 7px;
 
+    a {
+      text-decoration: none;
+      color: #5183f5;
+
+      &:hover {
+        color: rgb(255, 196, 0);
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding: 0 0 0 3rem;
+    }
+
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       width: 100%;
@@ -575,9 +590,9 @@ nav {
       text-align: justify;
       /* text-indent: 2.2rem; */
 
-      &::first-letter {
+      /* &::first-letter {
         font-size: 110%;
-      }
+      } */
     }
   }
 }
