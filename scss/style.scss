@@ -346,36 +346,70 @@ nav {
         background-color: $bg-clr;
       }
 
-      h3 {
-        margin: 0;
-
-        /* Medium devices (tablets: 576px - 992px) */
-        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          width: 100%;
-          margin: 0;
-          color: $heading-clr;
-        }
+      .article-container {
+        padding: 1rem 0;
+        display: flex;
 
         /* Small devices (landscape phones: 575px) */
         @media (max-width: $phone-max) {
-          width: 100%;
-          margin: 0;
+          padding: 1rem 0 0 0;
+          flex-wrap: wrap;
         }
-      }
 
-      .author-and-time {
-        /* margin: 0; */
-        padding: 0.5rem 0 1rem 0;
-        font-size: 0.7rem;
-        font-style: italic;
-      }
+        img {
+          width: 25%;
 
-      .news-info {
-        margin: 0;
-        padding: 0 0 1rem 0;
+          /* Small devices (landscape phones: 575px) */
+          @media (max-width: $phone-max) {
+            width: 100% !important;
+            padding: 0 0 1rem 0;
+          }
+        }
 
-        &::first-letter {
-          font-size: 110%;
+        .info-container {
+          padding: 0 0 0 1rem;
+
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+
+          /* Small devices (landscape phones: 575px) */
+          @media (max-width: $phone-max) {
+            padding: 0;
+          }
+
+          h3 {
+            margin: 0;
+
+            /* Medium devices (tablets: 576px - 992px) */
+            @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+              width: 100%;
+              margin: 0;
+              color: $heading-clr;
+            }
+
+            /* Small devices (landscape phones: 575px) */
+            @media (max-width: $phone-max) {
+              width: 100%;
+              margin: 0;
+            }
+          }
+
+          .author-and-time {
+            /* margin: 0; */
+            padding: 0.5rem 0 1rem 0;
+            font-size: 0.7rem;
+            font-style: italic;
+          }
+
+          .news-info {
+            margin: 0;
+            padding: 0 0 1rem 0;
+
+            &::first-letter {
+              font-size: 110%;
+            }
+          }
         }
       }
 
