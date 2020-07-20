@@ -368,10 +368,10 @@ nav {
 
           /* Small devices (landscape phones: 575px) */
           @media (max-width: $phone-max) {
-            width: 100% !important;
+            width: 100%;
             height: auto;
             padding: 0 0 1rem 0;
-            object-fit: cover;
+            /* object-fit: cover; */
           }
         }
 
