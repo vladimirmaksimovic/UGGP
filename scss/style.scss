@@ -356,12 +356,20 @@ nav {
           flex-wrap: wrap;
         }
 
-        img {
-          width: 25%;
+        .news-img {
+          width: 15rem;
+          height: 10rem;
+
+          /* Medium devices (tablets: 576px - 992px) */
+          @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+            width: 10rem;
+            height: 7rem;
+          }
 
           /* Small devices (landscape phones: 575px) */
           @media (max-width: $phone-max) {
             width: 100% !important;
+            height: auto;
             padding: 0 0 1rem 0;
           }
         }
