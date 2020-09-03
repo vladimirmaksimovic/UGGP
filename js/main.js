@@ -1,5 +1,3 @@
-// console.log("test JS :) ")
-
 /**
  * RESPONSIVE NAVBAR - HAMBURGER BTN
  */
@@ -7,7 +5,6 @@
 // open hamburger navbar
 function hamburger() {
   const li = document.getElementsByClassName("nav-item")
-  //console.log(li)
 
   for (let i = 0; i < li.length; i++) {
     if (li[i].className === "nav-item") {
@@ -20,7 +17,6 @@ function hamburger() {
 
 // close hamburger navbar
 const a = document.getElementsByClassName("nav-link")
-//console.log(a);
 
 for (let i = 0; i < a.length; i++) {
   a[i].addEventListener("click", function () {
@@ -36,7 +32,6 @@ for (let i = 0; i < a.length; i++) {
  */
 
 const newsArticle = document.getElementsByClassName("news-article")
-//console.log(newsArticle);
 
 for (let i = 0; i < newsArticle.length; i++) {
   newsArticle[i].addEventListener("click", function () {
