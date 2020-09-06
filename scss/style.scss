@@ -651,7 +651,7 @@ nav {
   h3 {
     width: 90%;
     margin: auto;
-    padding: 3rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 0.5rem;
     color: $black-clr;
 
     &::after {
@@ -677,7 +677,7 @@ nav {
 
   .ambience-article {
     width: 90%;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 1rem auto;
     background-color: $blackish-clr;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     border-left: 4px solid $font-clr;
@@ -693,6 +693,7 @@ nav {
       }
     }
 
+    ol,
     ul {
       padding: 0 0 0 3rem;
     }
