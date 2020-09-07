@@ -199,11 +199,11 @@ nav {
 
   h1 {
     margin: 0;
-    padding: 3rem 0 0 0;
-    font-size: 5.5rem;
+    padding: 3rem 0;
+    font-size: 5rem;
     text-align: center;
     color: $heading-clr;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
@@ -219,7 +219,7 @@ nav {
   h2 {
     width: 90%;
     margin: auto;
-    padding: 3rem 0.5rem 1rem 0.5rem;
+    padding: 0 0.5rem 1rem 0.5rem;
     color: $heading-clr;
 
     &::after {
