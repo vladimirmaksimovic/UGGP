@@ -233,13 +233,15 @@ nav {
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       width: 100%;
-      margin: 0;
+      /* margin: 0; */
+      /* padding: 1rem 0.5rem 1rem 0.5rem; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
       width: 100%;
-      margin: 0;
+      /* margin: 0; */
+      /* padding: 1rem 0.5rem 1rem 0.5rem; */
     }
   }
 
@@ -254,13 +256,13 @@ nav {
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       width: 100%;
-      margin: 0;
+      /* margin: 0; */
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
       width: 100%;
-      margin: 0;
+      /* margin: 0; */
     }
 
     p {
