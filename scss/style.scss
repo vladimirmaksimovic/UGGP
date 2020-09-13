@@ -225,8 +225,8 @@ nav {
     &::after {
       content: "";
       display: block;
-      width: 1.5rem;
-      height: 4px;
+      width: 1.1rem;
+      height: 3px;
       background: $light-clr;
     }
 
@@ -479,9 +479,9 @@ nav {
     &::after {
       content: "";
       display: block;
-      width: 1.5rem;
-      height: 4px;
-      background: $link-clr;
+      width: 1.1rem;
+      height: 3px;
+      background: $light-clr;
     }
 
     /* Medium devices (tablets: 576px - 992px) */
@@ -697,8 +697,8 @@ nav {
     &::after {
       content: "";
       display: block;
-      width: 1.5rem;
-      height: 4px;
+      width: 1.1rem;
+      height: 3px;
       background: $black-clr;
     }
 
@@ -788,8 +788,8 @@ footer {
     &::after {
       content: "";
       display: block;
-      width: 1.5rem;
-      height: 4px;
+      width: 1.1rem;
+      height: 3px;
       background: $light-clr;
     }
   }
@@ -860,8 +860,8 @@ footer {
       &::after {
         content: "";
         display: block;
-        width: 1.5rem;
-        height: 4px;
+        width: 1.1rem;
+        height: 3px;
         background: $light-clr;
       }
     }
