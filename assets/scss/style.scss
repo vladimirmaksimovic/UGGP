@@ -4,6 +4,9 @@
 
 /*** HEADER SECTION ***/
 header {
+  display: flex;
+  justify-content: center;
+
   position: relative;
   min-height: 100vh;
   background-image: url("./../img/landing-bg-02.jpg");
@@ -83,10 +86,12 @@ header {
 /** NAVBAR SECTION **/
 nav {
   width: 100%;
-  background-color: $blackish-clr;
+  max-width: 1440px;
+  /* background-color: $blackish-clr; */
   position: fixed;
   z-index: 1;
   overflow: hidden;
+  border-bottom: 3px solid $white-clr;
 
   ul {
     min-height: 4rem;

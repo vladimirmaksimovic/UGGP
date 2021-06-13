@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web sajt udruženja gradjana Gočka pruga">
+  <meta name="keywords" content="Gočka pruga, Goč, Planina Goč, Kraljevo">
+  <meta name="author" content="Vladimir Maksimović">
+  <title>Udruženje "Gočka pruga"</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="header">
+
+    <!-- Navbar Section -->
+    <nav>
+      <ul>
+        <!-- Hamburger Icon -->
+        <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <!-- <li class="nav-item"><a href="#about"><img src="./img/logo-ugp.svg" alt="" /></a></li> -->
+        <li class="nav-item"><a href="../index.html" class="nav-link">Naslovna</a></li>
+        <li class="nav-item"><a href="../index.html#about" class="nav-link">Gočka pruga</a></li>
+        <li class="nav-item"><a href="./news.html" class="nav-link">Novosti</a></li>
+        <li class="nav-item"><a href="#gallery" class="nav-link">Muzej</a></li>
+        <li class="nav-item"><a href="./ambience.html" class="nav-link">Goč</a></li>
+        <li class="nav-item"><a href="./gallery.html" class="nav-link">Kontakt</a></li>
+        <!-- <li class="nav-item">
+          <a href="#" class="nav-link lang-link">Srb</a><span class="slash">/</span><a href="#"
+            class="nav-link lang-link">Rus</a>
+        </li> -->
+      </ul>
+    </nav>
+    <!-- /Navbar Section -->
+
+    <!-- Logo Section -->
+    <div class="logo-container">
+      <div class="logo">
+        <a href="#about"><img src="./img/logo-ugp.svg" alt="" class="logo-img" /></a>
+      </div>
+    </div>
+    <!-- /Logo Section -->
+  </header>
+  <!-- /Header Section -->
+
+  <!-- Main Section -->
+  <main>
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <h2>Svedoci istorije</h2>
+      <div class="img-gallery-container">
+        <div class="img-container">
+
+          <img src="./img/00-logo-ugp.png" alt="Slika table udruženja na ulazu obnovljenu železničku stanicu u Kamenici"
+            class="img-item item-1">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/00-logo-ugp.png"
+              alt="Slika table udruženja na ulazu obnovljenu železničku stanicu u Kamenici" class="modal-img">
+            <p class="modal-info">Tabla uduruženja na ulazu u muzej Gočke pruge koji se nalazi u novoj zgradi mesne
+              zajednice Kamenica, na mestu nekadašnje železničke stanice Gočke pruge.</p>
+          </div>
+
+          <img src="./img/01-kraljevo-most-prvi-svetski-rat.jpg"
+            alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata" class="img-item item-2">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/01-kraljevo-most-prvi-svetski-rat.jpg" alt="Tabla železničke stanice u Kamenici"
+              class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/02-kamenica.jpg" alt="" class="img-item item-3">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/02-kamenica.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/03-kraljevo-zapaljeni-most-na-ibru.jpg" alt="Slika zapaljenog mosta na reci Ibar u Kraljevu"
+            class="img-item item-4">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/03-kraljevo-zapaljeni-most-na-ibru.jpg" alt="Slika zapaljenog mosta na reci Ibar u Kraljevu"
+              class="modal-img">
+            <p class="modal-info">U I svetskom ratu, 1918. godine, austrijska voska pali drveni most na Ibru preko kojeg
+              je prelazila Gočka pruga.</p>
+          </div>
+
+          <img src="./img/04-kraljevo-lozionica.jpg" alt="" class="img-item item-5">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/04-kraljevo-lozionica.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+        </div>
+        <div class="img-container">
+
+          <img src="./img/05-izlet-goc.jpg" alt="" class="img-item item-6">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/05-izlet-goc.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/06-most-ibar.jpg" alt="" class="img-item item-7">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/06-most-ibar.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/07-vodotocilo-riza.jpg" alt="Slika vodotočila, riže, na Goču" class="img-item item-8">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/07-vodotocilo-riza.jpg" alt="Slika vodotočila, riže, na Goču" class="modal-img">
+            <p class="modal-info">Vodotočilo - riža, koje je industrijalac Miljko Petrović gradio na Goču i okolnim
+              planinama.</p>
+          </div>
+
+          <img src="./img/08-most-na-ibaru-i-gocka-pruga.jpg" alt="Slika Gočke pruge i mosta na reci Ibar"
+            class="img-item item-9">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/08-most-na-ibaru-i-gocka-pruga.jpg" alt="Slika Gočke pruge i mosta na reci Ibar"
+              class="modal-img">
+            <p class="modal-info">14. septembra 1923. godine, pitomci Vojne akademije prelaze most na Ibru u
+              povratku sa kursa iz Žiče. Pogleda sa Pljakinog šanca na Gočku prugu i most na Ibru.
+            </p>
+          </div>
+
+          <img src="./img/09-muzej-gocke-pruge-kamenica.jpg"
+            alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici" class="img-item item-10">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/09-muzej-gocke-pruge-kamenica.jpg"
+              alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici" class="modal-img">
+            <p class="modal-info">Izložbeni prostor muzeja Gočke pruge u novoj zgradi Mesne zajednice Kamenica, na mestu
+              nekadašnje železničke stanice Gočke pruge.</p>
+          </div>
+
+        </div>
+        <div class="img-container">
+
+          <img src="./img/10-lokomotiva.jpg" alt="" class="img-item item-11">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/10-lokomotiva.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/11-voz-gocka-pruga.jpg" alt="Slika voza na Gočkoj pruzi" class="img-item item-12">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/11-voz-gocka-pruga.jpg" alt="Slika voza na Gočkoj pruzi" class="modal-img">
+            <p class="modal-info">Voz na Gočkoj pruzi iz Kamenice za Kraljevo 1934. godine.</p>
+          </div>
+
+          <img src="./img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
+            alt="Slika obnovljene železničke stanice nekadašnje Gočke pruge" class="img-item item-13">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
+              alt="Slika obnovljene železničke stanice nekadašnje Gočke pruge" class="modal-img">
+            <p class="modal-info">Kamenica, nova zgrada Mesne zajednice u kojoj je obnovljena železnička stanica
+              nekadašnje Gočke pruge.</p>
+          </div>
+
+          <img src="./img/13-lokomotiva.jpg" alt="" class="img-item item-14">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/13-lokomotiva.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg" alt="Slika Gočkog voza koji prelazi most na Ibru"
+            class="img-item item-15">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg" alt="Slika Gočkog voza koji prelazi most na Ibru"
+              class="modal-img">
+            <p class="modal-info">Poslednji prelazak Gočkog voza preko ibarskog mosta.</p>
+          </div>
+
+        </div>
+        <div class="img-container">
+
+          <img src="./img/15-goc-panorama.jpg" alt="Slika panorame planine Goč" class="img-item item-16">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/15-goc-panorama.jpg" alt="Slika panorame planine Goč" class="modal-img">
+            <p class="modal-info">Panorama planine Goč.</p>
+          </div>
+
+          <img src="./img/16-planinarski-dom.jpg" alt="" class="img-item item-17">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/16-planinarski-dom.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/17-rekonstrukcija-pruge.jpg" alt="" class="img-item item-18">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/17-rekonstrukcija-pruge.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/18-planinarski-dom.jpg" alt="" class="img-item item-19">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/18-planinarski-dom.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/19-rekonstrukcija-pruge.jpg" alt="" class="img-item item-20">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/19-rekonstrukcija-pruge.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img">
+            <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
+              incidunt.</p>
+          </div>
+
+          <img src="./img/20-gocki-voz-ribnicki-most.jpg" alt="Slika Gočkog voza na ribničkom mostu"
+            class="img-item item-20">
+          <div id="modal" class="modal-body">
+            <span class="close-modal">&times;</span>
+            <img src="./img/20-gocki-voz-ribnicki-most.jpg" alt="Slika Gočkog voza na ribničkom mostu"
+              class="modal-img">
+            <p class="modal-info">Gočki voz prelazi preko ribničkog mosta prema Kamenici.</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <hr class="gallery-border">
+
+      <h2>Čuvari sećanja</h2>
+      <div class="video-gallery-container">
+        <!-- Sumska pruga Kraljevo - Goc -->
+        <iframe src="https://www.youtube-nocookie.com/embed/gcAiN8QYMt0" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- Muzej Gočke (Rižine) pruge u Kamenici kod Kraljeva -->
+        <iframe src="https://www.youtube-nocookie.com/embed/5BsKiKjptUs" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+
+      <!--
+        TODO: video gallery section
+      -->
+
+    </section>
+    <!-- /Gallery Section -->
+
+  </main>
+  <!-- /Main section -->
+
+  <!-- Footer Section -->
+  <footer id="footer">
+
+    <!-- Google Map -->
+    <div class="ggl-map" id="map">
+      <div class="gmap-canvas">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
+          allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+      </div>
+    </div>
+    <!-- /Google Map -->
+
+    <!-- TODO: encode all contact numbers and mail -->
+
+    <div class="footer-info">
+      <div class="footer-info-item item-2">
+        <ul>
+          <h3>Adresa</h3>
+          <li><i class="fas fa-map-marked-alt"></i> Kamenica bb, 36103 Kamenica</li>
+          <li><i class="fas fa-globe-europe"></i> Kraljevo, Srbija</li>
+          <!-- <li><i class="fas fa-phone-alt"></i> 036 / ??? - ???</li>
+          <li><i class="fas fa-fax"></i> 036 / ??? - ???</li> -->
+          <!-- <li><i class="fas fa-envelope"></i>
+            &#103;&#111;&#099;&#107;&#097;&#112;&#114;&#117;&#103;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;
+          </li> -->
+        </ul>
+      </div>
+      <div class="footer-info-item item-3">
+        <ul>
+          <h3>Delatnost</h3>
+          <li><i class="fas fa-id-card"></i> PIB: &#049;&#048;&#056;&#049;&#055;&#052;&#051;&#048;&#057;</li>
+          <li><i class="far fa-id-card"></i> MBR: &#050;&#056;&#049;&#050;&#048;&#053;&#056;&#051;</li>
+          <li><i class="fas fa-stamp"></i> Šifra delatnosti: &#057;&#052;&#057;&#057;</li>
+          <li><i class="fas fa-calendar-alt"></i> Datum osnivanja: 28.06.2013. godine</li>
+        </ul>
+      </div>
+      <div class="footer-info-item item-4">
+        <ul>
+          <h3>Banka i račun</h3>
+          <li><i class="fas fa-landmark"></i> Uprava za trezor:</li>
+          <li><i class="fas fa-long-arrow-alt-right"></i>
+            &#056;&#052;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#049;&#057;&#051;&#057;&#051;&#055;&#054;&#051;&#045;&#050;&#049;
+          </li>
+          <li><i class="fas fa-piggy-bank"></i> NLB banka a. d. Beograd:</li>
+          <li><i class="fas fa-long-arrow-alt-right"></i>
+            &#051;&#049;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#048;&#048;&#050;&#049;&#056;&#051;&#048;&#053;&#045;&#052;&#056;
+          </li>
+        </ul>
+      </div>
+      <div class="footer-info-item item-5">
+        <ul>
+          <h3>Zastupnici</h3>
+          <li><i class="fas fa-user"></i> Prokurist: Veroljub Kostić</li>
+          <li><i class="fas fa-user"></i> Prokurist: Živomir Milašinović</li>
+        </ul>
+      </div>
+      <div class="footer-info-item item-1">
+        <a href="#header"><img src="./img/logo-ugp.svg" alt="" class="logo-img" /></a>
+      </div>
+    </div>
+
+    <div class="friends-and-family">
+      <h3>Prijatelji Gočke pruge</h3>
+      <div class="friends-and-family-container">
+        <div class="friends-and-family-item">
+          <!-- TODO: replace links with linked images -->
+          <a href="https://www.kraljevo.rs/" target="_blank">
+            <!-- <img src="./img/15-goc.jpg" alt=""> -->
+            Grad Kraljevo
+          </a>
+        </div>
+        <div class="friends-and-family-item">
+          <a href="http://www.kraljevoturizam.rs/" target="_blank">
+            <!-- <img src="./img/17-rekonstrukcija-pruge.jpg" alt=""> -->
+            Turistička organizacija Kraljevo
+          </a>
+        </div>
+        <div class="friends-and-family-item">
+          <a href="http://www.vrnjackabanja.co.rs/" target="_blank">
+            <!-- <img src="./img/16-planinarski-dom.jpg" alt=""> -->
+            Turistička organizacija Vrnjačka Banja
+          </a>
+        </div>
+        <div class="friends-and-family-item">
+          <a href="http://www.tos.rs/" target="_blank">
+            <!-- <img src="./img/18-planinarski-dom.jpg" alt=""> -->
+            Turistička organizacija Srbije
+          </a>
+        </div>
+        <div class="friends-and-family-item">
+          <a href="https://nmkv.rs/" target="_blank">
+            <!-- <img src="./img/19-rekonstrukcija-pruge.jpg" alt=""> -->
+            Narodni muzej Kraljevo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <span class="footer-copyright-item">Copyright @ 2020 Udruženje Gočka pruga</span>
+      <span class="design-link">Design by <a href="https://github.com/vmaksimovic-dev" target="_blank">
+          <!-- <strong>&lt;/lion_tamer&gt;</strong> -->
+          <i class="fas fa-paint-roller"></i>
+        </a></span>
+    </div>
+
+  </footer>
+  <!-- /Footer Section -->
+
+  <!-- JS link -->
+  <script src="./js/main.js"></script>
+  <!-- /JS link -->
+</body>
+
+</html>
