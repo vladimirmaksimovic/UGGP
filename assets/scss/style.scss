@@ -84,10 +84,10 @@ header {
 }
 
 /** NAVBAR SECTION **/
-nav {
+/* nav {
   width: 100%;
   max-width: 1440px;
-  /* background-color: $blackish-clr; */
+  background-color: $blackish-clr;
   position: fixed;
   z-index: 1;
   overflow: hidden;
@@ -98,27 +98,27 @@ nav {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    font-size: 1.15rem;
+    font-size: 1.15rem; */
 
-    /* Small devices (landscape phones: 575px) */
-    @media (max-width: $phone-max) {
+/* Small devices (landscape phones: 575px) */
+/* @media (max-width: $phone-max) {
       padding: 0 0 0 0.5rem;
     }
 
     .hamburger {
       display: none;
       padding: 1.15rem;
-      color: $light-clr;
+      color: $light-clr; */
 
-      /* Navbar Hamburger - 760px */
-      @media (max-width: $hamburger-max) {
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
         display: block;
         width: fit-content;
       }
-    }
+    } */
 
-    /* Navbar Hamburger - 760px */
-    @media (max-width: $hamburger-max) {
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
       flex-direction: column;
       justify-content: end;
     }
@@ -127,15 +127,15 @@ nav {
       display: flex !important;
       margin: 0 !important;
       padding: 0.5rem 1.4rem;
-    }
+    } */
 
-    /* li */
-    .nav-item {
+/* li */
+/* .nav-item {
       margin: auto;
-      display: flex;
+      display: flex; */
 
-      /* Navbar Hamburger - 760px */
-      @media (max-width: $hamburger-max) {
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
         display: none;
       }
 
@@ -150,10 +150,10 @@ nav {
 
         &:hover {
           color: $light-clr;
-        }
+        } */
 
-        /* Navbar Hamburger - 760px */
-        @media (max-width: $hamburger-max) {
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
           margin: 0;
         }
       }
@@ -176,6 +176,108 @@ nav {
         &:hover::after {
           width: 100%;
           transition: width 0.3s;
+        }
+      }
+    }
+  }
+} */
+
+/*** MAIN SECTION ***/
+main {
+  /** NAVBAR SECTION **/
+  nav {
+    width: 100%;
+    max-width: 1440px;
+    /* background-color: $blackish-clr;
+    position: fixed; */
+    z-index: 1;
+    overflow: hidden;
+    border-bottom: 1px solid $link-clr;
+
+    ul {
+      min-height: 4rem;
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      font-size: 1.15rem;
+
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: $phone-max) {
+        padding: 0 0 0 0.5rem;
+      }
+
+      .hamburger {
+        display: none;
+        padding: 1.15rem;
+        color: $light-clr;
+
+        /* Navbar Hamburger - 760px */
+        @media (max-width: $hamburger-max) {
+          display: block;
+          width: fit-content;
+        }
+      }
+
+      /* Navbar Hamburger - 760px */
+      @media (max-width: $hamburger-max) {
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      .responsive {
+        display: flex !important;
+        margin: 0 !important;
+        padding: 0.5rem 1.4rem;
+      }
+
+      /* li */
+      .nav-item {
+        margin: auto;
+        display: flex;
+
+        /* Navbar Hamburger - 760px */
+        @media (max-width: $hamburger-max) {
+          display: none;
+        }
+
+        a {
+          margin: auto;
+          background-color: transparent;
+          font-weight: bold;
+          color: $link-clr;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.2s ease-in;
+
+          &:hover {
+            color: $light-clr;
+          }
+
+          /* Navbar Hamburger - 760px */
+          @media (max-width: $hamburger-max) {
+            margin: 0;
+          }
+        }
+
+        .slash {
+          padding: 0 0.5rem;
+          color: $link-clr;
+        }
+
+        .nav-link {
+          &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $light-clr;
+            transition: width 0.5s;
+          }
+
+          &:hover::after {
+            width: 100%;
+            transition: width 0.3s;
+          }
         }
       }
     }
