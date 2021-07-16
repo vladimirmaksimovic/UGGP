@@ -22,7 +22,7 @@ $border-clr: #0084ff;
 
 /** font properties **/
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"); */
-$body-font: Arial, Helvetica, sans-serif;
+$body-font: Cambria, Cochin, Georgia, Times, "Times New Roman";
 $f-height: 1.6;
 $h-height: 1.2;
 $l-space: 0.5px;
@@ -43,7 +43,7 @@ html {
    * fixing "headbutting the browser window", i.e.
    * navbar fixed position overlap
    */
-  scroll-padding-top: 4rem;
+  /* scroll-padding-top: 4rem; */
 }
 
 body {

@@ -1,8 +1,35 @@
 /*** IMPORTS ***/
+
 @import "normalize";
 @import "globals";
 
-/*** HEADER SECTION ***/
+/*** GENERAL STYLES ***/
+
+.content-container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #000000bb;
+}
+
+.nav-link {
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $light-clr;
+    transition: width 0.5s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+}
+
+/*** HEADER ***/
+
 header {
   display: flex;
   justify-content: center;
@@ -182,24 +209,47 @@ header {
   }
 } */
 
-/*** MAIN SECTION ***/
+/*** MAIN ***/
+
 main {
-  /** NAVBAR SECTION **/
+  /*** NAVBAR ***/
+
   nav {
     width: 100%;
-    max-width: 1440px;
-    /* background-color: $blackish-clr;
+    padding: 0 0.5rem;
+    /* max-width: 1440px;
+    background-color: $blackish-clr;
     position: fixed; */
     z-index: 1;
     overflow: hidden;
     border-bottom: 1px solid $link-clr;
 
+    display: flex;
+    justify-content: end;
+
+    .brand {
+      /* margin-right: auto; */
+      margin: auto auto auto 0;
+      background-color: transparent;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $link-clr;
+      text-decoration: none;
+      /* text-transform: uppercase; */
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: $light-clr;
+      }
+    }
+
     ul {
       min-height: 4rem;
       display: flex;
+      gap: 2rem;
       justify-content: center;
       list-style-type: none;
-      font-size: 1.15rem;
+      /* font-size: 1.15rem; */
 
       /* Small devices (landscape phones: 575px) */
       @media (max-width: $phone-max) {
@@ -246,7 +296,7 @@ main {
           font-weight: bold;
           color: $link-clr;
           text-decoration: none;
-          text-transform: uppercase;
+          /* text-transform: uppercase; */
           transition: all 0.2s ease-in;
 
           &:hover {
@@ -264,7 +314,7 @@ main {
           color: $link-clr;
         }
 
-        .nav-link {
+        /* .nav-link {
           &::after {
             content: "";
             display: block;
@@ -278,13 +328,63 @@ main {
             width: 100%;
             transition: width 0.3s;
           }
-        }
+        } */
       }
     }
   }
 }
 
-/*** ABOUT SECTION ***/
+/*** HOME ***/
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url("../img/home-01-pexels-nikolai-ulltang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: $light-clr;
+}
+
+.home-section {
+  /* position: relative; */
+
+  .heading-container {
+    margin: 5rem 0 5rem 12rem;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 0.5rem;
+    /* position: absolute;
+    left: 7rem;
+    top: 3rem; */
+
+    h1 {
+      font-style: italic;
+    }
+  }
+
+  .home-article {
+    margin: 4rem 0 5rem 33rem;
+    /* position: absolute;
+    left: 17rem;
+    top: 17rem; */
+    border-top: 1px solid $light-clr;
+    border-left: 1px solid $light-clr;
+    padding: 0.5rem 0 0 1rem;
+    width: 46%;
+
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+  }
+}
+
+/*** ABOUT ***/
+
 #about {
   padding: 0 4rem 2rem 4rem;
   min-height: 100vh;
@@ -394,7 +494,8 @@ main {
   }
 }
 
-/** NEWS SECTION **/
+/*** NEWS ***/
+
 #news {
   min-height: 100vh;
   padding: 0 4rem;
@@ -563,7 +664,8 @@ main {
   }
 }
 
-/** GALLERY SECTION **/
+/*** GALLERY SECTION ***/
+
 #gallery {
   min-height: 100vh;
   padding: 0 4rem;
@@ -777,7 +879,8 @@ main {
   }
 }
 
-/** AMBIENCE **/
+/*** AMBIENCE ***/
+
 #ambience {
   padding: 0 4rem 2rem 4rem;
   min-height: 100vh;
@@ -878,7 +981,8 @@ main {
   }
 }
 
-/*** FOOTER SECTION ***/
+/*** FOOTER ***/
+
 footer {
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   background-attachment: fixed;

@@ -8,15 +8,16 @@
   <meta name="keywords" content="Gočka pruga, Goč, Planina Goč, Kraljevo">
   <meta name="author" content="Vladimir Maksimović">
   <title>Udruženje "Gočka pruga"</title>
+  <!-- font awesome 5 cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- css link -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Header Section -->
+  <!-- header -->
   <header id="header">
-
-    <!-- Navbar Section -->
+    <!-- Navbar -->
     <!-- <nav>
       <ul> -->
     <!-- Hamburger Icon -->
@@ -36,47 +37,71 @@
         </li> -->
     <!-- </ul>
     </nav> -->
-    <!-- /Navbar Section -->
-
-    <!-- Logo Section -->
+    <!-- logo -->
     <div class="logo-container">
       <div class="logo">
-        <a href="#home"><img src="./assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
+        <a href="#main"><img src="./assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
       </div>
     </div>
-    <!-- /Logo Section -->
   </header>
-  <!-- /Header Section -->
 
-  <!-- Main Section -->
-  <main>
+  <!-- main -->
+  <main id="main" class="home">
+    <div class="content-container">
+      <!-- navbar -->
+      <nav>
+        <a href="#header" class="nav-link brand">Удружење Гочка Пруга</a>
+        <ul>
+          <!-- hamburger icon -->
+          <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
+            <i class="fas fa-bars"></i>
+          </a>
+          <!-- <li class="nav-item"><a href="#about"><img src="./img/logo-ugp.svg" alt="" /></a></li> -->
+          <!-- <li class="nav-item">
+            <a href="#header" class="nav-link">Udruženje Gočka pruga</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="./pages/about.html" class="nav-link">Рижина пруга</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/news.html" class="nav-link">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/gallery.html" class="nav-link">Музеј</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/ambience.html" class="nav-link">Гоч</a>
+          </li>
+          <li class="nav-item">
+            <a href="./pages/contact.html" class="nav-link">Контакт</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#" class="nav-link lang-link">Srb</a><span class="slash">/</span><a href="#"
+              class="nav-link lang-link">Rus</a>
+          </li> -->
+        </ul>
+      </nav>
+      <!-- home -->
+      <section id="home" class="home-section">
+        <div class="heading-container">
+          <h3>Удружење</h3>
+          <h1>Гочка пруга</h1>
+        </div>
+        <article class="home-article">
+          <p>Група ентузијаста љубитеља старих пруга, на челу са Живомиром Милашиновићем и др Миланом Матијевићем у
+            крилу
+            <a href="https://sr-rs.facebook.com/zavicajnodrustvo.kraljevo.1/" target="_blank"><em>Завичајног друштва
+                "Краљево"</em></a> 8. априла 2008. године
+            покреће идеју за
+            ревитализацију Гочке пруге, а 2012. године региструју <em>Удружење "Гочка пруга"</em> са седиштем у
+            просторијама месне
+            заједнице Каменица у Краљеву.
+          </p>
+        </article>
 
-    <!-- Navbar Section -->
-    <nav>
-      <ul>
-        <!-- Hamburger Icon -->
-        <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
-          <i class="fas fa-bars"></i>
-        </a>
-        <!-- <li class="nav-item"><a href="#about"><img src="./img/logo-ugp.svg" alt="" /></a></li> -->
-        <li class="nav-item"><a href="#header" class="nav-link">Udruženje Gočka pruga</a></li>
-        <li class="nav-item"><a href="./pages/about.html" class="nav-link">Gočka pruga</a></li>
-        <li class="nav-item"><a href="./pages/news.html" class="nav-link">Novosti</a></li>
-        <li class="nav-item"><a href="./pages/gallery.html" class="nav-link">Muzej</a></li>
-        <li class="nav-item"><a href="./pages/ambience.html" class="nav-link">Goč</a></li>
-        <li class="nav-item"><a href="./pages/contact.html" class="nav-link">Kontakt</a></li>
-        <!-- <li class="nav-item">
-          <a href="#" class="nav-link lang-link">Srb</a><span class="slash">/</span><a href="#"
-            class="nav-link lang-link">Rus</a>
-        </li> -->
-      </ul>
-    </nav>
-    <!-- /Navbar Section -->
-
-    <!-- Home Section -->
-    <section id="home">
-      <h1>Gočka pruga</h1>
-      <h2>Udruženje</h2>
+      </section>
+    </div>
+    <div class="content-container">
       <article class="home-article">
         <p>Grupa entuzijasta ljubitelja starih pruga, na čelu sa Živomirom Milašinovićem i dr Milanom Matijevićem u
           krilu
@@ -85,35 +110,36 @@
           pokrenula je ideju za
           revitalizaciju Gočke pruge. 8. aprila 2008. godine formiran je Inicijativni odbor za revitalizaciju
           Gočke pruge, a 2012. godine registrovano je <em>Udruženje "Gočka pruga"</em>.
-          Snimljen je jedan popularni dokumentarni film o Gočkoj pruzi i otvoren je izložbeni prostor u novoj zgradi
-          Mesne zajednice Kamenica, na kome mestu se ranije nalazila železnička stanica Kamenica.
+
+          Снимљен је један популарни документарни филм о Гочкој прузи и отворен је изложбени простор у новој згради
+          Месне заједнице Каменица, на коме месту се раније налазила железничка станица Каменица.
         </p>
-        <p>U Kamenici, u novoj zgradi Mesne zajednice, uređena je
-          spomen soba sa brojnim fotografijama, eksponatima, alatima i uređajima koji su korišćeni na Gočkoj pruzi. U
-          spomen sobi je izloženo preko 90 slika, originalnih i kopija, a izložen je i jedan broj
-          originalnog alata i inventara koji su korišćeni na Gočkoj pruzi. Izložbena postavka je otvorena za pojedinačne
-          i grupne posete, za ekskurzije i stručne posete.</p>
-        <p>Oko pokrenute inicijative okupio se veći broj članova <em>Zavičajnog društva "Kraljevo"</em>, radnika sa
-          železnice,
-          inžinjera iz oblasti vagonogradnje i građana Kraljeva i sela ispod planine Goč. Pokrenuta inicijativa izazvala
-          je i pažnju <a href="https://www.zeleznice.in.rs/" target="_blank"><em>ljubitelja starih pruga iz
-              Srbije</em></a>.</p>
-        <p><em>Udruženje "Gočka pruga"</em> veruje da bi revitalizacija Gočke pruge bio jedan novi impuls u korišćenju
-          prirodnih
-          resursa planine Goč i korišćenju turističkih resursa <a href="https://www.vrnjackabanja.gov.rs/" target="_blank
-          "><em>Vrnjačke Banje</em></a>, <a href="https://www.kraljevo.rs/" target="_blank"><em>Kraljeva</em></a> i <a
-            href="http://www.mataruskabanja.rs/" target="_blank"><em>Mataruške Banje</em></a>, kao i brojnih
-          planinskih lokaliteta koji krase ovaj deo Jugozapadne Srbije.</p>
+        <p>У Каменици, у новој згради Месне заједнице, уређена је
+          спомен соба са бројним фотографијама, експонатима, алатима и уређајима који су коришћени на Гочкој прузи. У
+          спомен соби је изложено преко 90 слика, оригиналних и копија, а изложен је и један број
+          оригиналног алата и инвентара који су коришћени на Гочкој прузи. Изложбена поставка је отворена за
+          појединачне
+          и групне посете, за екскурзије и стручне посете.</p>
+        <p>Око покренуте иницијативе окупио се већи број чланова <em>Завичајног друштва "Краљево"</em>, радника са
+          железнице,
+          инжињера из области вагоноградње и грађана Краљева и села испод планине Гоч. Покренута иницијатива
+          изазвала
+          је и пажњу <a href="https://www.zeleznice.in.rs/" target="_blank"><em>љубитеља старих пруга из
+              Србије</em></a>.</p>
+        <p><em>Удружење "Гочка пруга"</em> верује да би ревитализација Гочке пруге био један нови импулс у коришћењу
+          природних
+          ресурса планине Гоч и коришћењу туристичких ресурса <a href="https://www.vrnjackabanja.gov.rs/" target="_blank
+          "><em>Врњачке Бање</em></a>, <a href="https://www.kraljevo.rs/" target="_blank"><em>Краљева</em></a> i
+          <a href="http://www.mataruskabanja.rs/" target="_blank"><em>Матарушке Бање</em></a>, као и бројних
+          планинских локалитета који красе овај део Југозападне Србије.
+        </p>
       </article>
-
-    </section>
-
+    </div>
   </main>
 
-  <!-- Footer -->
+  <!-- footer -->
   <footer id="footer">
-
-    <!-- Google Map -->
+    <!-- google map -->
     <div class="ggl-map" id="map">
       <div class="gmap-canvas">
         <iframe
@@ -122,16 +148,15 @@
         </iframe>
       </div>
     </div>
-    <!-- /Google Map -->
 
     <!-- TODO: encode all contact numbers and mail -->
-
+    <!-- info -->
     <div class="footer-info">
       <div class="footer-info-item item-2">
         <ul>
-          <h3>Adresa</h3>
-          <li><i class="fas fa-map-marked-alt"></i> Kamenica bb, 36103 Kamenica</li>
-          <li><i class="fas fa-globe-europe"></i> Kraljevo, Srbija</li>
+          <h3>Адреса</h3>
+          <li><i class="fas fa-map-marked-alt"></i> Каменица бб, 36103 Каменица</li>
+          <li><i class="fas fa-globe-europe"></i> Краљево, Србија</li>
           <!-- <li><i class="fas fa-phone-alt"></i> 036 / ??? - ???</li>
           <li><i class="fas fa-fax"></i> 036 / ??? - ???</li> -->
           <!-- <li><i class="fas fa-envelope"></i>
@@ -142,20 +167,20 @@
       <div class="footer-info-item item-3">
         <ul>
           <h3>Delatnost</h3>
-          <li><i class="fas fa-id-card"></i> PIB: &#049;&#048;&#056;&#049;&#055;&#052;&#051;&#048;&#057;</li>
-          <li><i class="far fa-id-card"></i> MBR: &#050;&#056;&#049;&#050;&#048;&#053;&#056;&#051;</li>
-          <li><i class="fas fa-stamp"></i> Šifra delatnosti: &#057;&#052;&#057;&#057;</li>
-          <li><i class="fas fa-calendar-alt"></i> Datum osnivanja: 28.06.2013. godine</li>
+          <li><i class="fas fa-id-card"></i> ПИБ: &#049;&#048;&#056;&#049;&#055;&#052;&#051;&#048;&#057;</li>
+          <li><i class="far fa-id-card"></i> МБР: &#050;&#056;&#049;&#050;&#048;&#053;&#056;&#051;</li>
+          <li><i class="fas fa-stamp"></i> Шифра делатности: &#057;&#052;&#057;&#057;</li>
+          <li><i class="fas fa-calendar-alt"></i> Датум оснивања: 28.06.2013. године</li>
         </ul>
       </div>
       <div class="footer-info-item item-4">
         <ul>
-          <h3>Banka i račun</h3>
-          <li><i class="fas fa-landmark"></i> Uprava za trezor:</li>
+          <h3>Банка и рачун</h3>
+          <li><i class="fas fa-landmark"></i> Управа за трезор:</li>
           <li><i class="fas fa-long-arrow-alt-right"></i>
             &#056;&#052;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#049;&#057;&#051;&#057;&#051;&#055;&#054;&#051;&#045;&#050;&#049;
           </li>
-          <li><i class="fas fa-piggy-bank"></i> NLB banka a. d. Beograd:</li>
+          <li><i class="fas fa-piggy-bank"></i> NLB banka a. d. Београд:</li>
           <li><i class="fas fa-long-arrow-alt-right"></i>
             &#051;&#049;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#048;&#048;&#050;&#049;&#056;&#051;&#048;&#053;&#045;&#052;&#056;
           </li>
@@ -163,67 +188,71 @@
       </div>
       <div class="footer-info-item item-5">
         <ul>
-          <h3>Zastupnici</h3>
-          <li><i class="fas fa-user"></i> Prokurist: Veroljub Kostić</li>
-          <li><i class="fas fa-user"></i> Prokurist: Živomir Milašinović</li>
+          <h3>Заступници</h3>
+          <li><i class="fas fa-user"></i> Прокурист: Верољуб Костић</li>
+          <li><i class="fas fa-user"></i> Прокурист: Живомир Милашиновић</li>
         </ul>
       </div>
       <div class="footer-info-item item-1">
         <a href="#header"><img src="./assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
       </div>
     </div>
-
+    <!-- friends -->
     <div class="friends-and-family">
-      <h3>Prijatelji Gočke pruge</h3>
+      <h3>Пријатељи Гочке пруге</h3>
       <div class="friends-and-family-container">
+        <div class="friends-and-family-item">
+          <!-- TODO: replace links with linked images -->
+          <a href="https://sr-rs.facebook.com/zavicajnodrustvo.kraljevo.1/" target="_blank">
+            <!-- <img src="./img/15-goc.jpg" alt=""> -->
+            Завичајно друштво "Краљево"
+          </a>
+        </div>
         <div class="friends-and-family-item">
           <!-- TODO: replace links with linked images -->
           <a href="https://www.kraljevo.rs/" target="_blank">
             <!-- <img src="./img/15-goc.jpg" alt=""> -->
-            Grad Kraljevo
+            Град Краљево
           </a>
         </div>
         <div class="friends-and-family-item">
           <a href="http://www.kraljevoturizam.rs/" target="_blank">
             <!-- <img src="./img/17-rekonstrukcija-pruge.jpg" alt=""> -->
-            Turistička organizacija Kraljevo
+            Туристичка организација Краљево
           </a>
         </div>
         <div class="friends-and-family-item">
           <a href="http://www.vrnjackabanja.co.rs/" target="_blank">
             <!-- <img src="./img/16-planinarski-dom.jpg" alt=""> -->
-            Turistička organizacija Vrnjačka Banja
+            Туристичка организација Врњачка Бања
           </a>
         </div>
         <div class="friends-and-family-item">
           <a href="http://www.tos.rs/" target="_blank">
             <!-- <img src="./img/18-planinarski-dom.jpg" alt=""> -->
-            Turistička organizacija Srbije
+            Туристичка организација Србије
           </a>
         </div>
         <div class="friends-and-family-item">
           <a href="https://nmkv.rs/" target="_blank">
             <!-- <img src="./img/19-rekonstrukcija-pruge.jpg" alt=""> -->
-            Narodni muzej Kraljevo
+            Народни музеј Краљево
           </a>
         </div>
       </div>
     </div>
-
+    <!-- copyright -->
     <div class="footer-copyright">
-      <span class="footer-copyright-item">Copyright @ 2020 Udruženje Gočka pruga</span>
+      <span class="footer-copyright-item">Copyright @ 2020 Удружење Гочка пруга</span>
       <span class="design-link">Design by <a href="https://github.com/vmaksimovic-dev" target="_blank">
           <!-- <strong>&lt;/lion_tamer&gt;</strong> -->
           <i class="fas fa-paint-roller"></i>
         </a></span>
     </div>
-
   </footer>
-  <!-- /Footer Section -->
 
   <!-- JS link -->
   <script src="./js/main.js"></script>
-  <!-- /JS link -->
 </body>
 
 </html>
