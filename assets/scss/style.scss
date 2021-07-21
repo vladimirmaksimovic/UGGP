@@ -6,13 +6,14 @@
 /*** GENERAL STYLES ***/
 
 .content-container {
-  max-width: 1200px;
+  max-width: 1440px;
   min-height: 100vh;
   margin: auto;
-  background-color: #000000bb;
+  background-color: #00000080;
 }
 
-.nav-link {
+/* nav link underline */
+/* .nav-link {
   &::after {
     content: "";
     display: block;
@@ -26,7 +27,7 @@
     width: 100%;
     transition: width 0.3s;
   }
-}
+} */
 
 /*** HEADER ***/
 
@@ -212,11 +213,11 @@ header {
 /*** MAIN ***/
 
 main {
-  /*** NAVBAR ***/
+  overflow: hidden;
 
   nav {
     width: 100%;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     /* max-width: 1440px;
     background-color: $blackish-clr;
     position: fixed; */
@@ -232,7 +233,7 @@ main {
       margin: auto auto auto 0;
       background-color: transparent;
       font-size: 1.2rem;
-      font-weight: bold;
+      /* font-weight: bold; */
       color: $link-clr;
       text-decoration: none;
       /* text-transform: uppercase; */
@@ -293,7 +294,7 @@ main {
         a {
           margin: auto;
           background-color: transparent;
-          font-weight: bold;
+          /* font-weight: bold; */
           color: $link-clr;
           text-decoration: none;
           /* text-transform: uppercase; */
@@ -352,7 +353,7 @@ main {
   /* position: relative; */
 
   .heading-container {
-    margin: 5rem 0 5rem 12rem;
+    margin: 6rem 0 0rem 15rem;
     font-size: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     letter-spacing: 0.5rem;
@@ -360,25 +361,41 @@ main {
     left: 7rem;
     top: 3rem; */
 
-    h1 {
+    h1,
+    h3 {
       font-style: italic;
+    }
+
+    h1 {
+      margin: 2rem 0 0 0;
     }
   }
 
   .home-article {
-    margin: 4rem 0 5rem 33rem;
+    margin: 4rem 0 0rem 30rem;
     /* position: absolute;
     left: 17rem;
-    top: 17rem; */
+    top: 17rem;
     border-top: 1px solid $light-clr;
-    border-left: 1px solid $light-clr;
-    padding: 0.5rem 0 0 1rem;
-    width: 46%;
+    border-left: 1px solid $light-clr; */
+    padding: 0.5rem 0 0 0;
+    width: 50%;
 
     p {
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman";
+      /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman"; */
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.1rem;
-      text-align: justify;
+      /* text-align: justify; */
+
+      a {
+        color: $light-clr;
+        text-decoration: none;
+
+        &:hover {
+          color: $border-clr;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
