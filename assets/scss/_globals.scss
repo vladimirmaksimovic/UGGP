@@ -1,4 +1,5 @@
-/*** RESET ***/
+/*** CSS RESET ***/
+
 *,
 ::before,
 ::after {
@@ -6,31 +7,6 @@
   margin: 0;
   padding: 0;
 }
-
-/*** VARIABLES ***/
-
-/** color properties **/
-$black-clr: #000;
-$blackish-clr: rgba(0, 0, 0, 0.7);
-$white-clr: #fff;
-$light-clr: #f2f2f2;
-$heading-clr: #e6e6e6;
-$font-clr: #ccc;
-$link-clr: #b3b3b3;
-$bg-clr: #004280;
-$border-clr: #0084ff;
-
-/** font properties **/
-$body-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-$f-height: 1.6;
-$h-height: 1.2;
-$l-space: 0.5px;
-
-/** media variables **/
-$tablet-min: 36rem;
-$tablet-max: 62rem;
-$phone-max: 35.9375rem;
-$hamburger-max: 47.5rem;
 
 /*** GLOBAL STYLE ***/
 
@@ -46,8 +22,9 @@ html {
 }
 
 body {
+  font-family: $primary-font-family;
+  font-size: 1.2rem;
   color: $black-clr;
-  font-family: $body-font;
   line-height: $f-height;
   letter-spacing: $l-space;
 
@@ -61,6 +38,8 @@ body {
   h3,
   h4,
   h5 {
+    font-family: $heading-font-family;
+    font-style: italic;
     /* padding: 3rem 0 1rem 0; */
     line-height: $h-height;
   }

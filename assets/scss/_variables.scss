@@ -1,0 +1,27 @@
+/*** VARIABLES ***/
+
+/** color properties **/
+$black-clr: #000;
+$blackish-clr: #000000b3;
+$transparent-black: #00000080;
+$white-clr: #fff;
+$light-clr: #f2f2f2;
+$heading-clr: #e6e6e6;
+$font-clr: #ccc;
+$link-clr: #b3b3b3;
+$bg-clr: #004280;
+$border-clr: #0084ff;
+$lion-color: #ffc400;
+
+/** font properties **/
+$primary-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$heading-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$f-height: 1.6;
+$h-height: 1.2;
+$l-space: 0.5px;
+
+/** media variables **/
+$tablet-min: 36rem; /* min-medium devices: 576px */
+$tablet-max: 62rem; /* max-medium devices: 992px */
+$phone-max: 35.9375rem; /* small devices: 575px */
+$hamburger-max: 47.5rem; /* navbar hamburger: 760px */
