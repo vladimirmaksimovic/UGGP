@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: $primary-font-family;
+  font-family: $primary-ff;
   font-size: 1.2rem;
   color: $black-clr;
   line-height: $f-height;
@@ -38,7 +38,7 @@ body {
   h3,
   h4,
   h5 {
-    font-family: $heading-font-family;
+    font-family: $heading-ff;
     font-style: italic;
     /* padding: 3rem 0 1rem 0; */
     line-height: $h-height;
