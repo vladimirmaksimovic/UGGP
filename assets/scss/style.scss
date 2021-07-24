@@ -28,7 +28,7 @@ nav {
   width: 100%;
   padding: 0 1rem;
   /* max-width: 1440px;
-  background-color: $blackish-clr;
+  background-color: $dark-transparent-black;
   position: fixed; */
   z-index: 1;
   overflow: hidden;
@@ -253,7 +253,7 @@ header {
 /* nav {
   width: 100%;
   max-width: 1440px;
-  background-color: $blackish-clr;
+  background-color: $dark-transparent-black;
   position: fixed;
   z-index: 1;
   overflow: hidden;
@@ -601,63 +601,51 @@ main {
 
 /*** NEWS ***/
 
-#news {
-  min-height: 100vh;
-  padding: 0 4rem;
-  background-image: url("./../img/alps-austria-blue-sky-clouds-dark2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+#main-news {
+  background-image: url("../img/abandoned-forest-industry-nature.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  color: $grey;
+  background-size: cover;
+  background-attachment: fixed;
+  //color: $grey;
+  color: $darker-white;
 
-  /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    padding: 0 3.5rem 2rem 3.5rem;
-  }
-
-  /* Small devices (landscape phones: 575px) */
-  @media (max-width: $phone-max) {
-    padding: 0 1.5rem 2rem 1.5rem;
-  }
-
-  h2 {
-    width: 90%;
-    margin: auto;
-    padding: 2rem 0.5rem 1.5rem 0.5rem;
-    color: $light-grey;
+  #news {
+    padding: 1rem 0;
+    min-height: 100vh;
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      width: 100%;
-      margin: 0;
+      padding: 0 3.5rem 2rem 3.5rem;
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
-      width: 100%;
-      margin: 0;
-    }
-  }
-
-  .news-container {
-    width: 90%;
-    margin: auto;
-    padding: 0.5rem;
-
-    /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      width: 100%;
-      margin: 0;
+      padding: 0 1.5rem 2rem 1.5rem;
     }
 
-    /* Small devices (landscape phones: 575px) */
-    @media (max-width: $phone-max) {
-      width: 100%;
-      margin: 0;
+    h2 {
+      width: 90%;
+      margin: auto;
+      padding: 2rem 0.5rem 1.5rem 0.5rem;
+      color: $light-grey;
+
+      /* Medium devices (tablets: 576px - 992px) */
+      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        width: 100%;
+        margin: 0;
+      }
+
+      /* Small devices (landscape phones: 575px) */
+      @media (max-width: $phone-max) {
+        width: 100%;
+        margin: 0;
+      }
     }
 
     .news-article {
-      margin-bottom: 3rem;
+      width: 90%;
+      margin: 1rem auto 3rem auto;
       padding: 1rem 0.5rem;
       border-top: 1px solid $grey;
       border-bottom: 1px solid $grey;
@@ -668,7 +656,13 @@ main {
         cursor: pointer;
         padding: 1rem;
         border: 1px solid $blue;
-        background-color: $bg-clr;
+        /* background-color: $green; */
+        background: $dark-transparent-black;
+        background: linear-gradient(
+          to bottom right,
+          $green,
+          $dark-transparent-black
+        );
       }
 
       .article-container {
@@ -754,11 +748,16 @@ main {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        background-color: $bg-clr;
+        background-color: $dark-transparent-black;
+        background: linear-gradient(
+          to bottom right,
+          $green,
+          $dark-transparent-black
+        );
 
         p {
           padding-bottom: 1rem;
-          /* text-indent: 2.2rem; */
+          text-indent: 3rem;
 
           &::first-letter {
             font-size: 110%;
@@ -1043,7 +1042,7 @@ main {
   .ambience-article {
     width: 90%;
     margin: 0 auto 1rem auto;
-    background-color: $blackish-clr;
+    background-color: $dark-transparent-black;
     box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
     border-left: 4px solid $grey;
     border-radius: 7px;
