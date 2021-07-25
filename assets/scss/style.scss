@@ -138,6 +138,8 @@ nav {
   }
 }
 
+/* content-container */
+
 .content-container {
   max-width: 1440px;
   min-height: 100vh;
@@ -155,6 +157,46 @@ nav {
       &:hover {
         color: $blue;
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* aside nav */
+
+aside {
+  min-width: 23vw;
+  padding: 1rem;
+  border-left: 1px solid $light-grey;
+  display: flex;
+
+  .aside-nav {
+    max-height: 80vh;
+    border: none;
+    justify-content: left;
+
+    ul {
+      max-width: 20vw;
+      position: fixed;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-self: center;
+
+      a {
+        padding: 0.5rem 0;
+        color: $grey;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $white;
+        }
+
+        @media (max-width: $hamburger-max) {
+          margin: 0;
+        }
       }
     }
   }
@@ -362,7 +404,7 @@ main {
     .heading-container {
       margin: 4rem 0 0 12rem;
       font-size: 3rem;
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-family: $heading-ff;
       letter-spacing: 0.5rem;
 
       h1,
@@ -467,7 +509,7 @@ main {
       padding: 0 1.5rem 2rem 1.5rem;
     }
 
-    aside {
+    /* aside {
       min-width: 30vw;
       padding: 1rem;
       border-left: 1px solid $light-grey;
@@ -483,7 +525,6 @@ main {
           gap: 2rem;
 
           position: fixed;
-          /* padding: 0 0 0 1rem; */
           max-width: 25vw;
           align-self: center;
 
@@ -503,7 +544,7 @@ main {
           }
         }
       }
-    }
+    } */
 
     .history-article {
       width: 90%;
@@ -740,6 +781,7 @@ main {
 
   #gallery {
     padding: 1rem 0;
+
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 3.5rem 2rem 3.5rem;
     }
@@ -928,102 +970,92 @@ main {
 
 /*** AMBIENCE ***/
 
-#ambience {
-  padding: 0 4rem 2rem 4rem;
+#main-ambience {
   min-height: 100vh;
-  background-image: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
+  background: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  color: $grey;
 
-  /* Medium devices (tablets: 576px - 992px) */
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-    padding: 0 3.5rem 2rem 3.5rem;
-  }
+  #ambience {
+    padding: 1rem 0;
+    color: $darker-white;
 
-  /* Small devices (landscape phones: 575px) */
-  @media (max-width: $phone-max) {
-    padding: 0 1.5rem 2rem 1.5rem;
-  }
-
-  h2 {
-    margin: 0;
-    padding: 3rem 0 0 0.5rem;
-    font-size: 3rem;
-    text-align: center;
-    color: $black;
-  }
-
-  h3 {
-    width: 90%;
-    margin: auto;
-    padding: 1rem 0.5rem;
-    color: $black;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 1.1rem;
-      height: 3px;
-      background: $black;
-    }
+    display: flex;
+    flex-direction: row-reverse;
 
     /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      width: 100%;
-      margin: 0;
+      padding: 0 3.5rem 2rem 3.5rem;
     }
 
     /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
-      width: 100%;
-      margin: 0;
+      padding: 0 1.5rem 2rem 1.5rem;
     }
-  }
 
-  .ambience-article {
-    width: 90%;
-    margin: 0 auto 1rem auto;
-    background-color: $dark-transparent-black;
-    box-shadow: 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-    border-left: 4px solid $grey;
-    border-radius: 7px;
-
-    a {
-      text-decoration: none;
-      color: $blue;
-
-      &:hover {
-        color: $lion;
-        text-decoration: underline;
+    .ambience-articles {
+      h1 {
+        margin: auto;
+        padding: 1rem 0.5rem;
+        font-size: 5rem;
+        text-align: center;
+        color: $darker-white;
       }
-    }
 
-    ul {
-      padding: 0 0 0 3rem;
-    }
+      .ambience-article {
+        width: 90%;
+        margin: 0 auto 1rem auto;
 
-    /* Medium devices (tablets: 576px - 992px) */
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      width: 100%;
-      margin: 0;
-    }
+        h2 {
+          /* width: 90%;
+        margin: auto; */
+          padding: 1rem;
+          color: $darker-white;
 
-    /* Small devices (landscape phones: 575px) */
-    @media (max-width: $phone-max) {
-      width: 100%;
-      margin: 0;
-    }
+          @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+            width: 100%;
+            margin: 0;
+          }
 
-    p {
-      padding: 0.5rem 1rem;
-      text-align: justify;
-      /* text-indent: 2.2rem; */
+          @media (max-width: $phone-max) {
+            width: 100%;
+            margin: 0;
+          }
+        }
 
-      /* &::first-letter {
-        font-size: 110%;
-      } */
+        ul {
+          padding: 0 0 0 3rem;
+
+          a {
+            color: $darker-white;
+            text-decoration: none;
+
+            &:hover {
+              color: $blue;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        /* Medium devices (tablets: 576px - 992px) */
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+          width: 100%;
+          margin: 0;
+        }
+
+        /* Small devices (landscape phones: 575px) */
+        @media (max-width: $phone-max) {
+          width: 100%;
+          margin: 0;
+        }
+
+        p {
+          padding: 0.5rem 1rem;
+          text-align: justify;
+          text-indent: 3rem;
+        }
+      }
     }
   }
 }
