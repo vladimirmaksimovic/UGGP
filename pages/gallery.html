@@ -15,35 +15,12 @@
 </head>
 
 <body>
-
-  <!-- <header id="header">
-    <nav>
-      <ul>
-        <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
-          <i class="fas fa-bars"></i>
-        </a>
-        <li class="nav-item"><a href="../index.html" class="nav-link">Udruženje Gočka pruga</a></li>
-        <li class="nav-item"><a href="#history" class="nav-link">Gočka pruga</a></li>
-        <li class="nav-item"><a href="./news.html" class="nav-link">Novosti</a></li>
-        <li class="nav-item"><a href="./gallery.html" class="nav-link">Muzej</a></li>
-        <li class="nav-item"><a href="./ambience.html" class="nav-link">Goč</a></li>
-        <li class="nav-item"><a href="./contact.html" class="nav-link">Kontakt</a></li>
-      </ul>
-    </nav>
-    
-    <div class="logo-container">
-      <div class="logo">
-        <a href="#history"><img src="./assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
-      </div>
-    </div>
-  </header> -->
-
   <!-- main -->
-  <main>
+  <main id="main-gallery">
     <div class="content-container">
       <!-- navbar -->
       <nav>
-        <a href="../index.html#main" class="nav-link">Удружење Гочка пруга</a>
+        <a href="../index.html#main" class="nav-link brand">Удружење Гочка пруга</a>
         <ul>
           <!-- hamburger icon -->
           <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
@@ -65,10 +42,11 @@
 
       <!-- gallery -->
       <section id="gallery">
-        <h2>Svedoci istorije</h2>
-        <div class="img-gallery-container">
-          <div class="img-container">
+        <h2>Сведоци историје</h2>
+        <!-- gallery container -->
+        <div class="gallery-articles">
 
+          <article class="img-container">
             <img src="./../assets/img/00-logo-ugp.png"
               alt="Slika table udruženja na ulazu obnovljenu železničku stanicu u Kamenici" class="img-item item-1">
             <div id="modal" class="modal-body">
@@ -116,10 +94,9 @@
               <p class="modal-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, inventore
                 incidunt.</p>
             </div>
+          </article>
 
-          </div>
-          <div class="img-container">
-
+          <article class="img-container">
             <img src="./../assets/img/05-izlet-goc.jpg" alt="" class="img-item item-6">
             <div id="modal" class="modal-body">
               <span class="close-modal">&times;</span>
@@ -166,10 +143,9 @@
                 mestu
                 nekadašnje železničke stanice Gočke pruge.</p>
             </div>
+          </article>
 
-          </div>
-          <div class="img-container">
-
+          <article class="img-container">
             <img src="./../assets/img/10-lokomotiva.jpg" alt="" class="img-item item-11">
             <div id="modal" class="modal-body">
               <span class="close-modal">&times;</span>
@@ -211,10 +187,9 @@
                 alt="Slika Gočkog voza koji prelazi most na Ibru" class="modal-img">
               <p class="modal-info">Poslednji prelazak Gočkog voza preko ibarskog mosta.</p>
             </div>
+          </article>
 
-          </div>
-          <div class="img-container">
-
+          <article class="img-container">
             <img src="./../assets/img/15-goc-panorama.jpg" alt="Slika panorame planine Goč" class="img-item item-16">
             <div id="modal" class="modal-body">
               <span class="close-modal">&times;</span>
@@ -266,15 +241,13 @@
                 class="modal-img">
               <p class="modal-info">Gočki voz prelazi preko ribničkog mosta prema Kamenici.</p>
             </div>
-
-          </div>
-
+          </article>
         </div>
 
         <hr class="gallery-border">
         <!-- video gallery -->
-        <h2>Čuvari sećanja</h2>
-        <div class="video-gallery-container">
+        <h2>Чувари сећања</h2>
+        <article class="video-gallery">
           <!-- Sumska pruga Kraljevo - Goc -->
           <iframe src="https://www.youtube-nocookie.com/embed/gcAiN8QYMt0" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -282,7 +255,7 @@
           <!-- Muzej Gočke (Rižine) pruge u Kamenici kod Kraljeva -->
           <iframe src="https://www.youtube-nocookie.com/embed/5BsKiKjptUs" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </article>
       </section>
     </div>
   </main>
@@ -299,9 +272,6 @@
         </iframe>
       </div>
     </div>
-
-    <!-- TODO: encode all contact numbers and mail -->
-
     <div class="footer-info">
       <div class="footer-info-item item-2">
         <ul>
@@ -345,7 +315,7 @@
         </ul>
       </div>
       <div class="footer-info-item item-1">
-        <a href="#header"><img src="./../assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
+        <a href="#main-gallery"><img src="./../assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
       </div>
     </div>
 
