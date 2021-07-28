@@ -8,17 +8,19 @@
   padding: 0;
 }
 
-/*** GLOBAL STYLE ***/
+/*** GENERAL STYLES ***/
 
 html {
   /* smooth page scrolling */
   scroll-behavior: smooth;
+  /* scroll-padding-top: 4rem; */
 
   /** 
    * fixing "headbutting the browser window", i.e.
    * navbar fixed position overlap
    */
-  /* scroll-padding-top: 4rem; */
+
+  font-size: 16px;
 }
 
 body {
@@ -43,4 +45,319 @@ body {
     /* padding: 3rem 0 1rem 0; */
     line-height: $h-height;
   }
+}
+
+/*** MAIN ***/
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/** NAVBAR SECTION **/
+
+/* nav {
+  width: 100%;
+  max-width: 1440px;
+  background-color: $dark-transparent-black;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  border-bottom: 1px solid $darker-grey;
+
+  ul {
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.15rem; */
+
+/* Small devices (landscape phones: 575px) */
+/* @media (max-width: $phone-max) {
+      padding: 0 0 0 0.5rem;
+    }
+
+    .hamburger {
+      display: none;
+      padding: 1.15rem;
+      color: $darker-white; */
+
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
+        display: block;
+        width: fit-content;
+      }
+    } */
+
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    .responsive {
+      display: flex !important;
+      margin: 0 !important;
+      padding: 0.5rem 1.4rem;
+    } */
+
+/* li */
+/* .nav-item {
+      margin: auto;
+      display: flex; */
+
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
+        display: none;
+      }
+
+      a {
+        margin: auto;
+        background-color: transparent;
+        font-weight: bold;
+        color: $darker-grey;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $darker-white;
+        } */
+
+/* Navbar Hamburger - 760px */
+/* @media (max-width: $hamburger-max) {
+          margin: 0;
+        }
+      }
+
+      .slash {
+        padding: 0 0.5rem;
+        color: $darker-grey;
+      }
+
+      .nav-link {
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: $darker-white;
+          transition: width 0.5s;
+        }
+
+        &:hover::after {
+          width: 100%;
+          transition: width 0.3s;
+        }
+      }
+    }
+  }
+} */
+
+/** nav bar **/
+
+nav {
+  width: 100%;
+  padding: 0 1rem;
+  /* max-width: 1440px;
+  background-color: $dark-transparent-black;
+  position: fixed; */
+  z-index: 1;
+  overflow: hidden;
+  border-bottom: 1px solid $darker-grey;
+
+  display: flex;
+  justify-content: end;
+
+  .brand {
+    /* margin-right: auto; */
+    margin: auto auto auto 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: $darker-grey;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: $darker-white;
+    }
+  }
+
+  ul {
+    min-height: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    list-style-type: none;
+    /* font-size: 1.15rem; */
+
+    @media (max-width: $phone-max) {
+      padding: 0 0 0 0.5rem;
+    }
+
+    .hamburger {
+      display: none;
+      padding: 1.15rem;
+      color: $darker-white;
+
+      @media (max-width: $hamburger-max) {
+        display: block;
+        width: fit-content;
+      }
+    }
+
+    @media (max-width: $hamburger-max) {
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    .responsive {
+      display: flex !important;
+      margin: 0 !important;
+      padding: 0.5rem 1.4rem;
+    }
+
+    /* li */
+    .nav-item {
+      margin: auto;
+      display: flex;
+
+      @media (max-width: $hamburger-max) {
+        display: none;
+      }
+
+      a {
+        margin: auto;
+        background-color: transparent;
+        /* font-weight: bold; */
+        color: $grey;
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $darker-white;
+        }
+
+        @media (max-width: $hamburger-max) {
+          margin: 0;
+        }
+      }
+
+      .slash {
+        padding: 0 0.5rem;
+        color: $darker-grey;
+      }
+
+      /* .nav-link {
+        &::after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 2px;
+          background: $darker-white;
+          transition: width 0.5s;
+        }
+
+        &:hover::after {
+          width: 100%;
+          transition: width 0.3s;
+        }
+      } */
+    }
+  }
+}
+
+/* nav link underline */
+
+/* .nav-link {
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $darker-white;
+    transition: width 0.5s;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+} */
+
+/* content-container */
+
+.content-container {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: $transparent-black;
+
+  p {
+    font-family: $primary-ff;
+    font-size: 1.1rem;
+
+    a {
+      color: $darker-white;
+      text-decoration: none;
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* aside nav */
+
+aside {
+  min-width: 23vw;
+  padding: 1rem;
+  border-left: 1px solid $light-grey;
+  display: flex;
+
+  .aside-nav {
+    max-height: 80vh;
+    border: none;
+    justify-content: left;
+
+    ul {
+      max-width: 20vw;
+      position: fixed;
+
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-self: center;
+
+      a {
+        padding: 0.5rem 0;
+        color: $grey;
+        text-decoration: none;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $white;
+        }
+
+        @media (max-width: $hamburger-max) {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+/*** MIXINS ***/
+
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

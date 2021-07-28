@@ -3,220 +3,21 @@
 @import "variables";
 @import "globals";
 
-/*** GENERAL STYLES ***/
-
-/* nav link underline */
-/* .nav-link {
-  &::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 1px;
-    background: $darker-white;
-    transition: width 0.5s;
-  }
-
-  &:hover::after {
-    width: 100%;
-    transition: width 0.3s;
-  }
-} */
-
-/* nav bar */
-
-nav {
-  width: 100%;
-  padding: 0 1rem;
-  /* max-width: 1440px;
-  background-color: $dark-transparent-black;
-  position: fixed; */
-  z-index: 1;
-  overflow: hidden;
-  border-bottom: 1px solid $darker-grey;
-
-  display: flex;
-  justify-content: end;
-
-  .brand {
-    /* margin-right: auto; */
-    margin: auto auto auto 0;
-    background-color: transparent;
-    font-size: 1.2rem;
-    /* font-weight: bold; */
-    color: $darker-grey;
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    transition: all 0.2s ease-in;
-
-    &:hover {
-      color: $darker-white;
-    }
-  }
-
-  ul {
-    min-height: 4rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    list-style-type: none;
-    /* font-size: 1.15rem; */
-
-    @media (max-width: $phone-max) {
-      padding: 0 0 0 0.5rem;
-    }
-
-    .hamburger {
-      display: none;
-      padding: 1.15rem;
-      color: $darker-white;
-
-      @media (max-width: $hamburger-max) {
-        display: block;
-        width: fit-content;
-      }
-    }
-
-    @media (max-width: $hamburger-max) {
-      flex-direction: column;
-      justify-content: end;
-    }
-
-    .responsive {
-      display: flex !important;
-      margin: 0 !important;
-      padding: 0.5rem 1.4rem;
-    }
-
-    /* li */
-    .nav-item {
-      margin: auto;
-      display: flex;
-
-      @media (max-width: $hamburger-max) {
-        display: none;
-      }
-
-      a {
-        margin: auto;
-        background-color: transparent;
-        /* font-weight: bold; */
-        color: $grey;
-        text-decoration: none;
-        /* text-transform: uppercase; */
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          color: $darker-white;
-        }
-
-        @media (max-width: $hamburger-max) {
-          margin: 0;
-        }
-      }
-
-      .slash {
-        padding: 0 0.5rem;
-        color: $darker-grey;
-      }
-
-      /* .nav-link {
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 2px;
-          background: $darker-white;
-          transition: width 0.5s;
-        }
-
-        &:hover::after {
-          width: 100%;
-          transition: width 0.3s;
-        }
-      } */
-    }
-  }
-}
-
-/* content-container */
-
-.content-container {
-  max-width: 1440px;
-  min-height: 100vh;
-  margin: auto;
-  background-color: $transparent-black;
-
-  p {
-    font-family: $primary-ff;
-    font-size: 1.1rem;
-
-    a {
-      color: $darker-white;
-      text-decoration: none;
-
-      &:hover {
-        color: $blue;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-/* aside nav */
-
-aside {
-  min-width: 23vw;
-  padding: 1rem;
-  border-left: 1px solid $light-grey;
-  display: flex;
-
-  .aside-nav {
-    max-height: 80vh;
-    border: none;
-    justify-content: left;
-
-    ul {
-      max-width: 20vw;
-      position: fixed;
-
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      align-self: center;
-
-      a {
-        padding: 0.5rem 0;
-        color: $grey;
-        text-decoration: none;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          color: $white;
-        }
-
-        @media (max-width: $hamburger-max) {
-          margin: 0;
-        }
-      }
-    }
-  }
-}
-
 /*** HEADER ***/
 
 header {
+  min-height: 100vh;
+
   display: flex;
   justify-content: center;
-
   position: relative;
-  min-height: 100vh;
+
   background-image: url("./../img/landing-bg-02.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  @include background;
 
   .logo-container {
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,6 +28,7 @@ header {
       .logo-img {
         width: 20rem;
         transition: all 0.5s ease-in;
+
         /* animation */
         animation-name: logo;
         animation-duration: 0.8s;
@@ -283,126 +85,17 @@ header {
   }
 }
 
-/** NAVBAR SECTION **/
-/* nav {
-  width: 100%;
-  max-width: 1440px;
-  background-color: $dark-transparent-black;
-  position: fixed;
-  z-index: 1;
-  overflow: hidden;
-  border-bottom: 1px solid $darker-grey;
-
-  ul {
-    min-height: 4rem;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 1.15rem; */
-
-/* Small devices (landscape phones: 575px) */
-/* @media (max-width: $phone-max) {
-      padding: 0 0 0 0.5rem;
-    }
-
-    .hamburger {
-      display: none;
-      padding: 1.15rem;
-      color: $darker-white; */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-        display: block;
-        width: fit-content;
-      }
-    } */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-      flex-direction: column;
-      justify-content: end;
-    }
-
-    .responsive {
-      display: flex !important;
-      margin: 0 !important;
-      padding: 0.5rem 1.4rem;
-    } */
-
-/* li */
-/* .nav-item {
-      margin: auto;
-      display: flex; */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-        display: none;
-      }
-
-      a {
-        margin: auto;
-        background-color: transparent;
-        font-weight: bold;
-        color: $darker-grey;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          color: $darker-white;
-        } */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-          margin: 0;
-        }
-      }
-
-      .slash {
-        padding: 0 0.5rem;
-        color: $darker-grey;
-      }
-
-      .nav-link {
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 2px;
-          background: $darker-white;
-          transition: width 0.5s;
-        }
-
-        &:hover::after {
-          width: 100%;
-          transition: width 0.3s;
-        }
-      }
-    }
-  }
-} */
-
-/*** MAIN ***/
-
-main {
-  overflow: hidden;
-  width: 100%;
-  min-height: 100vh;
-}
-
 /*** HOME ***/
 
 #main-home {
   background-image: url("../img/home-01-pexels-nikolai-ulltang.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+  @include background;
   color: $darker-white;
 
   #home {
     .heading-container {
       margin: 4rem 0 0 12rem;
+
       font-size: 3rem;
       font-family: $heading-ff;
       letter-spacing: 0.5rem;
@@ -419,9 +112,9 @@ main {
     }
 
     .home-article {
+      width: 45%;
       margin: 3rem 0 0rem 40rem;
       padding: 0.5rem 0 0 0;
-      width: 45%;
 
       p {
         font-family: $primary-ff;
@@ -451,28 +144,32 @@ main {
     }
   }
 
-  /*** ABOUT ***/
+  /** ABOUT **/
 
   #about {
     padding: 1rem 0.5rem;
+
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
     font-size: 1.2rem;
 
     .about-article {
       width: 90%;
       margin: 0 auto;
       padding: 0.5rem;
+
       display: flex;
+      flex-direction: column;
       gap: 1rem;
 
       img {
         width: 100%;
-        min-width: 30vw;
-        /* max-height: 20vh; */
+        max-width: 43vw;
+        margin: auto;
         padding: 0.5rem;
-        border-radius: 11px;
+        border-radius: 10px;
       }
 
       p {
@@ -488,10 +185,7 @@ main {
 
 #main-history {
   background-image: url("../img/bridge-clouds-cloudy-dark-clouds.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  @include background;
   color: $darker-white;
 
   #history {
@@ -508,43 +202,6 @@ main {
     @media (max-width: $phone-max) {
       padding: 0 1.5rem 2rem 1.5rem;
     }
-
-    /* aside {
-      min-width: 30vw;
-      padding: 1rem;
-      border-left: 1px solid $light-grey;
-      display: flex;
-
-      nav {
-        max-height: 80vh;
-        border: none;
-
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 2rem;
-
-          position: fixed;
-          max-width: 25vw;
-          align-self: center;
-
-          a {
-            padding: 0.5rem 0;
-            color: $grey;
-            text-decoration: none;
-            transition: all 0.2s ease-in;
-
-            &:hover {
-              color: $white;
-            }
-
-            @media (max-width: $hamburger-max) {
-              margin: 0;
-            }
-          }
-        }
-      }
-    } */
 
     .history-article {
       width: 90%;
@@ -593,8 +250,10 @@ main {
         /* max-height: 20vh; */
         margin: auto;
         padding: 0.5rem;
-        border-radius: 11px;
+
         display: flex;
+
+        border-radius: 10px;
       }
 
       p {
@@ -614,10 +273,7 @@ main {
 
 #main-news {
   background-image: url("../img/abandoned-forest-industry-nature.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  @include background;
   color: $darker-white;
 
   #news {
@@ -653,14 +309,16 @@ main {
       width: 90%;
       margin: 1rem auto 3rem auto;
       padding: 1rem 0.5rem;
+
       border-top: 1px solid $grey;
       border-bottom: 1px solid $grey;
       transition: all 0.4s ease-in;
       text-align: justify;
 
       &:hover {
-        cursor: pointer;
         padding: 1rem;
+        cursor: pointer;
+
         border: 1px solid $blue;
         background: $dark-transparent-black;
         background: linear-gradient(
@@ -682,6 +340,7 @@ main {
         .news-img {
           width: 15rem;
           height: 10rem;
+          border-radius: 2px;
 
           @media (min-width: $tablet-min) and (max-width: $tablet-max) {
             width: 10rem;
@@ -711,14 +370,12 @@ main {
           h3 {
             margin: 0;
 
-            /* Medium devices (tablets: 576px - 992px) */
             @media (min-width: $tablet-min) and (max-width: $tablet-max) {
               width: 100%;
               margin: 0;
               color: $light-grey;
             }
 
-            /* Small devices (landscape phones: 575px) */
             @media (max-width: $phone-max) {
               width: 100%;
               margin: 0;
@@ -775,9 +432,7 @@ main {
   min-height: 100vh;
   /* padding: 0 4rem; */
   background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
 
   #gallery {
     padding: 1rem 0;
@@ -815,6 +470,7 @@ main {
     .gallery-articles {
       width: 90%;
       margin: auto;
+
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -830,10 +486,11 @@ main {
       }
 
       .img-container {
+        max-width: 24.5%;
+
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-width: 24.5%;
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
           max-width: 45.5%;
@@ -845,39 +502,43 @@ main {
 
         /** modal **/
         .modal-body {
+          width: 100%;
+          height: 100%;
+          margin: auto;
+
           display: none;
           position: fixed;
           z-index: 1;
           top: 0;
           left: 0;
-          margin: auto;
-          width: 100%;
-          height: 100%;
+
           flex-direction: column;
           justify-content: center;
-          background-color: rgba(0, 0, 0, 0.8);
+          background-color: $dark-transparent-black;
 
           .close-modal {
-            color: #ccc;
-            font-size: 30px;
-
-            padding: 0.4rem;
-            border: 3px solid #ccc;
-            border-radius: 35px;
             width: 4rem;
+            margin: 40px 40px 0 auto;
+            padding: 0.4rem;
+
             display: flex;
             justify-content: center;
-            margin: 40px 40px 0 auto;
 
             position: absolute;
             top: 0;
             right: 0;
 
+            color: $grey;
+            font-size: 1.8rem;
+
+            border: 3px solid $grey;
+            border-radius: 35px;
+
             &:hover {
-              background-color: #fff;
-              color: #000;
+              background-color: $white;
+              color: $black;
               cursor: pointer;
-              border: 3px solid #8a8a8a;
+              border: 3px solid $blue;
             }
           }
 
@@ -885,11 +546,12 @@ main {
             max-width: 60%;
             max-height: 70vh;
             margin: 2rem auto;
+            border-radius: 2px;
 
-            animation-name: modalopen;
+            animation-name: open-modal;
             animation-duration: 0.4s;
 
-            @keyframes modalopen {
+            @keyframes open-modal {
               from {
                 opacity: 0;
               }
@@ -910,7 +572,7 @@ main {
           .modal-info {
             width: 60%;
             margin: 0 auto;
-            color: #ccc;
+            color: $grey;
             text-align: center;
           }
         }
@@ -919,6 +581,7 @@ main {
           padding: 1rem;
           width: 100%;
           height: auto;
+          border-radius: 18px;
           opacity: 0.9;
           transition: all 0.2s ease-in;
 
@@ -949,19 +612,18 @@ main {
       }
 
       iframe {
-        width: 560px;
-        height: 315px;
+        width: 35rem; /* 560px */
+        height: 19.6875rem; /* 315px */
         margin: 1rem;
         border: 1px solid $white;
+        border-radius: 2px;
 
-        /* min-width: 1217px and max-width: 1461px */
         @media (min-width: 76.0625rem) and (max-width: 91.3125rem) {
-          width: 450px;
+          width: 28.125rem; /* 450px */
         }
 
-        /* min-width: 1083px and max-width: 1216px */
         @media (min-width: 67.6875rem) and (max-width: 76rem) {
-          width: 390px;
+          width: 24.375rem; /* 390px */
         }
       }
     }
@@ -973,23 +635,18 @@ main {
 #main-ambience {
   min-height: 100vh;
   background: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
 
   #ambience {
     padding: 1rem 0;
-    color: $darker-white;
-
     display: flex;
     flex-direction: row-reverse;
+    color: $darker-white;
 
-    /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 3.5rem 2rem 3.5rem;
     }
 
-    /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
       padding: 0 1.5rem 2rem 1.5rem;
     }
@@ -1064,9 +721,7 @@ main {
 
 footer {
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include background;
   color: $grey;
 
   position: relative;
@@ -1098,16 +753,15 @@ footer {
 
   .footer-info {
     padding: 1rem 2rem;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    /* Medium devices (tablets: 576px - 992px) */
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       justify-content: space-between;
     }
 
-    /* Small devices (landscape phones: 575px) */
     @media (max-width: $phone-max) {
       justify-content: start;
     }
@@ -1115,12 +769,10 @@ footer {
     .item-1 {
       padding: 1rem 2rem !important;
 
-      /* Medium devices (tablets: 576px - 992px) */
       @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         margin: auto;
       }
 
-      /* Small devices (landscape phones: 575px) */
       @media (max-width: $phone-max) {
         margin: auto;
       }
@@ -1128,6 +780,7 @@ footer {
       img {
         width: 14rem;
         height: auto;
+
         transition: all 0.3s ease-in;
         filter: invert(100%);
 
@@ -1173,6 +826,7 @@ footer {
   .friends-and-family-container {
     width: 100%;
     height: auto;
+
     display: flex;
     flex-wrap: wrap;
 
@@ -1191,13 +845,13 @@ footer {
   }
 
   .footer-copyright {
-    padding: 0.5rem 0;
-    width: 100;
+    width: 100%;
     height: auto;
-    background-color: $black;
-    display: flex;
+    padding: 0.5rem 0;
 
-    /* Small devices (landscape phones: 575px) */
+    display: flex;
+    background-color: $black;
+
     @media (max-width: $phone-max) {
       flex-wrap: wrap;
     }
@@ -1205,7 +859,6 @@ footer {
     .footer-copyright-item {
       margin: auto;
 
-      /* Small devices (landscape phones: 575px) */
       @media (max-width: $phone-max) {
         width: 100%;
         text-align: center;
@@ -1215,7 +868,6 @@ footer {
     .design-link {
       padding: 0 1rem 0 0;
 
-      /* Small devices (landscape phones: 575px) */
       @media (max-width: $phone-max) {
         width: 100%;
         text-align: center;
