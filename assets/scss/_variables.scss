@@ -17,6 +17,7 @@ $lion: #ffc400;
 /** font properties **/
 $primary-ff: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $heading-ff: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+$footer-ff: "Courier New", Courier, monospace;
 $f-height: 1.6;
 $h-height: 1.2;
 $l-space: 0.5px;
@@ -26,4 +27,4 @@ $tablet-min: 36rem; /* min-medium devices: 576px */
 $tablet-max: 62rem; /* max-medium devices: 992px */
 $phone-max: 35.9375rem; /* small devices: 575px */
 $hamburger-max: 47.5rem; /* navbar hamburger: 760px */
-$desktop-min: 1260px;
+$desktop-min: 78.75rem; /* min desktop: 1260px */

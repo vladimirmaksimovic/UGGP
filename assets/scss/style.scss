@@ -702,7 +702,7 @@ header {
 
   #contact {
     padding: 2.5rem;
-    font-family: "Courier New", Courier, monospace;
+    font-family: $footer-ff;
     font-size: 1.1rem;
 
     .contact-articles {
@@ -786,9 +786,10 @@ header {
 
 /*** FOOTER ***/
 
-footer {
+#footer {
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   @include background;
+  font-family: $footer-ff;
 
   position: relative;
   z-index: 1;
@@ -803,35 +804,61 @@ footer {
     }
   }
 
-  h3 {
-    margin: 0;
-    padding: 0 0 1rem 0;
+  .footer-article {
+    padding: 0 2rem 1rem 2rem;
+
+    h3 {
+      margin: 0 0 1rem 0;
+      padding: 0 0 1rem 0;
+      font-family: $primary-ff;
+      font-style: normal;
+      border-bottom: 1px solid $grey;
+    }
   }
 
-  .footer-info {
-    padding: 1rem 2rem;
-
+  .contact-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 1rem;
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       justify-content: space-between;
+      gap: 0;
     }
 
     @media (max-width: $phone-max) {
       justify-content: start;
+      gap: 0;
     }
 
-    .item-1 {
-      padding: 1rem 2rem !important;
+    .footer-section {
+      padding: 1rem 0.5rem;
 
-      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        margin: auto;
+      .logo {
+        padding: 1rem 2rem !important;
+
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+          margin: auto;
+        }
+
+        @media (max-width: $phone-max) {
+          margin: auto;
+        }
       }
 
-      @media (max-width: $phone-max) {
-        margin: auto;
+      ul {
+        padding: 1rem 0;
+        list-style-type: none;
+
+        .fas,
+        .far {
+          padding: 0 0 0.5rem 1rem;
+        }
+
+        li {
+          padding: 0 0 0.5rem 0;
+        }
       }
 
       img {
@@ -847,37 +874,17 @@ footer {
         }
       }
     }
-
-    .footer-info-item {
-      padding: 1rem 0.5rem;
-
-      ul {
-        list-style-type: none;
-
-        .fas,
-        .far {
-          padding: 0 0 0.5rem 1rem;
-        }
-      }
-    }
   }
 
-  .friends-and-family {
-    padding: 0 2rem 1rem 2rem;
-
-    h3 {
-      padding: 0 2rem 1rem 0.5rem;
-    }
-  }
-
-  .friends-and-family-container {
+  .friends {
     width: 100%;
     height: auto;
 
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 
-    .friends-and-family-item {
+    .footer-section {
       margin: auto;
 
       a {
@@ -890,7 +897,7 @@ footer {
     }
   }
 
-  .footer-copyright {
+  .copyright-article {
     width: 100%;
     height: auto;
     padding: 0.5rem 0;
@@ -898,11 +905,13 @@ footer {
     display: flex;
     background-color: $black;
 
+    font-family: $primary-ff;
+
     @media (max-width: $phone-max) {
       flex-wrap: wrap;
     }
 
-    .footer-copyright-item {
+    .copyright {
       margin: auto;
 
       @media (max-width: $phone-max) {
@@ -911,7 +920,7 @@ footer {
       }
     }
 
-    .design-link {
+    .design {
       padding: 0 1rem 0 0;
 
       @media (max-width: $phone-max) {
