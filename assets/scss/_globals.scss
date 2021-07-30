@@ -26,7 +26,7 @@ html {
 body {
   font-family: $primary-ff;
   font-size: 1.2rem;
-  color: $black;
+  color: $grey;
   line-height: $f-height;
   letter-spacing: $l-space;
 
@@ -45,6 +45,10 @@ body {
     /* padding: 3rem 0 1rem 0; */
     line-height: $h-height;
   }
+}
+
+a {
+  color: $grey;
 }
 
 /*** MAIN ***/
@@ -160,9 +164,6 @@ main {
 nav {
   width: 100%;
   padding: 0 1rem;
-  /* max-width: 1440px;
-  background-color: $dark-transparent-black;
-  position: fixed; */
   z-index: 1;
   overflow: hidden;
   border-bottom: 1px solid $darker-grey;
@@ -171,14 +172,11 @@ nav {
   justify-content: end;
 
   .brand {
-    /* margin-right: auto; */
     margin: auto auto auto 0;
     background-color: transparent;
     font-size: 1.2rem;
-    /* font-weight: bold; */
     color: $darker-grey;
     text-decoration: none;
-    /* text-transform: uppercase; */
     transition: all 0.2s ease-in;
 
     &:hover {
@@ -192,7 +190,6 @@ nav {
     gap: 2rem;
     justify-content: center;
     list-style-type: none;
-    /* font-size: 1.15rem; */
 
     @media (max-width: $phone-max) {
       padding: 0 0 0 0.5rem;
@@ -232,10 +229,8 @@ nav {
       a {
         margin: auto;
         background-color: transparent;
-        /* font-weight: bold; */
         color: $grey;
         text-decoration: none;
-        /* text-transform: uppercase; */
         transition: all 0.2s ease-in;
 
         &:hover {
@@ -251,22 +246,6 @@ nav {
         padding: 0 0.5rem;
         color: $darker-grey;
       }
-
-      /* .nav-link {
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 2px;
-          background: $darker-white;
-          transition: width 0.5s;
-        }
-
-        &:hover::after {
-          width: 100%;
-          transition: width 0.3s;
-        }
-      } */
     }
   }
 }

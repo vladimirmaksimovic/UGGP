@@ -1,10 +1,10 @@
 /*** VARIABLES ***/
 
 /** color properties **/
-$black: #000;
-$dark-transparent-black: #000000bf;
-$transparent-black: #00000097;
-$white: #fff;
+$black: #0d0d0d;
+$dark-transparent-black: #0d0d0dec;
+$transparent-black: #0d0d0dd5;
+$white: #f9f9f9;
 $darker-white: #f2f2f2;
 $light-grey: #e6e6e6;
 $grey: #ccc;
@@ -26,3 +26,4 @@ $tablet-min: 36rem; /* min-medium devices: 576px */
 $tablet-max: 62rem; /* max-medium devices: 992px */
 $phone-max: 35.9375rem; /* small devices: 575px */
 $hamburger-max: 47.5rem; /* navbar hamburger: 760px */
+$desktop-min: 1260px;

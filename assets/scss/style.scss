@@ -90,7 +90,6 @@ header {
 #main-home {
   background-image: url("../img/home-01-pexels-nikolai-ulltang.jpg");
   @include background;
-  color: $darker-white;
 
   #home {
     .heading-container {
@@ -129,7 +128,6 @@ header {
 
       a {
         padding: 1rem 1.5rem;
-        color: $darker-grey;
         text-decoration: none;
         border-radius: 25px;
         border: 1px solid $light-grey;
@@ -190,7 +188,6 @@ header {
 #main-history {
   background-image: url("../img/bridge-clouds-cloudy-dark-clouds.jpg");
   @include background;
-  color: $darker-white;
 
   #history {
     padding: 1rem 0;
@@ -213,12 +210,10 @@ header {
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         width: 100%;
-        /* margin: 0; */
       }
 
       @media (max-width: $phone-max) {
         width: 100%;
-        /* margin: 0; */
       }
 
       .content-source {
@@ -226,10 +221,8 @@ header {
       }
 
       h2 {
-        /* width: 90%; */
         margin: auto;
         padding: 1rem 0.5rem;
-        color: $light-grey;
 
         /* &::after {
           content: "";
@@ -241,21 +234,16 @@ header {
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
           width: 100%;
-          /* margin: 0; */
-          /* padding: 1rem 0.5rem 1rem 0.5rem; */
         }
 
         @media (max-width: $phone-max) {
           width: 100%;
-          /* margin: 0; */
-          /* padding: 1rem 0.5rem 1rem 0.5rem; */
         }
       }
 
       img {
         width: 100%;
         max-width: 30vw;
-        /* max-height: 20vh; */
         margin: auto;
         padding: 0.5rem;
 
@@ -282,7 +270,6 @@ header {
 #main-news {
   background-image: url("../img/abandoned-forest-industry-nature.jpg");
   @include background;
-  color: $darker-white;
 
   #news {
     padding: 1rem 0;
@@ -300,7 +287,6 @@ header {
       width: 90%;
       margin: auto;
       padding: 2rem 0.5rem 1.5rem 0.5rem;
-      color: $light-grey;
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         width: 100%;
@@ -359,7 +345,6 @@ header {
             width: 100%;
             height: 100%;
             padding: 0 0 1rem 0;
-            /* object-fit: cover; */
             overflow: hidden;
           }
         }
@@ -381,7 +366,6 @@ header {
             @media (min-width: $tablet-min) and (max-width: $tablet-max) {
               width: 100%;
               margin: 0;
-              color: $light-grey;
             }
 
             @media (max-width: $phone-max) {
@@ -391,7 +375,6 @@ header {
           }
 
           .author-and-time {
-            /* margin: 0; */
             padding: 0.5rem 0 1rem 0;
             font-size: 0.7rem;
             font-style: italic;
@@ -409,8 +392,6 @@ header {
       }
 
       .news-content {
-        /* margin: 0;
-        padding: 0 1rem; */
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
@@ -438,7 +419,6 @@ header {
 
 #main-gallery {
   min-height: 100vh;
-  /* padding: 0 4rem; */
   background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
   @include background;
 
@@ -454,7 +434,6 @@ header {
     }
 
     .gallery-border {
-      /*  width: 90%; */
       margin: auto;
     }
 
@@ -462,7 +441,6 @@ header {
       width: 90%;
       margin: auto;
       padding: 2rem 0.5rem 1.5rem 0.5rem;
-      color: $light-grey;
 
       @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         width: 100%;
@@ -536,14 +514,13 @@ header {
             top: 0;
             right: 0;
 
-            color: $grey;
             font-size: 1.8rem;
 
             border: 3px solid $grey;
             border-radius: 35px;
 
             &:hover {
-              background-color: $white;
+              background-color: $grey;
               color: $black;
               cursor: pointer;
               border: 3px solid $blue;
@@ -580,18 +557,17 @@ header {
           .modal-info {
             width: 60%;
             margin: 0 auto;
-            color: $grey;
             text-align: center;
           }
         }
 
         .img-item {
-          padding: 1rem;
           width: 100%;
           height: auto;
+          padding: 1rem;
           border-radius: 18px;
           opacity: 0.9;
-          transition: all 0.2s ease-in;
+          transition: all 0.3s ease-in;
 
           &:hover {
             opacity: 1;
@@ -649,7 +625,6 @@ header {
     padding: 1rem 0;
     display: flex;
     flex-direction: row-reverse;
-    color: $darker-white;
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 3.5rem 2rem 3.5rem;
@@ -665,7 +640,6 @@ header {
         padding: 1rem 0.5rem;
         font-size: 5rem;
         text-align: center;
-        color: $darker-white;
       }
 
       .ambience-article {
@@ -673,10 +647,7 @@ header {
         margin: 0 auto 1rem auto;
 
         h2 {
-          /* width: 90%;
-        margin: auto; */
           padding: 1rem;
-          color: $darker-white;
 
           @media (min-width: $tablet-min) and (max-width: $tablet-max) {
             width: 100%;
@@ -693,7 +664,6 @@ header {
           padding: 0 0 0 3rem;
 
           a {
-            color: $darker-white;
             text-decoration: none;
 
             &:hover {
@@ -726,92 +696,87 @@ header {
 /*** CONTACT ***/
 
 #main-contact {
+  min-height: 80vh;
   background-image: url("../img/home-03-pexels-justin-lawson.jpg");
   @include background;
-  color: $darker-white;
 
   #contact {
-    padding: 1rem 0;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: row-reverse;
-
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      padding: 0 3.5rem 2rem 3.5rem;
-    }
-
-    @media (max-width: $phone-max) {
-      padding: 0 1.5rem 2rem 1.5rem;
-    }
+    padding: 2.5rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.1rem;
 
     .contact-articles {
-      width: 100%;
+      display: flex;
+
+      gap: 2rem;
+      justify-content: center;
+
+      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+
+      @media (max-width: $phone-max) {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+
+      .contact-info {
+        max-width: 90vw;
+      }
 
       .contact-article {
-        width: 90%;
-        margin: 1rem auto;
+        max-width: 90vw;
+        padding: 1rem;
 
-        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          width: 100%;
-          /* margin: 0; */
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
 
-        @media (max-width: $phone-max) {
-          width: 100%;
-          /* margin: 0; */
-        }
-
-        .content-source {
-          text-align: right;
-        }
-
-        h3 {
-          /* width: 90%; */
-          margin: auto;
-          padding: 1rem 0.5rem;
-          color: $light-grey;
-
-          /* &::after {
-          content: "";
-          display: block;
-          width: 1.1rem;
-          height: 3px;
-          background: $darker-white;
-        } */
-
-          @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-            width: 100%;
-            /* margin: 0; */
-            /* padding: 1rem 0.5rem 1rem 0.5rem; */
+        /* google map */
+        .ggl-map {
+          .gmap-canvas {
+            padding: 1rem 0;
           }
 
-          @media (max-width: $phone-max) {
-            width: 100%;
-            /* margin: 0; */
-            /* padding: 1rem 0.5rem 1rem 0.5rem; */
+          .gmap-canvas,
+          iframe {
+            width: 30vw;
+            min-height: 60vh;
+            border-radius: 3px;
+
+            @media (max-width: $desktop-min) {
+              width: 45vw;
+            }
+
+            @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+              width: 80vw;
+            }
+
+            @media (max-width: $phone-max) {
+              width: 80vw;
+            }
           }
         }
 
-        img {
-          width: 100%;
-          max-width: 30vw;
-          /* max-height: 20vh; */
-          margin: auto;
-          padding: 0.5rem;
+        section {
+          h3 {
+            margin: 0;
+            padding: 0 0 1rem 0;
+            font-family: $primary-ff;
+            font-style: normal;
+            border-bottom: 1px solid $grey;
+          }
 
-          display: flex;
+          ul {
+            padding: 1rem 0;
+            list-style-type: none;
 
-          border-radius: 10px;
-        }
-
-        p {
-          padding: 0.5rem 0;
-          text-align: justify;
-          text-indent: 3rem;
-
-          &::first-letter {
-            font-size: 110%;
+            .fas,
+            .far {
+              padding: 0 0 0.5rem 1rem;
+            }
           }
         }
       }
@@ -819,124 +784,11 @@ header {
   }
 }
 
-/* #main-contact {
-  background-image: url("../img/home-03-pexels-justin-lawson.jpg");
-  @include background;
-  color: $darker-white;
-
-  #contact {
-    padding: 1rem 0.5rem;
-
-    .contact-articles {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 3rem;
-      justify-content: space-around;
-      align-items: center;
-
-      .contact-article {
-        padding: 0.5rem;
-
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        google map
-        .ggl-map {
-          padding: 1rem;
-          border-left: 1px solid $grey;
-
-          .gmap-canvas,
-          iframe {
-            width: 50vw;
-            height: 80vh;
-            border: none;
-          }
-        }
-
-        .logo-img {
-          width: 14rem;
-          height: auto;
-
-          transition: all 0.3s ease-in;
-          filter: invert(100%);
-
-          &:hover {
-            opacity: 0.9;
-            transform: scale(1.02);
-          }
-        }
-
-        h3 {
-          margin: 0;
-          padding: 0 0 1rem 0;
-          color: $light-grey;
-        }
-
-        .contact-info {
-          padding: 1rem 2rem;
-
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-
-          @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-            justify-content: space-between;
-          }
-
-          @media (max-width: $phone-max) {
-            justify-content: start;
-          }
-
-          .item-1 {
-            padding: 1rem 2rem !important;
-
-            @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-              margin: auto;
-            }
-
-            @media (max-width: $phone-max) {
-              margin: auto;
-            }
-
-            img {
-              width: 14rem;
-              height: auto;
-
-              transition: all 0.3s ease-in;
-              filter: invert(100%);
-
-              &:hover {
-                opacity: 0.9;
-                transform: scale(1.02);
-              }
-            }
-          }
-
-          .contact-info-item {
-            padding: 1rem 0.5rem;
-
-            ul {
-              list-style-type: none;
-
-              .fas,
-              .far {
-                padding: 0 0 0.5rem 1rem;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-} */
-
 /*** FOOTER ***/
 
 footer {
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   @include background;
-  color: $grey;
 
   position: relative;
   z-index: 1;
@@ -954,15 +806,6 @@ footer {
   h3 {
     margin: 0;
     padding: 0 0 1rem 0;
-    color: $light-grey;
-
-    /* &::after {
-      content: "";
-      display: block;
-      width: 1.1rem;
-      height: 3px;
-      background: $darker-white;
-    } */
   }
 
   .footer-info {
@@ -1024,16 +867,6 @@ footer {
 
     h3 {
       padding: 0 2rem 1rem 0.5rem;
-      color: $light-grey;
-
-      /* short underline */
-      /* &::after {
-        content: "";
-        display: block;
-        width: 1.1rem;
-        height: 3px;
-        background: $darker-white;
-      } */
     }
   }
 
@@ -1048,7 +881,6 @@ footer {
       margin: auto;
 
       a {
-        color: $darker-grey;
         text-decoration: none;
 
         &:hover {
@@ -1089,7 +921,6 @@ footer {
 
       a {
         text-decoration: none;
-        color: $darker-grey;
 
         &:hover {
           color: $lion;
