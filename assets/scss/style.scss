@@ -3,9 +3,9 @@
 @import "variables";
 @import "globals";
 
-/*** HEADER ***/
+/*** LANDING PAGE ***/
 
-header {
+#main-landing {
   min-height: 100vh;
 
   display: flex;
@@ -15,17 +15,17 @@ header {
   background-image: url("./../img/landing-bg-02.jpg");
   @include background;
 
-  .logo-container {
+  .logo-article {
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .logo {
+    .logo-section {
       text-align: center;
 
-      .logo-img {
+      .logo {
         width: 20rem;
         transition: all 0.5s ease-in;
 
@@ -123,10 +123,10 @@ header {
     }
 
     .next-page {
-      margin: 6rem 0 0 0;
+      margin: 4.5rem 0 0 0;
       text-align: center;
 
-      a {
+      .scroll-btn {
         padding: 1rem 1.5rem;
         text-decoration: none;
         border-radius: 25px;
@@ -162,9 +162,9 @@ header {
       flex-direction: column;
       gap: 1rem;
 
-      .content-source {
+      /* .content-source {
         text-align: right;
-      }
+      } */
 
       img {
         width: 100%;
@@ -216,9 +216,9 @@ header {
         width: 100%;
       }
 
-      .content-source {
+      /* .content-source {
         text-align: right;
-      }
+      } */
 
       h2 {
         margin: auto;
@@ -494,7 +494,7 @@ header {
 
           display: none;
           position: fixed;
-          z-index: 1;
+          z-index: 3;
           top: 0;
           left: 0;
 
@@ -661,7 +661,8 @@ header {
         }
 
         ul {
-          padding: 0 0 0 3rem;
+          padding: 0 0 0 6rem;
+          font-size: 1.1rem;
 
           a {
             text-decoration: none;

@@ -3,7 +3,7 @@
 /** color properties **/
 $black: #0d0d0d;
 $dark-transparent-black: #0d0d0dec;
-$transparent-black: #0d0d0dd5;
+$transparent-black: #0d0d0db6;
 $white: #f9f9f9;
 $darker-white: #f2f2f2;
 $light-grey: #e6e6e6;
@@ -23,8 +23,8 @@ $h-height: 1.2;
 $l-space: 0.5px;
 
 /** media variables **/
+$phone-max: 35.9375rem; /* small devices: 575px */
 $tablet-min: 36rem; /* min-medium devices: 576px */
 $tablet-max: 62rem; /* max-medium devices: 992px */
-$phone-max: 35.9375rem; /* small devices: 575px */
-$hamburger-max: 47.5rem; /* navbar hamburger: 760px */
 $desktop-min: 78.75rem; /* min desktop: 1260px */
+$hamburger-max: 47.5rem; /* navbar hamburger: 760px */

@@ -292,6 +292,28 @@ nav {
   }
 }
 
+/* to the top oh the page btn */
+.page-top {
+  padding: 0.5rem 1.5rem;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 3rem;
+  z-index: 2;
+  border: 1px solid $transparent-black;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: $transparent-black;
+    border: 1px solid $darker-grey;
+  }
+}
+
+/*** content source ***/
+
+.content-source {
+  text-align: center !important;
+}
+
 /* aside nav */
 
 aside {
