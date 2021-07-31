@@ -171,6 +171,10 @@ nav {
   display: flex;
   justify-content: end;
 
+  @media (max-width: $hamburger-max) {
+    flex-direction: row-reverse;
+  }
+
   .brand {
     margin: auto auto auto 0;
     background-color: transparent;
@@ -181,6 +185,11 @@ nav {
 
     &:hover {
       color: $darker-white;
+    }
+
+    @media (max-width: $hamburger-max) {
+      margin: 1rem 0 auto auto;
+      font-size: 1.1rem;
     }
   }
 
@@ -209,6 +218,7 @@ nav {
     @media (max-width: $hamburger-max) {
       flex-direction: column;
       justify-content: end;
+      gap: 0;
     }
 
     .responsive {
@@ -300,15 +310,18 @@ nav {
   bottom: 3rem;
   z-index: 2;
   border: 1px solid $transparent-black;
+  border-bottom: 1px solid $darker-grey;
   border-radius: 30px;
+  color: $darker-grey;
 
   &:hover {
     background-color: $transparent-black;
-    border: 1px solid $darker-grey;
+    border: 1px solid $white;
+    color: $white;
   }
 }
 
-/*** content source ***/
+/* content source */
 
 .content-source {
   text-align: center !important;
