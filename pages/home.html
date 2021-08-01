@@ -15,14 +15,16 @@
 </head>
 
 <body>
-  <!-- main home page -->
-  <main id="main-home">
+  <!-- home page -->
+  <main id="home">
     <div class="content-container">
       <!-- to the top of the page btn -->
-      <a class="page-top" href="#main-home"><i class="fas fa-chevron-up"></i></a>
+      <a class="page-top" href="#home"><i class="fas fa-chevron-up"></i></a>
+      <!-- next page btn -->
+      <a class="next-page" href="#about">O удружењу</a>
       <!-- navbar -->
       <nav>
-        <a href="#header" class="nav-link brand">Удружење Гочка пруга</a>
+        <a href="#home" class="nav-link brand">Удружење Гочка пруга</a>
         <ul>
           <!-- hamburger icon -->
           <a href="javascript:void(0);" class="hamburger" onclick="hamburger()">
@@ -54,21 +56,21 @@
         </ul>
       </nav>
 
-      <!-- home -->
-      <section id="home" class="home-section">
-        <div class="heading-container">
+      <!-- welcome -->
+      <section id="welcome" class="home-section">
+        <div class="welcome-heading">
           <h3>Удружење</h3>
           <h1>Гочка пруга</h1>
         </div>
-        <article class="home-article">
+        <article class="welcome-article">
           <p>&mdash; чувари сећања и покретачи обнове пруге уског колосека на релацији која је обележила почетак
             индустријализације Краљева, развој инфрaструктуре и дрвне индустрије Гоча, борбе и трагедије у вихору
             светских ратова . . .</p>
         </article>
         <!-- next page btn -->
-        <p class="next-page">
+        <!-- <p class="next-page">
           <a class="scroll-btn" href="#about">O удружењу</a>
-        </p>
+        </p> -->
       </section>
     </div>
 
@@ -125,17 +127,14 @@
   <!-- footer -->
   <footer id="footer">
     <div class="footer-articles">
-      <article class="footer-article">
-
-        <!-- google map -->
-        <section class="ggl-map" id="map">
-          <div class="gmap-canvas">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
-              allowfullscreen="" aria-hidden="false" tabindex="0">
-            </iframe>
-          </div>
-        </section>
+      <!-- google map -->
+      <article class="ggl-map" id="map">
+        <div class="gmap-canvas">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
+            allowfullscreen="" aria-hidden="false" tabindex="0">
+          </iframe>
+        </div>
       </article>
 
       <!-- contact info -->

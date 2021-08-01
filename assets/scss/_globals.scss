@@ -31,9 +31,9 @@ body {
   letter-spacing: $l-space;
 
   /* Small devices (landscape phones: 575px) */
-  @media (max-width: $phone-max) {
+  /* @media (max-width: $phone-max) {
     font-size: 90%;
-  }
+  } */
 
   h1,
   h2,
@@ -44,6 +44,22 @@ body {
     font-style: italic;
     /* padding: 3rem 0 1rem 0; */
     line-height: $h-height;
+  }
+}
+
+p,
+a,
+li {
+  @media (max-width: $desktop-min) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: $tablet-max) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: $phone-max) {
+    font-size: 0.9rem;
   }
 }
 
@@ -288,7 +304,6 @@ nav {
 
   p {
     font-family: $primary-ff;
-    font-size: 1.1rem;
 
     a {
       color: $darker-white;
@@ -374,4 +389,9 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
 }

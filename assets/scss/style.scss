@@ -5,12 +5,11 @@
 
 /*** LANDING PAGE ***/
 
-#main-landing {
+#landing {
   min-height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  position: relative;
+  @include flex-center;
+  /* position: relative; */
 
   background-image: url("./../img/landing-bg-02.jpg");
   @include background;
@@ -18,14 +17,13 @@
   .logo-article {
     height: 100vh;
 
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     align-items: center;
 
     .logo-section {
       text-align: center;
 
-      .logo {
+      .logo-img {
         width: 20rem;
         transition: all 0.5s ease-in;
 
@@ -87,17 +85,56 @@
 
 /*** HOME ***/
 
-#main-home {
+#home {
   background-image: url("../img/home-01-pexels-nikolai-ulltang.jpg");
   @include background;
 
-  #home {
-    .heading-container {
+  .next-page {
+    padding: 1rem 1.5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 40vw;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid $light-grey;
+
+    @media (max-width: $tablet-max) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: $tablet-min) {
+      left: 35vw;
+    }
+
+    &:hover {
+      background-color: $transparent-black;
+      color: $darker-white;
+      border: 1px solid $darker-white;
+      text-decoration: none;
+    }
+  }
+
+  #welcome {
+    .welcome-heading {
       margin: 4rem 0 0 12rem;
 
       font-size: 3rem;
       font-family: $heading-ff;
       letter-spacing: 0.5rem;
+
+      @media (max-width: $desktop-min) {
+        margin: 4rem 0 0 11rem;
+      }
+
+      @media (max-width: $tablet-max) {
+        margin: 4rem auto;
+        text-align: center;
+      }
+
+      /* @media (max-width: $tablet-min) {
+        margin: 3rem auto;
+      } */
 
       h1,
       h3 {
@@ -107,36 +144,69 @@
       h1 {
         margin: 2rem 0 0 0;
         font-size: 7rem;
+
+        @media (max-width: $desktop-min) {
+          font-size: 6rem;
+        }
+
+        @media (max-width: $tablet-max) {
+          font-size: 5rem;
+        }
+
+        @media (max-width: $phone-max) {
+          font-size: 4rem;
+        }
+      }
+
+      h3 {
+        @media (max-width: $desktop-min) {
+          font-size: 90%;
+        }
+
+        @media (max-width: $tablet-max) {
+          font-size: 80%;
+        }
+
+        @media (max-width: $phone-max) {
+          font-size: 75%;
+        }
       }
     }
 
-    .home-article {
+    .welcome-article {
       width: 45%;
-      margin: 3rem 0 0rem 40rem;
-      padding: 0.5rem 0 0 0;
+      margin: 3rem 0 0 40rem;
+      /* padding: 0.5rem 0 0 0; */
+
+      /* media queries */
+      @media (max-width: $desktop-min) {
+        width: 50%;
+        margin: 3rem 0 0 25rem;
+      }
+
+      @media (max-width: $tablet-max) {
+        width: 70%;
+        margin: 4rem auto;
+      }
+
+      @media (max-width: $tablet-min) {
+        width: 90%;
+        margin: 2rem auto;
+      }
 
       p {
         font-family: $primary-ff;
-        font-size: 1.1rem;
+        /* font-size: 1.2rem; */
         line-height: 1.8;
-      }
-    }
 
-    .next-page {
-      margin: 4.5rem 0 0 0;
-      text-align: center;
+        @media (max-width: $desktop-min) {
+          /* font-size: 1.1rem; */
+          text-align: right;
+        }
 
-      .scroll-btn {
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        border-radius: 25px;
-        border: 1px solid $light-grey;
-
-        &:hover {
-          background-color: $transparent-black;
-          color: $darker-white;
-          border: 1px solid $darker-white;
-          text-decoration: none;
+        @media (max-width: $tablet-max) {
+          /* font-size: 1rem; */
+          text-align: center;
         }
       }
     }
@@ -797,6 +867,7 @@
 
   /** google map **/
   .ggl-map {
+    padding: 0;
     .gmap-canvas,
     iframe {
       width: 100%;
