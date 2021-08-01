@@ -350,10 +350,22 @@ aside {
   border-left: 1px solid $light-grey;
   display: flex;
 
+  @media (max-width: $tablet-max) {
+    padding: 0.5rem;
+  }
+
+  @media (max-width: $hamburger-max) {
+    display: none;
+  }
+
   .aside-nav {
     max-height: 80vh;
     border: none;
     justify-content: left;
+
+    @media (max-width: $tablet-max) {
+      padding: 0.5rem;
+    }
 
     ul {
       max-width: 20vw;
@@ -370,12 +382,16 @@ aside {
         text-decoration: none;
         transition: all 0.2s ease-in;
 
-        &:hover {
-          color: $white;
+        @media (max-width: $desktop-min) {
+          font-size: 1rem;
         }
 
-        @media (max-width: $hamburger-max) {
-          margin: 0;
+        @media (max-width: $tablet-max) {
+          font-size: 0.9rem;
+        }
+
+        &:hover {
+          color: $white;
         }
       }
     }
