@@ -253,19 +253,21 @@
         max-width: 43vw;
         margin: auto;
         padding: 0.5rem;
-        border-radius: 10px;
+        border-radius: 3px;
 
         @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          max-width: 75vw;
+          max-width: 80vw;
+          padding: 0.25rem;
         }
 
         @media (max-width: $phone-max) {
           max-width: 100vw;
+          padding: 0;
         }
       }
 
       p {
-        padding: 0 0 1rem 0;
+        padding: 0.75rem 0;
         text-align: justify;
         text-indent: 3rem;
       }
@@ -294,67 +296,90 @@
       padding: 0 1.5rem 2rem 1.5rem;
     }
 
-    .history-article {
-      width: 90%;
-      margin: 1rem auto;
+    .history-articles {
+      width: 100%;
 
-      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-        width: 90%;
-        margin: 1rem auto;
-      }
+      .welcome-heading {
+        margin: 1rem 0;
+        text-align: center;
 
-      @media (max-width: $phone-max) {
-        width: 100%;
-      }
+        font-size: 3rem;
+        font-family: $heading-ff;
+        letter-spacing: 0.5rem;
 
-      h2 {
-        margin: auto;
-        padding: 1rem 0.5rem;
-
-        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          width: 100%;
+        h1 {
+          font-size: 3rem;
         }
 
-        @media (max-width: $phone-max) {
-          width: 100%;
+        h3 {
+          font-size: 2rem;
         }
-      }
 
-      img {
-        width: 100%;
-        max-width: 30vw;
-        margin: auto;
-        padding: 0.5rem;
-
-        display: flex;
-
-        border-radius: 10px;
-
-        @media (max-width: $desktop-min) {
-          max-width: 35vw;
+        /* @media (max-width: $desktop-min) {
+          margin: 4rem 0 0 11rem;
         }
 
         @media (max-width: $tablet-max) {
-          max-width: 40vw;
+          margin: 4rem auto;
+          text-align: center;
         }
 
-        @media (max-width: $hamburger-max) {
-          max-width: 45vw;
-        }
+        @media (max-width: $tablet-max) {
+          margin: 2.5rem auto;
+        } */
+      }
 
-        @media (max-width: $tablet-min) {
-          max-width: 50vw;
+      .history-article {
+        width: 90%;
+        margin: 1rem auto;
+
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+          width: 90%;
+          margin: 1rem auto;
         }
 
         @media (max-width: $phone-max) {
-          max-width: 55vw;
+          width: 100%;
         }
-      }
 
-      p {
-        padding: 0.5rem 0;
-        text-align: justify;
-        text-indent: 3rem;
+        h2 {
+          margin: auto;
+          padding: 1rem 0.5rem;
+
+          @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+            width: 100%;
+          }
+
+          @media (max-width: $phone-max) {
+            width: 100%;
+          }
+        }
+
+        img {
+          width: 100%;
+          max-width: 43vw;
+          margin: auto;
+          padding: 0.5rem;
+          border-radius: 3px;
+
+          display: flex;
+
+          @media (max-width: $tablet-max) {
+            max-width: 80vw;
+            padding: 0.25rem;
+          }
+
+          @media (max-width: $phone-max) {
+            max-width: 100vw;
+            padding: 0;
+          }
+        }
+
+        p {
+          padding: 0.75rem 0;
+          text-align: justify;
+          text-indent: 3rem;
+        }
       }
     }
   }
