@@ -329,6 +329,10 @@ nav {
   border-radius: 30px;
   color: $darker-grey;
 
+  @media (max-width: $phone-max) {
+    right: 1rem;
+  }
+
   &:hover {
     background-color: $transparent-black;
     border: 1px solid $white;
