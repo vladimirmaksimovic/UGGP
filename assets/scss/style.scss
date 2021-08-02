@@ -314,19 +314,6 @@
         h3 {
           font-size: 2rem;
         }
-
-        /* @media (max-width: $desktop-min) {
-          margin: 4rem 0 0 11rem;
-        }
-
-        @media (max-width: $tablet-max) {
-          margin: 4rem auto;
-          text-align: center;
-        }
-
-        @media (max-width: $tablet-max) {
-          margin: 2.5rem auto;
-        } */
       }
 
       .history-article {
@@ -365,8 +352,13 @@
           display: flex;
 
           @media (max-width: $tablet-max) {
-            max-width: 80vw;
-            padding: 0.25rem;
+            max-width: 50vw;
+            padding: 0;
+          }
+
+          @media (max-width: $hamburger-max) {
+            max-width: 65vw;
+            padding: 0;
           }
 
           @media (max-width: $phone-max) {
@@ -387,28 +379,28 @@
 
 /*** NEWS ***/
 
-#main-news {
+#news {
   background-image: url("../img/abandoned-forest-industry-nature.jpg");
   @include background;
 
-  #news {
+  #news-container {
     padding: 1rem 0;
     min-height: 100vh;
 
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 3.5rem 2rem 3.5rem;
     }
 
     @media (max-width: $phone-max) {
       padding: 0 1.5rem 2rem 1.5rem;
-    }
+    } */
 
     h2 {
       width: 90%;
       margin: auto;
       padding: 2rem 0.5rem 1.5rem 0.5rem;
 
-      @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
         width: 100%;
         margin: 0;
       }
@@ -416,7 +408,7 @@
       @media (max-width: $phone-max) {
         width: 100%;
         margin: 0;
-      }
+      } */
     }
 
     .news-article {
@@ -454,7 +446,7 @@
         .news-img {
           width: 15rem;
           height: 10rem;
-          border-radius: 2px;
+          border-radius: 3px;
 
           @media (min-width: $tablet-min) and (max-width: $tablet-max) {
             width: 10rem;
@@ -537,12 +529,12 @@
 
 /*** GALLERY ***/
 
-#main-gallery {
+#gallery {
   min-height: 100vh;
   background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
   @include background;
 
-  #gallery {
+  #gallery-container {
     padding: 1rem 0;
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
@@ -651,7 +643,7 @@
             max-width: 60%;
             max-height: 70vh;
             margin: 2rem auto;
-            border-radius: 2px;
+            border-radius: 3px;
 
             animation-name: open-modal;
             animation-duration: 0.4s;
@@ -736,35 +728,53 @@
 
 /*** AMBIENCE ***/
 
-#main-ambience {
+#ambience {
   min-height: 100vh;
   background: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
   @include background;
 
-  #ambience {
+  #ambience-container {
     padding: 1rem 0;
     display: flex;
     flex-direction: row-reverse;
 
-    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 3.5rem 2rem 3.5rem;
-    }
+    } */
 
     @media (max-width: $phone-max) {
-      padding: 0 1.5rem 2rem 1.5rem;
+      padding: 0 0.5rem 2rem 0.5rem;
     }
 
     .ambience-articles {
-      h1 {
-        margin: auto;
-        padding: 1rem 0.5rem;
-        font-size: 5rem;
+      width: 100%;
+
+      .welcome-heading {
+        margin: 1rem 0;
         text-align: center;
+
+        font-size: 3rem;
+        font-family: $heading-ff;
+        letter-spacing: 0.5rem;
+
+        h1 {
+          font-size: 3rem;
+        }
       }
 
       .ambience-article {
         width: 90%;
         margin: 0 auto 1rem auto;
+
+        /* @media (max-width: $tablet-max) {
+          width: 100%;
+          margin: 0;
+        } */
+
+        @media (max-width: $phone-max) {
+          width: 100%;
+          margin: 0;
+        }
 
         h2 {
           padding: 1rem;
@@ -782,26 +792,24 @@
 
         ul {
           padding: 0 0 0 6rem;
-          font-size: 1.1rem;
 
-          a {
-            text-decoration: none;
+          @media (max-width: $hamburger-max) {
+            padding: 0 0 0 2rem;
+          }
 
-            &:hover {
-              color: $blue;
-              text-decoration: underline;
+          li {
+            text-align: justify;
+            padding: 0 1rem 0 0;
+
+            a {
+              text-decoration: none;
+
+              &:hover {
+                color: $blue;
+                text-decoration: underline;
+              }
             }
           }
-        }
-
-        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-          width: 100%;
-          margin: 0;
-        }
-
-        @media (max-width: $phone-max) {
-          width: 100%;
-          margin: 0;
         }
 
         p {
