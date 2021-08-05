@@ -83,15 +83,11 @@ const designer = document.querySelector(".designer");
 const alterEgo = document.querySelector(".alt-ego");
 const designIcon = document.querySelector(".fa-paint-roller");
 
-designer.addEventListener("mouseenter", showAltEgo);
-designer.addEventListener("mouseleave", hideAltEgo);
+designer.addEventListener("mouseover", showAltEgo);
 
 function showAltEgo() {
   alterEgo.style.display = "inline";
+  alterEgo.style.display = "#ffc400";
   designIcon.style.color = "#ffc400";
 }
 
-function hideAltEgo() {
-  alterEgo.style.display = "none";
-  designIcon.style.color = "#ccc";
-}

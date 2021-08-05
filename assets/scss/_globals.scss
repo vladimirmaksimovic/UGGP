@@ -298,7 +298,7 @@ nav {
 /* content-container */
 
 .content-container {
-  max-width: 1440px;
+  max-width: $desktop-mid;
   min-height: 100vh;
   margin: auto;
   background-color: $transparent-black;
@@ -415,4 +415,26 @@ aside {
 @mixin flex-center {
   display: flex;
   justify-content: center;
+}
+
+@mixin flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@mixin welcome-heading {
+  margin: 1rem 0;
+  text-align: center;
+
+  font-size: 3rem;
+  font-family: $heading-ff;
+  letter-spacing: 0.5rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 }

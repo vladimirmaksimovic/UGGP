@@ -278,15 +278,13 @@
 /*** HISTORY ***/
 
 #history {
+  min-height: 100vh;
   background-image: url("../img/bridge-clouds-cloudy-dark-clouds.jpg");
   @include background;
 
   #history-container {
     padding: 1rem 0;
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: row-reverse;
+    @include flex-row-reverse;
 
     @media (min-width: $tablet-min) and (max-width: $tablet-max) {
       padding: 0 0 2rem 0;
@@ -300,20 +298,7 @@
       width: 100%;
 
       .welcome-heading {
-        margin: 1rem 0;
-        text-align: center;
-
-        font-size: 3rem;
-        font-family: $heading-ff;
-        letter-spacing: 0.5rem;
-
-        h1 {
-          font-size: 3rem;
-        }
-
-        h3 {
-          font-size: 2rem;
-        }
+        @include welcome-heading;
       }
 
       .history-article {
@@ -342,22 +327,54 @@
           }
         }
 
+        ul {
+          padding: 0 0 0 6rem;
+
+          @media (max-width: $hamburger-max) {
+            padding: 0 0 0 2rem;
+          }
+
+          li {
+            text-align: justify;
+            padding: 0 1rem 0 0;
+
+            a {
+              text-decoration: none;
+
+              &:hover {
+                color: $blue;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+
         img {
           width: 100%;
-          max-width: 43vw;
+          max-width: 30vw;
           margin: auto;
           padding: 0.5rem;
           border-radius: 3px;
 
           display: flex;
 
+          @media (max-width: $desktop-mid) {
+            max-width: 35vw;
+            padding: 0;
+          }
+
+          @media (max-width: $desktop-min) {
+            max-width: 40vw;
+            padding: 0;
+          }
+
           @media (max-width: $tablet-max) {
-            max-width: 50vw;
+            max-width: 45vw;
             padding: 0;
           }
 
           @media (max-width: $hamburger-max) {
-            max-width: 65vw;
+            max-width: 50vw;
             padding: 0;
           }
 
@@ -735,58 +752,46 @@
 
   #ambience-container {
     padding: 1rem 0;
-    display: flex;
-    flex-direction: row-reverse;
+    @include flex-row-reverse;
 
-    /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
-      padding: 0 3.5rem 2rem 3.5rem;
-    } */
+    @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+      padding: 0 0 2rem 0;
+    }
 
     @media (max-width: $phone-max) {
-      padding: 0 0.5rem 2rem 0.5rem;
+      padding: 0 1.5rem 2rem 1.5rem;
     }
 
     .ambience-articles {
       width: 100%;
 
       .welcome-heading {
-        margin: 1rem 0;
-        text-align: center;
-
-        font-size: 3rem;
-        font-family: $heading-ff;
-        letter-spacing: 0.5rem;
-
-        h1 {
-          font-size: 3rem;
-        }
+        @include welcome-heading;
       }
 
       .ambience-article {
         width: 90%;
-        margin: 0 auto 1rem auto;
+        margin: 1rem auto;
 
-        /* @media (max-width: $tablet-max) {
-          width: 100%;
-          margin: 0;
-        } */
+        @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+          width: 90%;
+          margin: 1rem auto;
+        }
 
         @media (max-width: $phone-max) {
           width: 100%;
-          margin: 0;
         }
 
         h2 {
-          padding: 1rem;
+          margin: auto;
+          padding: 1rem 0.5rem;
 
           @media (min-width: $tablet-min) and (max-width: $tablet-max) {
             width: 100%;
-            margin: 0;
           }
 
           @media (max-width: $phone-max) {
             width: 100%;
-            margin: 0;
           }
         }
 
@@ -812,8 +817,43 @@
           }
         }
 
+        img {
+          width: 100%;
+          max-width: 30vw;
+          margin: auto;
+          padding: 0.5rem;
+          border-radius: 3px;
+
+          display: flex;
+
+          @media (max-width: $desktop-mid) {
+            max-width: 35vw;
+            padding: 0;
+          }
+
+          @media (max-width: $desktop-min) {
+            max-width: 40vw;
+            padding: 0;
+          }
+
+          @media (max-width: $tablet-max) {
+            max-width: 45vw;
+            padding: 0;
+          }
+
+          @media (max-width: $hamburger-max) {
+            max-width: 50vw;
+            padding: 0;
+          }
+
+          @media (max-width: $phone-max) {
+            max-width: 100vw;
+            padding: 0;
+          }
+        }
+
         p {
-          padding: 0.5rem 1rem;
+          padding: 0.75rem 0;
           text-align: justify;
           text-indent: 3rem;
         }
@@ -1072,13 +1112,11 @@
         .alt-ego {
           display: none;
           text-decoration: none;
-
-          /* transition: all 0.3s ease-in; */
-          transition: width 2s;
+          color: $lion;
 
           &:hover {
-            width: 300px;
-            color: $lion;
+            color: $blue;
+            text-decoration: underline;
           }
         }
       }
