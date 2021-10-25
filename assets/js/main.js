@@ -1,37 +1,23 @@
 /**
- * RESPONSIVE NAVBAR - HAMBURGER BTN
+ * RESPONSIVE NAVBAR - HAMBURGER BUTTON
  */
 
-// open hamburger navbar
-function hamburger() {
-  const li = document.getElementsByClassName("nav-item");
+const hamburgerIcon = document.querySelector("#hamburger");
+const li = document.querySelectorAll(".nav-item");
+const newsArticle = document.querySelectorAll(".news-article");
+const newsContent = document.querySelectorAll(".news-content");
+console.log(newsContent);
+//const a = document.querySelectorAll(".nav-link");
 
-  for (let i = 0; i < li.length; i++) {
-    if (li[i].className === "nav-item") {
-      li[i].className += " responsive";
-    } else {
-      li[i].className = "nav-item";
-    }
-  }
-}
-
-// close hamburger navbar
-const a = document.getElementsByClassName("nav-link");
-
-for (let i = 0; i < a.length; i++) {
-  a[i].addEventListener("click", function () {
-    const li = document.getElementsByClassName("nav-item");
-    for (let i = 0; i < li.length; i++) {
-      li[i].className = "nav-item";
-    }
+const hamburgerHandler = () => {
+  li.forEach(li => {
+    li.className === "nav-item" ?
+      li.classList.add("responsive") :
+      li.classList.remove("responsive");
   });
 }
 
-/**
- * NEWS COLLAPSE
- */
-
-const newsArticle = document.getElementsByClassName("news-article");
+hamburgerIcon.addEventListener("click", hamburgerHandler, false);
 
 for (let i = 0; i < newsArticle.length; i++) {
   newsArticle[i].addEventListener("click", function () {
@@ -44,6 +30,81 @@ for (let i = 0; i < newsArticle.length; i++) {
     }
   });
 }
+
+/* const newsArticleHandler = () => {
+  newsArticle.forEach(article => {
+    article.classList.toggle("active");
+
+    newsContent.style.maxHeight ?
+      newsContent.style.maxHeight = null :
+      newsContent.style.maxHeight = newsContent.scrollHeight + "px";
+  });
+}
+
+newsArticle.forEach(newsArticle => {
+  newsArticle.addEventListener("click", newsArticleHandler, false)
+}); */
+
+//newsArticle.addEventListener("click", newsArticleHandler, false);
+/* for (let i = 0; i < a.length; i++) {
+  a[i].addEventListener("click", function () {
+    //const li = document.getElementsByClassName("nav-item");
+    for (let i = 0; i < li.length; i++) {
+      li[i].className = "nav-item";
+    }
+  });
+} */
+
+// open hamburger navbar
+/* function hamburger() {
+  const li = document.getElementsByClassName("nav-item");
+ 
+  for (let i = 0; i < li.length; i++) {
+    if (li[i].className === "nav-item") {
+      li[i].className += " responsive";
+    } else {
+      li[i].className = "nav-item";
+    }
+  }
+ 
+  //const li = document.querySelectorAll(".nav-item");
+ 
+  li.forEach(li => {
+    li.className === "nav-item" ?
+      li.classList.add("responsive") :
+      li.classList.remove("responsive");
+  });
+} */
+
+// close hamburger navbar
+//const a = document.getElementsByClassName("nav-link");
+
+/* for (let i = 0; i < a.length; i++) {
+  a[i].addEventListener("click", function () {
+    //const li = document.getElementsByClassName("nav-item");
+    for (let i = 0; i < li.length; i++) {
+      li[i].className = "nav-item";
+    }
+  });
+} */
+
+/**
+ * NEWS COLLAPSE
+ */
+
+//const newsArticle = document.getElementsByClassName("news-article");
+
+/* for (let i = 0; i < newsArticle.length; i++) {
+  newsArticle[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    const newsContent = this.lastElementChild;
+    if (newsContent.style.maxHeight) {
+      newsContent.style.maxHeight = null;
+    } else {
+      newsContent.style.maxHeight = newsContent.scrollHeight + "px";
+    }
+  });
+} */
 
 /**
  * GALLERY MODAL F-N

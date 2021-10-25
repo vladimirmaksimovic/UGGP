@@ -8,18 +8,12 @@
   padding: 0;
 }
 
-/*** GENERAL STYLES ***/
+/*** GLOBAL STYLES ***/
 
 html {
   /* smooth page scrolling */
   scroll-behavior: smooth;
   /* scroll-padding-top: 4rem; */
-
-  /** 
-   * fixing "headbutting the browser window", i.e.
-   * navbar fixed position overlap
-   */
-
   font-size: 16px;
 }
 
@@ -77,107 +71,7 @@ main {
   overflow: hidden;
 }
 
-/** NAVBAR SECTION **/
-
-/* nav {
-  width: 100%;
-  max-width: 1440px;
-  background-color: $dark-transparent-black;
-  position: fixed;
-  z-index: 1;
-  overflow: hidden;
-  border-bottom: 1px solid $darker-grey;
-
-  ul {
-    min-height: 4rem;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 1.15rem; */
-
-/* Small devices (landscape phones: 575px) */
-/* @media (max-width: $phone-max) {
-      padding: 0 0 0 0.5rem;
-    }
-
-    .hamburger {
-      display: none;
-      padding: 1.15rem;
-      color: $darker-white; */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-        display: block;
-        width: fit-content;
-      }
-    } */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-      flex-direction: column;
-      justify-content: end;
-    }
-
-    .responsive {
-      display: flex !important;
-      margin: 0 !important;
-      padding: 0.5rem 1.4rem;
-    } */
-
-/* li */
-/* .nav-item {
-      margin: auto;
-      display: flex; */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-        display: none;
-      }
-
-      a {
-        margin: auto;
-        background-color: transparent;
-        font-weight: bold;
-        color: $darker-grey;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.2s ease-in;
-
-        &:hover {
-          color: $darker-white;
-        } */
-
-/* Navbar Hamburger - 760px */
-/* @media (max-width: $hamburger-max) {
-          margin: 0;
-        }
-      }
-
-      .slash {
-        padding: 0 0.5rem;
-        color: $darker-grey;
-      }
-
-      .nav-link {
-        &::after {
-          content: "";
-          display: block;
-          width: 0;
-          height: 2px;
-          background: $darker-white;
-          transition: width 0.5s;
-        }
-
-        &:hover::after {
-          width: 100%;
-          transition: width 0.3s;
-        }
-      }
-    }
-  }
-} */
-
-/** nav bar **/
+/*** NAVBAR ***/
 
 nav {
   width: 100%;
@@ -222,7 +116,7 @@ nav {
       padding: 0 0 0 0.5rem;
     }
 
-    .hamburger {
+    #hamburger {
       display: none;
       padding: 1.15rem;
       color: $darker-white;
