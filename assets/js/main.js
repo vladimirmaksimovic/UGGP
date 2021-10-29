@@ -6,7 +6,7 @@ const hamburgerIcon = document.querySelector("#hamburger");
 const li = document.querySelectorAll(".nav-item");
 const newsArticle = document.querySelectorAll(".news-article");
 const newsContent = document.querySelectorAll(".news-content");
-console.log(newsContent);
+//console.log(newsContent);
 //const a = document.querySelectorAll(".nav-link");
 
 const hamburgerHandler = () => {
@@ -19,10 +19,16 @@ const hamburgerHandler = () => {
 
 hamburgerIcon.addEventListener("click", hamburgerHandler, false);
 
+/**
+ * NEWS ACCORDION F-N
+ */
+
 for (let i = 0; i < newsArticle.length; i++) {
   newsArticle[i].addEventListener("click", function () {
     this.classList.toggle("active");
+
     const newsContent = this.lastElementChild;
+
     if (newsContent.style.maxHeight) {
       newsContent.style.maxHeight = null;
     } else {
@@ -110,30 +116,26 @@ newsArticle.forEach(newsArticle => {
  * GALLERY MODAL F-N
  */
 
-// get modal elements
-const modal = document.getElementsByClassName("modal-body");
-// get img elements
-const img = document.getElementsByClassName("img-item");
-// get close btn`s
-const closeModalBtn = document.getElementsByClassName("close-modal");
+// get modal, image and button elements
+const modal = document.querySelectorAll(".modal-body");
+const img = document.querySelectorAll(".img-item");
+const closeModalBtn = document.querySelectorAll(".close-modal");
 
-// go through images
+// loop through images
 for (let i = 0; i < img.length; i++) {
-  // open modal event
-  img[i].addEventListener("click", openModal);
 
   // open modal f-n
-  function openModal() {
+  const openModal = () => {
     modal[i].style.display = "flex";
   }
 
-  // close modal event
-  closeModalBtn[i].addEventListener("click", closeModal);
-
   // close modal f-n
-  function closeModal() {
+  const closeModal = () => {
     modal[i].style.display = "none";
   }
+
+  img[i].addEventListener("click", openModal);
+  closeModalBtn[i].addEventListener("click", closeModal);
 }
 
 /**
@@ -144,11 +146,10 @@ const designer = document.querySelector(".designer");
 const alterEgo = document.querySelector(".alt-ego");
 const designIcon = document.querySelector(".fa-paint-roller");
 
-designer.addEventListener("mouseover", showAltEgo);
-
 function showAltEgo() {
   alterEgo.style.display = "inline";
-  alterEgo.style.display = "#ffc400";
+  alterEgo.style.color = "#ffc400";
   designIcon.style.color = "#ffc400";
 }
 
+designer.addEventListener("mouseover", showAltEgo);
