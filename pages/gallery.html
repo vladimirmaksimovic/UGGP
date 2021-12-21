@@ -1,466 +1,630 @@
 <!DOCTYPE html>
 <html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web sajt udruženja gradjana Gočka pruga"
+    />
+    <meta name="keywords" content="Gočka pruga, Goč, Planina Goč, Kraljevo" />
+    <meta name="author" content="Vladimir Maksimović" />
+    <!-- JS script -->
+    <script src="./../assets/js/main.js" defer></script>
+    <!-- Font Awesome 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <title>Удружење "Гочка пруга"</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Web sajt udruženja gradjana Gočka pruga" />
-  <meta name="keywords" content="Gočka pruga, Goč, Planina Goč, Kraljevo" />
-  <meta name="author" content="Vladimir Maksimović" />
-  <!-- JS script -->
-  <script src="./../assets/js/main.js" defer></script>
-  <!-- Font Awesome 5 CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <!-- CSS link -->
-  <link rel="stylesheet" href="./../assets/css/style.css" />
-  <title>Удружење "Гочка пруга"</title>
-</head>
-
-<body>
-  <!-- main -->
-  <main id="gallery">
-    <div class="content-container">
-      <!-- to the top of the page btn -->
-      <a class="page-top" href="#gallery"><i class="fas fa-chevron-up"></i></a>
-      <!-- navbar -->
-      <nav>
-        <a href="./home.html#main-home" class="nav-link brand">Удружење Гочка пруга</a>
-        <ul>
-          <!-- hamburger icon -->
-          <a href="javascript:void(0);" id="hamburger">
-            <i class="fas fa-bars"></i>
-          </a>
-          <!-- <li class="nav-item"><a href="#history"><img src="./img/logo-ugp.svg" alt="" /></a></li>
+  <body>
+    <!-- main -->
+    <main id="gallery">
+      <div class="content-container">
+        <!-- to the top of the page btn -->
+        <a class="page-top" href="#gallery"
+          ><i class="fas fa-chevron-up"></i
+        ></a>
+        <!-- navbar -->
+        <nav>
+          <a href="./home.html#main-home" class="nav-link brand"
+            >Удружење Гочка пруга</a
+          >
+          <ul>
+            <!-- hamburger icon -->
+            <a href="javascript:void(0);" id="hamburger">
+              <i class="fas fa-bars"></i>
+            </a>
+            <!-- <li class="nav-item"><a href="#history"><img src="./img/logo-ugp.svg" alt="" /></a></li>
         <li class="nav-item"><a href="../index.html#main" class="nav-link">Удружење Гочка пруга</a></li> -->
-          <li class="nav-item">
-            <a href="./history.html" class="nav-link">Историја</a>
-          </li>
-          <li class="nav-item">
-            <a href="./news.html" class="nav-link">Новости</a>
-          </li>
-          <li class="nav-item">
-            <a href="#gallery.html" class="nav-link">Музеј</a>
-          </li>
-          <li class="nav-item">
-            <a href="./ambience.html" class="nav-link">Гоч</a>
-          </li>
-          <li class="nav-item">
-            <a href="./contact.html" class="nav-link">Контакт</a>
-          </li>
-          <!-- <li class="nav-item">
+            <li class="nav-item">
+              <a href="./history.html" class="nav-link">Историја</a>
+            </li>
+            <li class="nav-item">
+              <a href="./news.html" class="nav-link">Новости</a>
+            </li>
+            <li class="nav-item">
+              <a href="#gallery.html" class="nav-link">Музеј</a>
+            </li>
+            <li class="nav-item">
+              <a href="./ambience.html" class="nav-link">Гоч</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Контакт</a>
+            </li>
+            <!-- <li class="nav-item">
               <a href="#" class="nav-link lang-link">Srb</a><span class="slash">/</span><a href="#"
                 class="nav-link lang-link">Rus</a>
             </li> -->
-        </ul>
-      </nav>
+          </ul>
+        </nav>
 
-      <!-- gallery -->
-      <section id="gallery-container">
-        <h2>Сведоци историје</h2>
-        <div class="gallery-articles">
-          <article class="img-container">
-            <img src="./../assets/img/00-logo-ugp.png"
-              alt="Slika table udruženja na ulazu obnovljenu železničku stanicu u Kamenici" class="img-item item-1" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <!-- TODO: optimize content images -->
-              <img src="./../assets/img/00-logo-ugp.png"
-                alt="Slika table udruženja na ulazu obnovljenu železničku stanicu u Kamenici" class="modal-img" />
-              <p class="modal-info">
-                Табла удуружења на улазу у музеј Гочке пруге који се налази у
-                новој згради месне заједнице Каменица, на месту некадашње
-                железничке станице Гочке пруге.
-              </p>
-            </div>
+        <!-- gallery -->
+        <section id="gallery-container">
+          <h2>Сведоци историје</h2>
+          <div class="gallery-articles">
+            <article class="img-container">
+              <img
+                src="./../assets/img/00-logo-ugp.png"
+                alt="Tabla udruženja na ulazu obnovljenu železničku stanicu u Kamenici."
+                class="img-item item-1"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <!-- TODO: optimize content images -->
+                <img
+                  src="./../assets/img/00-logo-ugp.png"
+                  alt="Tabla udruženja na ulazu obnovljenu železničku stanicu u Kamenici."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Табла удружења "Гочка пруга" на објекту обновљене железничке
+                  станице у Каменици.
+                </p>
+              </div>
 
-            <img src="./../assets/img/01-kraljevo-most-prvi-svetski-rat.jpg"
-              alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata" class="img-item item-2" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/01-kraljevo-most-prvi-svetski-rat.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
+              <img
+                src="./../assets/img/01-kraljevo-most-prvi-svetski-rat.jpg"
+                alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata."
+                class="img-item item-2"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/01-kraljevo-most-prvi-svetski-rat.jpg"
+                  alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Дрвени мост у Краљеву на реци Ибар у време Првог светског
+                  рата.
+                </p>
+              </div>
 
-            <img src="./../assets/img/02-kamenica.jpg" alt="" class="img-item item-3" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/02-kamenica.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
+              <img
+                src="./../assets/img/02-kamenica.jpg"
+                alt="Izletnici na Gočkoj pruzi."
+                class="img-item item-3"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/02-kamenica.jpg"
+                  alt="Izletnici na Gočkoj pruzi."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Излетници на Гочкој прузи - архив
+                  <em>
+                    <a
+                      href="https://sr.wikipedia.org/sr-ec/%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%86%D0%B5"
+                      target="_blank"
+                      >Југословенска Државна Железница</a
+                    ></em
+                  >.
+                </p>
+              </div>
 
-            <img src="./../assets/img/03-kraljevo-zapaljeni-most-na-ibru.jpg"
-              alt="Slika zapaljenog mosta na reci Ibar u Kraljevu" class="img-item item-4" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/03-kraljevo-zapaljeni-most-na-ibru.jpg"
-                alt="Slika zapaljenog mosta na reci Ibar u Kraljevu" class="modal-img" />
-              <p class="modal-info">
-                У I светском рату, 1918. године, аустријска воска пали дрвени
-                мост на Ибру преко којег је прелазила Гочка пруга.
-              </p>
-            </div>
+              <img
+                src="./../assets/img/03-kraljevo-zapaljeni-most-na-ibru.jpg"
+                alt="Slika zapaljenog mosta na reci Ibar u Kraljevu u Prvom svetskom ratu."
+                class="img-item item-4"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/03-kraljevo-zapaljeni-most-na-ibru.jpg"
+                  alt="Slika zapaljenog mosta na reci Ibar u Kraljevu u Prvom svetskom ratu."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  У I светском рату, 1918. године, аустријска војска пали дрвени
+                  мост на Ибру преко којег је прелазила Гочка пруга - архив
+                  <em>
+                    <a
+                      href="https://sr.wikipedia.org/sr-ec/%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%86%D0%B5"
+                      target="_blank"
+                      >Југословенска Државна Железница</a
+                    ></em
+                  >.
+                </p>
+              </div>
 
-            <img src="./../assets/img/04-kraljevo-lozionica.jpg" alt="" class="img-item item-5" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/04-kraljevo-lozionica.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
+              <img
+                src="./../assets/img/04-kraljevo-lozionica.jpg"
+                alt="Ložionica u Kraljevu."
+                class="img-item item-5"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/04-kraljevo-lozionica.jpg"
+                  alt="Ložionica u Kraljevu."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Ложионица у Краљеву - архив
+                  <em>
+                    <a
+                      href="https://sr.wikipedia.org/sr-ec/%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%86%D0%B5"
+                      target="_blank"
+                      >Југословенска Државна Железница</a
+                    ></em
+                  >.
+                </p>
+              </div>
+            </article>
+
+            <article class="img-container">
+              <img
+                src="./../assets/img/05-izlet-goc.jpg"
+                alt="Lokalni mestani i izletnici na Gočkoj pruzi."
+                class="img-item item-6"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/05-izlet-goc.jpg"
+                  alt="Lokalni mestani i izletnici na Gočkoj pruzi."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Локални мештани и излетници на Гочкој прузи.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/06-most-ibar.jpg"
+                alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata."
+                class="img-item item-7"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/06-most-ibar.jpg"
+                  alt="Slika mosta u Kraljevu na reci Ibar za vreme Prvog svetskog rata."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Дрвени мост у Краљеву на реци Ибар у време Првог светског
+                  рата.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/07-vodotocilo-riza.jpg"
+                alt="Vodotočilo, riža, na Goču."
+                class="img-item item-8"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/07-vodotocilo-riza.jpg"
+                  alt="Vodotočilo, riža, na Goču."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Водоточило - рижа, које је индустријалац Миљко Петровић градио
+                  на Гочу и околним планинама.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/08-most-na-ibaru-i-gocka-pruga.jpg"
+                alt="Slika Gočke pruge i mosta na reci Ibar u Kraljevu."
+                class="img-item item-9"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/08-most-na-ibaru-i-gocka-pruga.jpg"
+                  alt="Slika Gočke pruge i mosta na reci Ibar u Kraljevu."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  14. септембра 1923. године, питомци Војне академије прелазе
+                  мост на Ибру у повратку са курса из Жиче - поглед са Пљакиног
+                  шанца на Гочку пругу и мост на Ибру.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/09-muzej-gocke-pruge-kamenica.jpg"
+                alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici."
+                class="img-item item-10"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/09-muzej-gocke-pruge-kamenica.jpg"
+                  alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Изложбени простор музеја Гочке пруге у новој згради Месне
+                  заједнице Каменица, на месту некадашње железничке станице
+                  Гочке пруге.
+                </p>
+              </div>
+            </article>
+
+            <article class="img-container">
+              <img
+                src="./../assets/img/10-lokomotiva.jpg"
+                alt="Parna lokomotiva na Gočkoj pruzi."
+                class="img-item item-11"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/10-lokomotiva.jpg"
+                  alt="Parna lokomotiva na Gočkoj pruzi."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Парна локомотива на Гочкој прузи - архив
+                  <em>
+                    <a
+                      href="https://sr.wikipedia.org/sr-ec/%D0%88%D1%83%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B5_%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%B8%D1%86%D0%B5"
+                      target="_blank"
+                      >Југословенска Државна Железница</a
+                    ></em
+                  >.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/11-voz-gocka-pruga.jpg"
+                alt="Parna lokomotiva sa putničkim vagonom na Gočkoj pruzi."
+                class="img-item item-12"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/11-voz-gocka-pruga.jpg"
+                  alt="Parna lokomotiva sa putničkim vagonom na Gočkoj pruzi."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Воз на Гочкој прузи из Каменице за Краљево 1934. године.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
+                alt="Obnovljena železnička stanica nekadašnje Gočke pruge."
+                class="img-item item-13"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
+                  alt="Obnovljena železnička stanica nekadašnje Gočke pruge."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Каменица, нова зграда Месне заједнице у којој је обновљена
+                  железничка станица некадашње Гочке пруге.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/13-lokomotiva.jpg"
+                alt="Parna lokomotiva na Gočkoj pruzi."
+                class="img-item item-14"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/13-lokomotiva.jpg"
+                  alt="Parna lokomotiva na Gočkoj pruzi."
+                  class="modal-img"
+                />
+                <p class="modal-info">Парна локомотива на Гочкој прузи.</p>
+              </div>
+
+              <img
+                src="./../assets/img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg"
+                alt="Slika Gočkog voza koji prelazi most na Ibru."
+                class="img-item item-15"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg"
+                  alt="Slika Gočkog voza koji prelazi most na Ibru."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Последњи прелазак Гочког воза преко ибарског моста.
+                </p>
+              </div>
+            </article>
+
+            <article class="img-container">
+              <img
+                src="./../assets/img/15-goc-panorama.jpg"
+                alt="Panorama planine Goč."
+                class="img-item item-16"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/15-goc-panorama.jpg"
+                  alt="Panorama planine Goč."
+                  class="modal-img"
+                />
+                <p class="modal-info">Панорама планине Гоч.</p>
+              </div>
+
+              <img
+                src="./../assets/img/16-planinarski-dom.jpg"
+                alt="Zgrada planinarskog doma u Sokolji."
+                class="img-item item-17"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/16-planinarski-dom.jpg"
+                  alt="Zgrada planinarskog doma u Sokolji."
+                  class="modal-img"
+                />
+                <p class="modal-info">Зграда планинарског дома у Сокољи.</p>
+              </div>
+
+              <img
+                src="./../assets/img/17-rekonstrukcija-pruge.jpg"
+                alt="Radnici na radovima rekonstrukcije dela Gočke pruge."
+                class="img-item item-18"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/17-rekonstrukcija-pruge.jpg"
+                  alt="Radnici na radovima rekonstrukcije dela Gočke pruge."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Радници на радовима реконструкције дела Гочке пруге.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/19-rekonstrukcija-pruge.jpg"
+                alt="Radnici na radovima rekonstrukcije dela Gočke pruge."
+                class="img-item item-20"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/19-rekonstrukcija-pruge.jpg"
+                  alt="Radnici na radovima rekonstrukcije dela Gočke pruge."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Радници на радовима реконструкције дела Гочке пруге.
+                </p>
+              </div>
+
+              <img
+                src="./../assets/img/20-gocki-voz-ribnicki-most.jpg"
+                alt="Slika Gočkog voza na ribničkom mostu."
+                class="img-item item-20"
+              />
+              <div id="modal" class="modal-body">
+                <span class="close-modal">&times;</span>
+                <img
+                  src="./../assets/img/20-gocki-voz-ribnicki-most.jpg"
+                  alt="Slika Gočkog voza na ribničkom mostu."
+                  class="modal-img"
+                />
+                <p class="modal-info">
+                  Гочки воз прелази преко рибничког моста према Каменици.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <hr class="gallery-border" />
+
+          <!-- video gallery -->
+          <h2>Чувари сећања</h2>
+          <article class="video-gallery">
+            <!-- Sumska pruga Kraljevo - Goc -->
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/gcAiN8QYMt0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            <!-- Muzej Gočke (Rižine) pruge u Kamenici kod Kraljeva -->
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/5BsKiKjptUs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </article>
+        </section>
+      </div>
+    </main>
 
-          <article class="img-container">
-            <img src="./../assets/img/05-izlet-goc.jpg" alt="" class="img-item item-6" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/05-izlet-goc.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/06-most-ibar.jpg" alt="" class="img-item item-7" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/06-most-ibar.jpg" alt="Tabla železničke stanice u Kamenici" class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/07-vodotocilo-riza.jpg" alt="Slika vodotočila, riže, na Goču"
-              class="img-item item-8" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/07-vodotocilo-riza.jpg" alt="Slika vodotočila, riže, na Goču"
-                class="modal-img" />
-              <p class="modal-info">
-                Водоточило - рижа, које је индустријалац Миљко Петровић
-                градио на Гочу и околним планинама.
-              </p>
-            </div>
-
-            <img src="./../assets/img/08-most-na-ibaru-i-gocka-pruga.jpg" alt="Slika Gočke pruge i mosta na reci Ibar"
-              class="img-item item-9" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/08-most-na-ibaru-i-gocka-pruga.jpg" alt="Slika Gočke pruge i mosta na reci Ibar"
-                class="modal-img" />
-              <p class="modal-info">
-                14. септембра 1923. године, питомци Војне академије прелазе
-                мост на Ибру у повратку са курса из Жиче. Погледа са Пљакиног
-                шанца на Гочку пругу и мост на Ибру.
-              </p>
-            </div>
-
-            <img src="./../assets/img/09-muzej-gocke-pruge-kamenica.jpg"
-              alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici" class="img-item item-10" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/09-muzej-gocke-pruge-kamenica.jpg"
-                alt="Slika izložbenog prostora muzeja Gočke pruge u Kamenici" class="modal-img" />
-              <p class="modal-info">
-                Изложбени простор музеја Гочке пруге у новој згради Месне
-                заједнице Каменица, на месту некадашње железничке станице
-                Гочке пруге.
-              </p>
-            </div>
-          </article>
-
-          <article class="img-container">
-            <img src="./../assets/img/10-lokomotiva.jpg" alt="" class="img-item item-11" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/10-lokomotiva.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/11-voz-gocka-pruga.jpg" alt="Slika voza na Gočkoj pruzi"
-              class="img-item item-12" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/11-voz-gocka-pruga.jpg" alt="Slika voza na Gočkoj pruzi" class="modal-img" />
-              <p class="modal-info">
-                Воз на Гочкој прузи из Каменице за Краљево 1934. године.
-              </p>
-            </div>
-
-            <img src="./../assets/img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
-              alt="Slika obnovljene železničke stanice nekadašnje Gočke pruge" class="img-item item-13" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/12-obnovljena-zeleznicka-stanica-kamenica.jpg"
-                alt="Slika obnovljene železničke stanice nekadašnje Gočke pruge" class="modal-img" />
-              <p class="modal-info">
-                Каменица, нова зграда Месне заједнице у којој је обновљена
-                железничка станица некадашње Гочке пруге.
-              </p>
-            </div>
-
-            <img src="./../assets/img/13-lokomotiva.jpg" alt="" class="img-item item-14" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/13-lokomotiva.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg"
-              alt="Slika Gočkog voza koji prelazi most na Ibru" class="img-item item-15" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/14-kraljevo-most-na-ibru-i-gocki-voz.jpg"
-                alt="Slika Gočkog voza koji prelazi most na Ibru" class="modal-img" />
-              <p class="modal-info">
-                Последњи прелазак Гочког воза преко ибарског моста.
-              </p>
-            </div>
-          </article>
-
-          <article class="img-container">
-            <img src="./../assets/img/15-goc-panorama.jpg" alt="Slika panorame planine Goč" class="img-item item-16" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/15-goc-panorama.jpg" alt="Slika panorame planine Goč" class="modal-img" />
-              <p class="modal-info">Панорама планине Гоч.</p>
-            </div>
-
-            <img src="./../assets/img/16-planinarski-dom.jpg" alt="" class="img-item item-17" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/16-planinarski-dom.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/17-rekonstrukcija-pruge.jpg" alt="" class="img-item item-18" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/17-rekonstrukcija-pruge.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/18-planinarski-dom.jpg" alt="" class="img-item item-19" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/18-planinarski-dom.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/19-rekonstrukcija-pruge.jpg" alt="" class="img-item item-20" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/19-rekonstrukcija-pruge.jpg" alt="Tabla železničke stanice u Kamenici"
-                class="modal-img" />
-              <p class="modal-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus, inventore incidunt.
-              </p>
-            </div>
-
-            <img src="./../assets/img/20-gocki-voz-ribnicki-most.jpg" alt="Slika Gočkog voza na ribničkom mostu"
-              class="img-item item-20" />
-            <div id="modal" class="modal-body">
-              <span class="close-modal">&times;</span>
-              <img src="./../assets/img/20-gocki-voz-ribnicki-most.jpg" alt="Slika Gočkog voza na ribničkom mostu"
-                class="modal-img" />
-              <p class="modal-info">
-                Гочки воз прелази преко рибничког моста према Каменици.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <hr class="gallery-border" />
-
-        <!-- video gallery -->
-        <h2>Чувари сећања</h2>
-        <article class="video-gallery">
-          <!-- Sumska pruga Kraljevo - Goc -->
-          <iframe src="https://www.youtube-nocookie.com/embed/gcAiN8QYMt0" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-          <!-- Muzej Gočke (Rižine) pruge u Kamenici kod Kraljeva -->
-          <iframe src="https://www.youtube-nocookie.com/embed/5BsKiKjptUs" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-articles">
+        <!-- google map -->
+        <article class="ggl-map" id="map">
+          <div class="gmap-canvas">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
         </article>
-      </section>
-    </div>
-  </main>
 
-  <!-- footer -->
-  <footer id="footer">
-    <div class="footer-articles">
-
-      <!-- google map -->
-      <article class="ggl-map" id="map">
-        <div class="gmap-canvas">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2716.1902585738503!2d20.699534258739504!3d43.6014624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDM2JzA1LjIiTiAyMMKwNDInMDUuMyJF!5e1!3m2!1ssr!2srs!4v1590257248618!5m2!1ssr!2srs"
-            allowfullscreen="" aria-hidden="false" tabindex="0">
-          </iframe>
-        </div>
-      </article>
-
-      <!-- contact info -->
-      <article class="footer-article contact-info">
-        <!-- address -->
-        <section class="footer-section">
-          <ul>
-            <h3>Адреса</h3>
-            <li>
-              <i class="fas fa-map-marked-alt"></i> Каменица бб, 36103
-              Каменица
-            </li>
-            <li><i class="fas fa-globe-europe"></i> Краљево, Србија</li>
-          </ul>
-        </section>
-
-        <!-- activity -->
-        <section class="footer-section">
-          <ul>
-            <h3>Делатност</h3>
-            <li>
-              <i class="fas fa-id-card"></i> ПИБ:
-              &#049;&#048;&#056;&#049;&#055;&#052;&#051;&#048;&#057;
-            </li>
-            <li>
-              <i class="far fa-id-card"></i> МБР:
-              &#050;&#056;&#049;&#050;&#048;&#053;&#056;&#051;
-            </li>
-            <li>
-              <i class="fas fa-stamp"></i> Шифра делатности:
-              &#057;&#052;&#057;&#057;
-            </li>
-            <li>
-              <i class="fas fa-calendar-alt"></i> Датум оснивања: 28.06.2013.
-              године
-            </li>
-          </ul>
-        </section>
-
-        <!-- accounts -->
-        <section class="footer-section">
-          <ul>
-            <h3>Банка и рачун</h3>
-            <li><i class="fas fa-landmark"></i> Управа за трезор:</li>
-            <li>
-              <i class="fas fa-long-arrow-alt-right"></i>
-              &#056;&#052;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#049;&#057;&#051;&#057;&#051;&#055;&#054;&#051;&#045;&#050;&#049;
-            </li>
-            <li>
-              <i class="fas fa-piggy-bank"></i> NLB banka a. d. Београд:
-            </li>
-            <li>
-              <i class="fas fa-long-arrow-alt-right"></i>
-              &#051;&#049;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#048;&#048;&#050;&#049;&#056;&#051;&#048;&#053;&#045;&#052;&#056;
-            </li>
-          </ul>
-        </section>
-
-        <!-- representatives -->
-        <section class="footer-section">
-          <ul>
-            <h3>Заступници</h3>
-            <li><i class="fas fa-user"></i> Прокурист: Верољуб Костић</li>
-            <li>
-              <i class="fas fa-user"></i> Прокурист: Живомир Милашиновић
-            </li>
-          </ul>
-        </section>
-
-        <!-- logo -->
-        <section class="footer-section logo">
-          <a href="#gallery"><img src="../assets/img/logo-ugp.svg" alt="" class="logo-img" /></a>
-        </section>
-      </article>
-
-      <!-- friends -->
-      <article class="footer-article">
-        <h3>Пријатељи Гочке пруге</h3>
-        <div class="friends">
+        <!-- contact info -->
+        <article class="footer-article contact-info">
+          <!-- address -->
           <section class="footer-section">
-            <a href="https://sr-rs.facebook.com/zavicajnodrustvo.kraljevo.1/" target="_blank">
-              <!-- <img src="./img/15-goc.jpg" alt=""> -->
-              Завичајно друштво "Краљево"
-            </a>
+            <ul>
+              <h3>Адреса</h3>
+              <li>
+                <i class="fas fa-map-marked-alt"></i> Каменица бб, 36103
+                Каменица
+              </li>
+              <li><i class="fas fa-globe-europe"></i> Краљево, Србија</li>
+            </ul>
           </section>
-          <section class="footer-section">
-            <a href="https://www.kraljevo.rs/" target="_blank">
-              <!-- <img src="./img/15-goc.jpg" alt=""> -->
-              Град Краљево
-            </a>
-          </section>
-          <section class="footer-section">
-            <a href="http://www.kraljevoturizam.rs/" target="_blank">
-              <!-- <img src="./img/17-rekonstrukcija-pruge.jpg" alt=""> -->
-              Туристичка организација Краљево
-            </a>
-          </section>
-          <section class="footer-section">
-            <a href="http://www.vrnjackabanja.co.rs/" target="_blank">
-              <!-- <img src="./img/16-planinarski-dom.jpg" alt=""> -->
-              Туристичка организација Врњачка Бања
-            </a>
-          </section>
-          <section class="footer-section">
-            <a href="http://www.tos.rs/" target="_blank">
-              <!-- <img src="./img/18-planinarski-dom.jpg" alt=""> -->
-              Туристичка организација Србије
-            </a>
-          </section>
-          <section class="footer-section">
-            <a href="https://nmkv.rs/" target="_blank">
-              <!-- <img src="./img/19-rekonstrukcija-pruge.jpg" alt=""> -->
-              Народни музеј Краљево
-            </a>
-          </section>
-        </div>
-      </article>
 
-      <!-- copyright -->
-      <article class="footer-article copyright-article">
-        <span class="copyright">@ 2020-2021 Удружење Гочка пруга</span>
-        <span class="design"><i class="fas fa-paint-roller"></i> by
-          <span class="designer">
-            &lt;/<a href="https://github.com/vladimirmaksimovic" target="_blank" class="alt-ego">
-              lion_tamer</a>&gt;
+          <!-- activity -->
+          <section class="footer-section">
+            <ul>
+              <h3>Делатност</h3>
+              <li>
+                <i class="fas fa-id-card"></i> ПИБ:
+                &#049;&#048;&#056;&#049;&#055;&#052;&#051;&#048;&#057;
+              </li>
+              <li>
+                <i class="far fa-id-card"></i> МБР:
+                &#050;&#056;&#049;&#050;&#048;&#053;&#056;&#051;
+              </li>
+              <li>
+                <i class="fas fa-stamp"></i> Шифра делатности:
+                &#057;&#052;&#057;&#057;
+              </li>
+              <li>
+                <i class="fas fa-calendar-alt"></i> Датум оснивања: 28.06.2013.
+                године
+              </li>
+            </ul>
+          </section>
+
+          <!-- accounts -->
+          <section class="footer-section">
+            <ul>
+              <h3>Банка и рачун</h3>
+              <li><i class="fas fa-landmark"></i> Управа за трезор:</li>
+              <li>
+                <i class="fas fa-long-arrow-alt-right"></i>
+                &#056;&#052;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#049;&#057;&#051;&#057;&#051;&#055;&#054;&#051;&#045;&#050;&#049;
+              </li>
+              <li>
+                <i class="fas fa-piggy-bank"></i> NLB banka a. d. Београд:
+              </li>
+              <li>
+                <i class="fas fa-long-arrow-alt-right"></i>
+                &#051;&#049;&#048;&#045;&#048;&#048;&#048;&#048;&#048;&#048;&#048;&#050;&#049;&#056;&#051;&#048;&#053;&#045;&#052;&#056;
+              </li>
+            </ul>
+          </section>
+
+          <!-- representatives -->
+          <section class="footer-section">
+            <ul>
+              <h3>Заступници</h3>
+              <li><i class="fas fa-user"></i> Прокурист: Верољуб Костић</li>
+              <li>
+                <i class="fas fa-user"></i> Прокурист: Живомир Милашиновић
+              </li>
+            </ul>
+          </section>
+
+          <!-- logo -->
+          <section class="footer-section logo">
+            <a href="#gallery"
+              ><img src="../assets/img/logo-ugp.svg" alt="" class="logo-img"
+            /></a>
+          </section>
+        </article>
+
+        <!-- friends -->
+        <article class="footer-article">
+          <h3>Пријатељи Гочке пруге</h3>
+          <div class="friends">
+            <section class="footer-section">
+              <a
+                href="https://sr-rs.facebook.com/zavicajnodrustvo.kraljevo.1/"
+                target="_blank"
+              >
+                <!-- <img src="./img/15-goc.jpg" alt=""> -->
+                Завичајно друштво "Краљево"
+              </a>
+            </section>
+            <section class="footer-section">
+              <a href="https://www.kraljevo.rs/" target="_blank">
+                <!-- <img src="./img/15-goc.jpg" alt=""> -->
+                Град Краљево
+              </a>
+            </section>
+            <section class="footer-section">
+              <a href="http://www.kraljevoturizam.rs/" target="_blank">
+                <!-- <img src="./img/17-rekonstrukcija-pruge.jpg" alt=""> -->
+                Туристичка организација Краљево
+              </a>
+            </section>
+            <section class="footer-section">
+              <a href="http://www.vrnjackabanja.co.rs/" target="_blank">
+                <!-- <img src="./img/16-planinarski-dom.jpg" alt=""> -->
+                Туристичка организација Врњачка Бања
+              </a>
+            </section>
+            <section class="footer-section">
+              <a href="http://www.tos.rs/" target="_blank">
+                <!-- <img src="./img/18-planinarski-dom.jpg" alt=""> -->
+                Туристичка организација Србије
+              </a>
+            </section>
+            <section class="footer-section">
+              <a href="https://nmkv.rs/" target="_blank">
+                <!-- <img src="./img/19-rekonstrukcija-pruge.jpg" alt=""> -->
+                Народни музеј Краљево
+              </a>
+            </section>
+          </div>
+        </article>
+
+        <!-- copyright -->
+        <article class="footer-article copyright-article">
+          <span class="copyright">@ 2020-2021 Удружење Гочка пруга</span>
+          <span class="design">
+            <a
+              href="https://github.com/vladimirmaksimovic"
+              target="_blank"
+              class="alt-ego"
+            >
+              <i class="fas fa-paint-roller"></i>
+            </a>
           </span>
-        </span>
-      </article>
-    </div>
-  </footer>
-
-</body>
-
+        </article>
+      </div>
+    </footer>
+  </body>
 </html>

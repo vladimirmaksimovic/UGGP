@@ -10,12 +10,12 @@ const newsContent = document.querySelectorAll(".news-content");
 //const a = document.querySelectorAll(".nav-link");
 
 const hamburgerHandler = () => {
-  li.forEach(li => {
-    li.className === "nav-item" ?
-      li.classList.add("responsive") :
-      li.classList.remove("responsive");
+  li.forEach((li) => {
+    li.className === "nav-item"
+      ? li.classList.add("responsive")
+      : li.classList.remove("responsive");
   });
-}
+};
 
 hamburgerIcon.addEventListener("click", hamburgerHandler, false);
 
@@ -123,16 +123,15 @@ const closeModalBtn = document.querySelectorAll(".close-modal");
 
 // loop through images
 for (let i = 0; i < img.length; i++) {
-
   // open modal f-n
   const openModal = () => {
     modal[i].style.display = "flex";
-  }
+  };
 
   // close modal f-n
   const closeModal = () => {
     modal[i].style.display = "none";
-  }
+  };
 
   img[i].addEventListener("click", openModal);
   closeModalBtn[i].addEventListener("click", closeModal);
@@ -142,7 +141,7 @@ for (let i = 0; i < img.length; i++) {
  * SHOW DESIGNER LINK
  */
 
-const designer = document.querySelector(".designer");
+/* const designer = document.querySelector(".designer");
 const alterEgo = document.querySelector(".alt-ego");
 const designIcon = document.querySelector(".fa-paint-roller");
 
@@ -152,4 +151,4 @@ function showAltEgo() {
   designIcon.style.color = "#ffc400";
 }
 
-designer.addEventListener("mouseover", showAltEgo);
+designer.addEventListener("mouseover", showAltEgo); */

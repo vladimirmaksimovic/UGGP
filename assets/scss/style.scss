@@ -1098,11 +1098,16 @@
         text-align: center;
       }
 
+      i:hover {
+        cursor: pointer;
+        color: $lion;
+      }
+
       /* .fa-paint-roller {
         color: $lion;
       } */
 
-      .designer {
+      /* .designer {
         transition: all 0.3s ease-in;
 
         &:hover {
@@ -1119,7 +1124,7 @@
             text-decoration: underline;
           }
         }
-      }
+      } */
     }
   }
 }
