@@ -14,13 +14,17 @@
   background-image: url("./../img/pexels-mark-plötz-2790395-1920x1280.jpg");
   @include background;
 
-  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-mark-plötz-2790395-1280x853.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
     background-image: url("./../img/pexels-mark-plötz-2790395-1280x853.jpg");
   }
 
   @media (max-width: $phone-max) {
     background-image: url("./../img/pexels-mark-plötz-2790395-640x426.jpg");
-  }
+  } */
 
   .logo-article {
     height: 100vh;
@@ -94,8 +98,20 @@
 /*** HOME ***/
 
 #home {
-  background-image: url("../img/home-01-pexels-nikolai-ulltang.jpg");
+  background-image: url("../img/pexels-nikolai-ulltang-285286-1920x1080.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-nikolai-ulltang-285286-1280x720.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-nikolai-ulltang-285286-1280x720.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-nikolai-ulltang-285286-640x360.jpg");
+  } */
 
   .next-page {
     padding: 1rem 1.5rem;
@@ -287,8 +303,20 @@
 
 #history {
   min-height: 100vh;
-  background-image: url("../img/bridge-clouds-cloudy-dark-clouds.jpg");
+  background-image: url("../img/pexels-nomi-gogo-555868-1920x1268.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-nomi-gogo-555868-1280x845.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-nomi-gogo-555868-1280x845.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-nomi-gogo-555868-640x422.jpg");
+  } */
 
   #history-container {
     padding: 1rem 0;
@@ -405,8 +433,20 @@
 /*** NEWS ***/
 
 #news {
-  background-image: url("../img/abandoned-forest-industry-nature.jpg");
+  background-image: url("../img/pexels-snapwire-34950-1920x1280.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-snapwire-34950-1280x853.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-snapwire-34950-1280x853.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-snapwire-34950-640x426.jpg");
+  } */
 
   #news-container {
     padding: 1rem 0;
@@ -556,8 +596,20 @@
 
 #gallery {
   min-height: 100vh;
-  background: url("./../img/gray-trail-rails-between-green-leaf-trees-2.jpg");
+  background-image: url("./../img/pexels-alex-qian-2304795-1920x1280.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-alex-qian-2304795-1280x853.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-alex-qian-2304795-1280x853.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-alex-qian-2304795-640x426.jpg");
+  } */
 
   #gallery-container {
     padding: 1rem 0;
@@ -755,8 +807,20 @@
 
 #ambience {
   min-height: 100vh;
-  background: url("./../img/alps-austria-blue-sky-clouds-light1.jpg");
+  background-image: url("./../img/pexels-skitterphoto-339336-1920x1280.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-skitterphoto-339336-1280x853.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-skitterphoto-339336-1280x853.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-skitterphoto-339336-640x426.jpg");
+  } */
 
   #ambience-container {
     padding: 1rem 0;
@@ -874,8 +938,20 @@
 
 #main-contact {
   min-height: 80vh;
-  background-image: url("../img/home-03-pexels-justin-lawson.jpg");
+  background-image: url("../img/pexels-justin-lawson-3668481-1920x1350.jpg");
   @include background;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-justin-lawson-3668481-1280x900.jpg");
+  }
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-justin-lawson-3668481-1280x900.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-justin-lawson-3668481-640x450.jpg");
+  } */
 
   #contact {
     padding: 2.5rem;
@@ -967,6 +1043,14 @@
   background-image: url("./../img/abandoned-forest-industry-nature-gray.jpg");
   @include background;
   font-family: $footer-ff;
+
+  /* @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-justin-lawson-3668481-1280x900.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-justin-lawson-3668481-640x450.jpg");
+  } */
 
   position: relative;
   z-index: 1;
