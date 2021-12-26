@@ -11,8 +11,16 @@
   @include flex-center;
   /* position: relative; */
 
-  background-image: url("./../img/landing-bg-02.jpg");
+  background-image: url("./../img/pexels-mark-plötz-2790395-1920x1280.jpg");
   @include background;
+
+  @media (min-width: $tablet-min) and (max-width: $tablet-max) {
+    background-image: url("./../img/pexels-mark-plötz-2790395-1280x853.jpg");
+  }
+
+  @media (max-width: $phone-max) {
+    background-image: url("./../img/pexels-mark-plötz-2790395-640x426.jpg");
+  }
 
   .logo-article {
     height: 100vh;
