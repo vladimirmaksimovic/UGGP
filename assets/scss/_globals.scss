@@ -63,6 +63,23 @@ a {
   color: $grey;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75rem;
+
+  a {
+    font-size: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $lion;
+    }
+  }
+}
+
 /*** MAIN ***/
 
 main {
@@ -206,8 +223,8 @@ nav {
       text-decoration: none;
 
       &:hover {
-        color: $blue;
-        text-decoration: underline;
+        color: $lion;
+        /* text-decoration: underline; */
       }
     }
   }
