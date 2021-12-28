@@ -70,6 +70,15 @@ figure {
   text-align: center;
   font-size: 0.75rem;
 
+  .img-desc {
+    padding: 0 0 0.5rem 0;
+    font-size: 0.95rem;
+  }
+
+  .img-source {
+    font-size: 0.75rem;
+  }
+
   a {
     font-size: inherit;
     text-decoration: none;
