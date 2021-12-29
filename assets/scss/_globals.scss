@@ -30,14 +30,30 @@ body {
     font-size: 90%;
   } */
 
-  h1,
+  /* h1 {
+    font-family: $heading-ff;
+    font-style: italic;
+    padding: 3rem 0 1rem 0;
+    line-height: $h-height;
+  } */
+
+  .welcome-heading {
+    h1,
+    h3 {
+      font-family: $heading-ff;
+      font-style: italic;
+      line-height: $h-height;
+    }
+  }
+
   h2,
   h3,
   h4,
   h5 {
-    font-family: $heading-ff;
-    font-style: italic;
-    /* padding: 3rem 0 1rem 0; */
+    font-family: $primary-ff;
+    font-weight: 300;
+    /* font-style: italic;
+    padding: 3rem 0 1rem 0; */
     line-height: $h-height;
   }
 }

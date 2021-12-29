@@ -167,7 +167,9 @@
 
       h1,
       h3 {
+        font-family: $heading-ff;
         font-style: italic;
+        line-height: $h-height;
       }
 
       h1 {
